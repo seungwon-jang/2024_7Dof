@@ -1,0 +1,3 @@
+[console_scripts]
+jt_test_node = apf_nodes.joint_t_test_node:main
+

@@ -1,0 +1,6 @@
+Invoking command in '/home/jang/2024_7Dof/src/build/culjaco': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/jang/2024_7Dof/src/culjaco -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/jang/2024_7Dof/src/install/culjaco
+Invoked command in '/home/jang/2024_7Dof/src/build/culjaco' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/jang/2024_7Dof/src/culjaco -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/jang/2024_7Dof/src/install/culjaco
+Invoking command in '/home/jang/2024_7Dof/src/build/culjaco': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/jang/2024_7Dof/src/build/culjaco -- -j16 -l16
+Invoked command in '/home/jang/2024_7Dof/src/build/culjaco' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/jang/2024_7Dof/src/build/culjaco -- -j16 -l16
+Invoking command in '/home/jang/2024_7Dof/src/build/culjaco': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/jang/2024_7Dof/src/build/culjaco
+Invoked command in '/home/jang/2024_7Dof/src/build/culjaco' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/jang/2024_7Dof/src/build/culjaco

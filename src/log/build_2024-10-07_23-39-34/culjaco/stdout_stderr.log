@@ -1,0 +1,47 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/jang/2024_7Dof/src/culjaco/include>
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/jang/2024_7Dof/src/build/culjaco
+[ 50%] [32mBuilding CXX object CMakeFiles/forward.dir/src/forward.cpp.o[0m
+[100%] [32m[1mLinking CXX executable forward[0m
+[100%] Built target forward
+-- Install configuration: "Release"
+-- Execute custom install script
+-- Symlinking: /home/jang/2024_7Dof/src/install/culjaco/lib/culjaco/forward
+-- Symlinking: /home/jang/2024_7Dof/src/install/culjaco/share/ament_index/resource_index/package_run_dependencies/culjaco
+-- Symlinking: /home/jang/2024_7Dof/src/install/culjaco/share/ament_index/resource_index/parent_prefix_path/culjaco
+-- Symlinking: /home/jang/2024_7Dof/src/install/culjaco/share/culjaco/environment/ament_prefix_path.sh
+-- Symlinking: /home/jang/2024_7Dof/src/install/culjaco/share/culjaco/environment/ament_prefix_path.dsv
+-- Symlinking: /home/jang/2024_7Dof/src/install/culjaco/share/culjaco/environment/path.sh
+-- Symlinking: /home/jang/2024_7Dof/src/install/culjaco/share/culjaco/environment/path.dsv
+-- Symlinking: /home/jang/2024_7Dof/src/install/culjaco/share/culjaco/local_setup.bash
+-- Symlinking: /home/jang/2024_7Dof/src/install/culjaco/share/culjaco/local_setup.sh
+-- Symlinking: /home/jang/2024_7Dof/src/install/culjaco/share/culjaco/local_setup.zsh
+-- Symlinking: /home/jang/2024_7Dof/src/install/culjaco/share/culjaco/local_setup.dsv
+-- Symlinking: /home/jang/2024_7Dof/src/install/culjaco/share/culjaco/package.dsv
+-- Symlinking: /home/jang/2024_7Dof/src/install/culjaco/share/ament_index/resource_index/packages/culjaco
+-- Symlinking: /home/jang/2024_7Dof/src/install/culjaco/share/culjaco/cmake/culjacoConfig.cmake
+-- Symlinking: /home/jang/2024_7Dof/src/install/culjaco/share/culjaco/cmake/culjacoConfig-version.cmake
+-- Symlinking: /home/jang/2024_7Dof/src/install/culjaco/share/culjaco/package.xml

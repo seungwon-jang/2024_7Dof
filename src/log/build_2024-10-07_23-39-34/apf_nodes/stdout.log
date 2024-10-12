@@ -1,0 +1,22 @@
+running develop
+running egg_info
+creating apf_nodes.egg-info
+writing apf_nodes.egg-info/PKG-INFO
+writing dependency_links to apf_nodes.egg-info/dependency_links.txt
+writing entry points to apf_nodes.egg-info/entry_points.txt
+writing requirements to apf_nodes.egg-info/requires.txt
+writing top-level names to apf_nodes.egg-info/top_level.txt
+writing manifest file 'apf_nodes.egg-info/SOURCES.txt'
+reading manifest file 'apf_nodes.egg-info/SOURCES.txt'
+writing manifest file 'apf_nodes.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/jang/2024_7Dof/src/install/apf_nodes/lib/python3.10/site-packages/apf-nodes.egg-link (link to .)
+Installing jt_test_node script to /home/jang/2024_7Dof/src/install/apf_nodes/lib/apf_nodes
+
+Installed /home/jang/2024_7Dof/src/build/apf_nodes
+running symlink_data
+creating /home/jang/2024_7Dof/src/install/apf_nodes/share/ament_index
+creating /home/jang/2024_7Dof/src/install/apf_nodes/share/ament_index/resource_index
+creating /home/jang/2024_7Dof/src/install/apf_nodes/share/ament_index/resource_index/packages
+symbolically linking /home/jang/2024_7Dof/src/build/apf_nodes/resource/apf_nodes -> /home/jang/2024_7Dof/src/install/apf_nodes/share/ament_index/resource_index/packages
+symbolically linking /home/jang/2024_7Dof/src/build/apf_nodes/package.xml -> /home/jang/2024_7Dof/src/install/apf_nodes/share/apf_nodes

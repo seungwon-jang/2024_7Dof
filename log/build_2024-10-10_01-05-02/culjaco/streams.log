@@ -1,0 +1,31 @@
+[0.163s] Invoking command in '/home/jang/2024_7Dof/build/culjaco': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jang/2024_7Dof/install/apf_nodes:/opt/ros/humble /usr/bin/cmake --build /home/jang/2024_7Dof/build/culjaco -- -j16 -l16
+[0.317s] [ 25%] Built target forward
+[0.330s] [ 50%] Built target listener
+[0.346s] [ 75%] Built target talker
+[0.353s] [ 87%] [32mBuilding CXX object CMakeFiles/forward_node.dir/src/forward_node.cpp.o[0m
+[5.777s] [100%] [32m[1mLinking CXX executable forward_node[0m
+[5.868s] [100%] Built target forward_node
+[5.881s] Invoked command in '/home/jang/2024_7Dof/build/culjaco' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jang/2024_7Dof/install/apf_nodes:/opt/ros/humble /usr/bin/cmake --build /home/jang/2024_7Dof/build/culjaco -- -j16 -l16
+[5.918s] Invoking command in '/home/jang/2024_7Dof/build/culjaco': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jang/2024_7Dof/install/apf_nodes:/opt/ros/humble /usr/bin/cmake --install /home/jang/2024_7Dof/build/culjaco
+[5.924s] -- Install configuration: "Release"
+[5.925s] -- Execute custom install script
+[5.925s] -- Up-to-date symlink: /home/jang/2024_7Dof/install/culjaco/lib/culjaco/forward
+[5.925s] -- Up-to-date symlink: /home/jang/2024_7Dof/install/culjaco/lib/culjaco/talker
+[5.925s] -- Up-to-date symlink: /home/jang/2024_7Dof/install/culjaco/lib/culjaco/listener
+[5.925s] -- Up-to-date symlink: /home/jang/2024_7Dof/install/culjaco/lib/culjaco/forward_node
+[5.925s] -- Up-to-date symlink: /home/jang/2024_7Dof/install/culjaco/share/ament_index/resource_index/package_run_dependencies/culjaco
+[5.926s] -- Up-to-date symlink: /home/jang/2024_7Dof/install/culjaco/share/ament_index/resource_index/parent_prefix_path/culjaco
+[5.926s] -- Up-to-date symlink: /home/jang/2024_7Dof/install/culjaco/share/culjaco/environment/ament_prefix_path.sh
+[5.926s] -- Up-to-date symlink: /home/jang/2024_7Dof/install/culjaco/share/culjaco/environment/ament_prefix_path.dsv
+[5.926s] -- Up-to-date symlink: /home/jang/2024_7Dof/install/culjaco/share/culjaco/environment/path.sh
+[5.926s] -- Up-to-date symlink: /home/jang/2024_7Dof/install/culjaco/share/culjaco/environment/path.dsv
+[5.926s] -- Up-to-date symlink: /home/jang/2024_7Dof/install/culjaco/share/culjaco/local_setup.bash
+[5.926s] -- Up-to-date symlink: /home/jang/2024_7Dof/install/culjaco/share/culjaco/local_setup.sh
+[5.926s] -- Up-to-date symlink: /home/jang/2024_7Dof/install/culjaco/share/culjaco/local_setup.zsh
+[5.926s] -- Up-to-date symlink: /home/jang/2024_7Dof/install/culjaco/share/culjaco/local_setup.dsv
+[5.927s] -- Symlinking: /home/jang/2024_7Dof/install/culjaco/share/culjaco/package.dsv
+[5.934s] -- Up-to-date symlink: /home/jang/2024_7Dof/install/culjaco/share/ament_index/resource_index/packages/culjaco
+[5.934s] -- Up-to-date symlink: /home/jang/2024_7Dof/install/culjaco/share/culjaco/cmake/culjacoConfig.cmake
+[5.934s] -- Up-to-date symlink: /home/jang/2024_7Dof/install/culjaco/share/culjaco/cmake/culjacoConfig-version.cmake
+[5.935s] -- Up-to-date symlink: /home/jang/2024_7Dof/install/culjaco/share/culjaco/package.xml
+[5.937s] Invoked command in '/home/jang/2024_7Dof/build/culjaco' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jang/2024_7Dof/install/apf_nodes:/opt/ros/humble /usr/bin/cmake --install /home/jang/2024_7Dof/build/culjaco

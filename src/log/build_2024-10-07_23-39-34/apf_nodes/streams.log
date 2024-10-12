@@ -1,0 +1,26 @@
+[2.025s] Invoking command in '/home/jang/2024_7Dof/src/build/apf_nodes': PYTHONPATH=/home/jang/2024_7Dof/src/build/apf_nodes/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jang/2024_7Dof/src/install/apf_nodes/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/jang/2024_7Dof/src/build/apf_nodes/build --no-deps symlink_data
+[2.251s] running develop
+[2.252s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[2.252s]   warnings.warn(
+[2.357s] running egg_info
+[2.357s] creating apf_nodes.egg-info
+[2.357s] writing apf_nodes.egg-info/PKG-INFO
+[2.357s] writing dependency_links to apf_nodes.egg-info/dependency_links.txt
+[2.357s] writing entry points to apf_nodes.egg-info/entry_points.txt
+[2.357s] writing requirements to apf_nodes.egg-info/requires.txt
+[2.357s] writing top-level names to apf_nodes.egg-info/top_level.txt
+[2.357s] writing manifest file 'apf_nodes.egg-info/SOURCES.txt'
+[2.359s] reading manifest file 'apf_nodes.egg-info/SOURCES.txt'
+[2.359s] writing manifest file 'apf_nodes.egg-info/SOURCES.txt'
+[2.361s] running build_ext
+[2.361s] Creating /home/jang/2024_7Dof/src/install/apf_nodes/lib/python3.10/site-packages/apf-nodes.egg-link (link to .)
+[2.361s] Installing jt_test_node script to /home/jang/2024_7Dof/src/install/apf_nodes/lib/apf_nodes
+[2.362s] 
+[2.362s] Installed /home/jang/2024_7Dof/src/build/apf_nodes
+[2.362s] running symlink_data
+[2.362s] creating /home/jang/2024_7Dof/src/install/apf_nodes/share/ament_index
+[2.362s] creating /home/jang/2024_7Dof/src/install/apf_nodes/share/ament_index/resource_index
+[2.362s] creating /home/jang/2024_7Dof/src/install/apf_nodes/share/ament_index/resource_index/packages
+[2.362s] symbolically linking /home/jang/2024_7Dof/src/build/apf_nodes/resource/apf_nodes -> /home/jang/2024_7Dof/src/install/apf_nodes/share/ament_index/resource_index/packages
+[2.362s] symbolically linking /home/jang/2024_7Dof/src/build/apf_nodes/package.xml -> /home/jang/2024_7Dof/src/install/apf_nodes/share/apf_nodes
+[2.401s] Invoked command in '/home/jang/2024_7Dof/src/build/apf_nodes' returned '0': PYTHONPATH=/home/jang/2024_7Dof/src/build/apf_nodes/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jang/2024_7Dof/src/install/apf_nodes/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/jang/2024_7Dof/src/build/apf_nodes/build --no-deps symlink_data

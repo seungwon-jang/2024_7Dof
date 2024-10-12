@@ -1,0 +1,9 @@
+source;share/apf_nodes/hook/pythonpath.ps1
+source;share/apf_nodes/hook/pythonpath.dsv
+source;share/apf_nodes/hook/pythonpath.sh
+source;share/apf_nodes/hook/ament_prefix_path.ps1
+source;share/apf_nodes/hook/ament_prefix_path.dsv
+source;share/apf_nodes/hook/ament_prefix_path.sh
+source;../../build/apf_nodes/share/apf_nodes/hook/pythonpath_develop.ps1
+source;../../build/apf_nodes/share/apf_nodes/hook/pythonpath_develop.dsv
+source;../../build/apf_nodes/share/apf_nodes/hook/pythonpath_develop.sh

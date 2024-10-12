@@ -1,0 +1,4 @@
+source;share/culjaco/local_setup.bash
+source;share/culjaco/local_setup.dsv
+source;share/culjaco/local_setup.sh
+source;share/culjaco/local_setup.zsh

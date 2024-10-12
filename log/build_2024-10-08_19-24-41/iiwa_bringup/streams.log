@@ -1,0 +1,74 @@
+[0.005s] Invoking command in '/home/jang/2024_7Dof/build/iiwa_bringup': AMENT_PREFIX_PATH=/home/jang/2024_7Dof/install/iiwa_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jang/2024_7Dof/install/iiwa_description:/opt/ros/humble GAZEBO_MODEL_PATH=/home/jang/2024_7Dof/install/iiwa_description/share/iiwa_description/meshes:${GAZEBO_MODEL_PATH} GAZEBO_RESOURCE_PATH=/home/jang/2024_7Dof/install/iiwa_description/share/iiwa_description/meshes:${GAZEBO_RESOURCE_PATH} GZ_SIM_RESOURCE_PATH=/home/jang/2024_7Dof/install/iiwa_description/share/iiwa_description/meshes IGN_GAZEBO_RESOURCE_PATH=/home/jang/2024_7Dof/install/iiwa_description/share/iiwa_description/meshes /usr/bin/cmake /home/jang/2024_7Dof/src/iiwa_ros2/iiwa_bringup -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/jang/2024_7Dof/install/iiwa_bringup
+[0.058s] -- The C compiler identification is GNU 11.4.0
+[0.116s] -- The CXX compiler identification is GNU 11.4.0
+[0.123s] -- Detecting C compiler ABI info
+[0.199s] -- Detecting C compiler ABI info - done
+[0.207s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.207s] -- Detecting C compile features
+[0.207s] -- Detecting C compile features - done
+[0.209s] -- Detecting CXX compiler ABI info
+[0.287s] -- Detecting CXX compiler ABI info - done
+[0.292s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.292s] -- Detecting CXX compile features
+[0.292s] -- Detecting CXX compile features - done
+[0.294s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.439s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.522s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.555s] -- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)
+[0.603s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.608s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.617s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.631s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.650s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.695s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.697s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.792s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.817s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.847s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.854s] -- Looking for pthread.h
+[0.920s] -- Looking for pthread.h - found
+[0.921s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.002s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.004s] -- Found Threads: TRUE  
+[1.068s] -- Found rclpy: 3.3.14 (/opt/ros/humble/share/rclpy/cmake)
+[1.070s] -- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+[1.113s] -- Found visualization_msgs: 4.2.4 (/opt/ros/humble/share/visualization_msgs/cmake)
+[1.138s] -- Found ament_cmake_gtest: 1.3.10 (/opt/ros/humble/share/ament_cmake_gtest/cmake)
+[1.140s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.245s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.247s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.247s] -- Added test 'lint_cmake' to check CMake code style
+[1.248s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.250s] -- Added test 'xmllint' to check XML markup files
+[1.252s] -- Configuring done
+[1.257s] -- Generating done
+[1.259s] -- Build files have been written to: /home/jang/2024_7Dof/build/iiwa_bringup
+[1.270s] Invoked command in '/home/jang/2024_7Dof/build/iiwa_bringup' returned '0': AMENT_PREFIX_PATH=/home/jang/2024_7Dof/install/iiwa_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jang/2024_7Dof/install/iiwa_description:/opt/ros/humble GAZEBO_MODEL_PATH=/home/jang/2024_7Dof/install/iiwa_description/share/iiwa_description/meshes:${GAZEBO_MODEL_PATH} GAZEBO_RESOURCE_PATH=/home/jang/2024_7Dof/install/iiwa_description/share/iiwa_description/meshes:${GAZEBO_RESOURCE_PATH} GZ_SIM_RESOURCE_PATH=/home/jang/2024_7Dof/install/iiwa_description/share/iiwa_description/meshes IGN_GAZEBO_RESOURCE_PATH=/home/jang/2024_7Dof/install/iiwa_description/share/iiwa_description/meshes /usr/bin/cmake /home/jang/2024_7Dof/src/iiwa_ros2/iiwa_bringup -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/jang/2024_7Dof/install/iiwa_bringup
+[1.272s] Invoking command in '/home/jang/2024_7Dof/build/iiwa_bringup': AMENT_PREFIX_PATH=/home/jang/2024_7Dof/install/iiwa_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jang/2024_7Dof/install/iiwa_description:/opt/ros/humble GAZEBO_MODEL_PATH=/home/jang/2024_7Dof/install/iiwa_description/share/iiwa_description/meshes:${GAZEBO_MODEL_PATH} GAZEBO_RESOURCE_PATH=/home/jang/2024_7Dof/install/iiwa_description/share/iiwa_description/meshes:${GAZEBO_RESOURCE_PATH} GZ_SIM_RESOURCE_PATH=/home/jang/2024_7Dof/install/iiwa_description/share/iiwa_description/meshes IGN_GAZEBO_RESOURCE_PATH=/home/jang/2024_7Dof/install/iiwa_description/share/iiwa_description/meshes /usr/bin/cmake --build /home/jang/2024_7Dof/build/iiwa_bringup -- -j16 -l16
+[1.315s] Invoked command in '/home/jang/2024_7Dof/build/iiwa_bringup' returned '0': AMENT_PREFIX_PATH=/home/jang/2024_7Dof/install/iiwa_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jang/2024_7Dof/install/iiwa_description:/opt/ros/humble GAZEBO_MODEL_PATH=/home/jang/2024_7Dof/install/iiwa_description/share/iiwa_description/meshes:${GAZEBO_MODEL_PATH} GAZEBO_RESOURCE_PATH=/home/jang/2024_7Dof/install/iiwa_description/share/iiwa_description/meshes:${GAZEBO_RESOURCE_PATH} GZ_SIM_RESOURCE_PATH=/home/jang/2024_7Dof/install/iiwa_description/share/iiwa_description/meshes IGN_GAZEBO_RESOURCE_PATH=/home/jang/2024_7Dof/install/iiwa_description/share/iiwa_description/meshes /usr/bin/cmake --build /home/jang/2024_7Dof/build/iiwa_bringup -- -j16 -l16
+[1.338s] Invoking command in '/home/jang/2024_7Dof/build/iiwa_bringup': AMENT_PREFIX_PATH=/home/jang/2024_7Dof/install/iiwa_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jang/2024_7Dof/install/iiwa_description:/opt/ros/humble GAZEBO_MODEL_PATH=/home/jang/2024_7Dof/install/iiwa_description/share/iiwa_description/meshes:${GAZEBO_MODEL_PATH} GAZEBO_RESOURCE_PATH=/home/jang/2024_7Dof/install/iiwa_description/share/iiwa_description/meshes:${GAZEBO_RESOURCE_PATH} GZ_SIM_RESOURCE_PATH=/home/jang/2024_7Dof/install/iiwa_description/share/iiwa_description/meshes IGN_GAZEBO_RESOURCE_PATH=/home/jang/2024_7Dof/install/iiwa_description/share/iiwa_description/meshes /usr/bin/cmake --install /home/jang/2024_7Dof/build/iiwa_bringup
+[1.347s] -- Install configuration: "Release"
+[1.348s] -- Execute custom install script
+[1.348s] -- Symlinking: /home/jang/2024_7Dof/install/iiwa_bringup/share/iiwa_bringup/launch/iiwa.launch.py
+[1.358s] -- Symlinking: /home/jang/2024_7Dof/install/iiwa_bringup/share/iiwa_bringup/launch/iiwa_planning.launch.py
+[1.368s] -- Symlinking: /home/jang/2024_7Dof/install/iiwa_bringup/share/iiwa_bringup/launch/iiwa_pose_tracking.launch.py
+[1.378s] -- Symlinking: /home/jang/2024_7Dof/install/iiwa_bringup/share/iiwa_bringup/launch/iiwa_servoing.launch.py
+[1.388s] -- Symlinking: /home/jang/2024_7Dof/install/iiwa_bringup/share/iiwa_bringup/launch/iiwa_test_joint_trajectory_controller.launch.py
+[1.398s] -- Symlinking: /home/jang/2024_7Dof/install/iiwa_bringup/share/iiwa_bringup/launch/joy_servo_teleop.launch.py
+[1.407s] -- Symlinking: /home/jang/2024_7Dof/install/iiwa_bringup/share/iiwa_bringup/config/test_trajectory_config.yaml
+[1.418s] -- Symlinking: /home/jang/2024_7Dof/install/iiwa_bringup/share/ament_index/resource_index/package_run_dependencies/iiwa_bringup
+[1.428s] -- Symlinking: /home/jang/2024_7Dof/install/iiwa_bringup/share/ament_index/resource_index/parent_prefix_path/iiwa_bringup
+[1.437s] -- Symlinking: /home/jang/2024_7Dof/install/iiwa_bringup/share/iiwa_bringup/environment/ament_prefix_path.sh
+[1.447s] -- Symlinking: /home/jang/2024_7Dof/install/iiwa_bringup/share/iiwa_bringup/environment/ament_prefix_path.dsv
+[1.456s] -- Symlinking: /home/jang/2024_7Dof/install/iiwa_bringup/share/iiwa_bringup/environment/path.sh
+[1.466s] -- Symlinking: /home/jang/2024_7Dof/install/iiwa_bringup/share/iiwa_bringup/environment/path.dsv
+[1.475s] -- Symlinking: /home/jang/2024_7Dof/install/iiwa_bringup/share/iiwa_bringup/local_setup.bash
+[1.486s] -- Symlinking: /home/jang/2024_7Dof/install/iiwa_bringup/share/iiwa_bringup/local_setup.sh
+[1.495s] -- Symlinking: /home/jang/2024_7Dof/install/iiwa_bringup/share/iiwa_bringup/local_setup.zsh
+[1.505s] -- Symlinking: /home/jang/2024_7Dof/install/iiwa_bringup/share/iiwa_bringup/local_setup.dsv
+[1.516s] -- Symlinking: /home/jang/2024_7Dof/install/iiwa_bringup/share/iiwa_bringup/package.dsv
+[1.525s] -- Symlinking: /home/jang/2024_7Dof/install/iiwa_bringup/share/ament_index/resource_index/packages/iiwa_bringup
+[1.535s] -- Symlinking: /home/jang/2024_7Dof/install/iiwa_bringup/share/iiwa_bringup/cmake/iiwa_bringupConfig.cmake
+[1.545s] -- Symlinking: /home/jang/2024_7Dof/install/iiwa_bringup/share/iiwa_bringup/cmake/iiwa_bringupConfig-version.cmake
+[1.554s] -- Symlinking: /home/jang/2024_7Dof/install/iiwa_bringup/share/iiwa_bringup/package.xml
+[1.566s] Invoked command in '/home/jang/2024_7Dof/build/iiwa_bringup' returned '0': AMENT_PREFIX_PATH=/home/jang/2024_7Dof/install/iiwa_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jang/2024_7Dof/install/iiwa_description:/opt/ros/humble GAZEBO_MODEL_PATH=/home/jang/2024_7Dof/install/iiwa_description/share/iiwa_description/meshes:${GAZEBO_MODEL_PATH} GAZEBO_RESOURCE_PATH=/home/jang/2024_7Dof/install/iiwa_description/share/iiwa_description/meshes:${GAZEBO_RESOURCE_PATH} GZ_SIM_RESOURCE_PATH=/home/jang/2024_7Dof/install/iiwa_description/share/iiwa_description/meshes IGN_GAZEBO_RESOURCE_PATH=/home/jang/2024_7Dof/install/iiwa_description/share/iiwa_description/meshes /usr/bin/cmake --install /home/jang/2024_7Dof/build/iiwa_bringup

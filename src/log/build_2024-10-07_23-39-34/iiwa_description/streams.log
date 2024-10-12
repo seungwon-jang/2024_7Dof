@@ -1,0 +1,92 @@
+[0.016s] Invoking command in '/home/jang/2024_7Dof/src/build/iiwa_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/jang/2024_7Dof/src/iiwa_ros2/iiwa_description -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/jang/2024_7Dof/src/install/iiwa_description
+[0.179s] -- The C compiler identification is GNU 11.4.0
+[0.179s] -- The CXX compiler identification is GNU 11.4.0
+[0.179s] -- Detecting C compiler ABI info
+[0.445s] -- Detecting C compiler ABI info - done
+[0.493s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.495s] -- Detecting C compile features
+[0.499s] -- Detecting C compile features - done
+[0.524s] -- Detecting CXX compiler ABI info
+[0.948s] -- Detecting CXX compiler ABI info - done
+[1.012s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.014s] -- Detecting CXX compile features
+[1.017s] -- Detecting CXX compile features - done
+[1.058s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.839s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[2.023s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[2.049s] -- Found ament_cmake_gtest: 1.3.10 (/opt/ros/humble/share/ament_cmake_gtest/cmake)
+[2.051s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[2.145s] -- Added test 'copyright' to check source files copyright and LICENSE
+[2.152s] -- Added test 'lint_cmake' to check CMake code style
+[2.156s] -- Added test 'xmllint' to check XML markup files
+[2.158s] -- Configuring done
+[2.167s] -- Generating done
+[2.170s] -- Build files have been written to: /home/jang/2024_7Dof/src/build/iiwa_description
+[2.175s] Invoked command in '/home/jang/2024_7Dof/src/build/iiwa_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/jang/2024_7Dof/src/iiwa_ros2/iiwa_description -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/jang/2024_7Dof/src/install/iiwa_description
+[2.178s] Invoking command in '/home/jang/2024_7Dof/src/build/iiwa_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/jang/2024_7Dof/src/build/iiwa_description -- -j16 -l16
+[2.237s] Invoked command in '/home/jang/2024_7Dof/src/build/iiwa_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/jang/2024_7Dof/src/build/iiwa_description -- -j16 -l16
+[2.271s] Invoking command in '/home/jang/2024_7Dof/src/build/iiwa_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/jang/2024_7Dof/src/build/iiwa_description
+[2.277s] -- Install configuration: "Release"
+[2.278s] -- Execute custom install script
+[2.278s] -- Symlinking: /home/jang/2024_7Dof/src/install/iiwa_description/share/iiwa_description/urdf/iiwa.urdf.xacro
+[2.286s] -- Symlinking: /home/jang/2024_7Dof/src/install/iiwa_description/share/iiwa_description/meshes/flex_fellow_h800/flex_fellow_h800.dae
+[2.296s] -- Symlinking: /home/jang/2024_7Dof/src/install/iiwa_description/share/iiwa_description/meshes/flex_fellow_h800/flex_fellow_h800.stl
+[2.307s] -- Symlinking: /home/jang/2024_7Dof/src/install/iiwa_description/share/iiwa_description/meshes/lbr_iiwa_14_r820/collision/base_link.stl
+[2.318s] -- Symlinking: /home/jang/2024_7Dof/src/install/iiwa_description/share/iiwa_description/meshes/lbr_iiwa_14_r820/collision/link_1.stl
+[2.328s] -- Symlinking: /home/jang/2024_7Dof/src/install/iiwa_description/share/iiwa_description/meshes/lbr_iiwa_14_r820/collision/link_2.stl
+[2.338s] -- Symlinking: /home/jang/2024_7Dof/src/install/iiwa_description/share/iiwa_description/meshes/lbr_iiwa_14_r820/collision/link_3.stl
+[2.346s] -- Symlinking: /home/jang/2024_7Dof/src/install/iiwa_description/share/iiwa_description/meshes/lbr_iiwa_14_r820/collision/link_4.stl
+[2.356s] -- Symlinking: /home/jang/2024_7Dof/src/install/iiwa_description/share/iiwa_description/meshes/lbr_iiwa_14_r820/collision/link_5.stl
+[2.366s] -- Symlinking: /home/jang/2024_7Dof/src/install/iiwa_description/share/iiwa_description/meshes/lbr_iiwa_14_r820/collision/link_6.stl
+[2.373s] -- Symlinking: /home/jang/2024_7Dof/src/install/iiwa_description/share/iiwa_description/meshes/lbr_iiwa_14_r820/collision/link_7.stl
+[2.380s] -- Symlinking: /home/jang/2024_7Dof/src/install/iiwa_description/share/iiwa_description/meshes/lbr_iiwa_14_r820/collision/link_7_2.stl
+[2.390s] -- Symlinking: /home/jang/2024_7Dof/src/install/iiwa_description/share/iiwa_description/meshes/lbr_iiwa_14_r820/link_7_2.stl
+[2.398s] -- Symlinking: /home/jang/2024_7Dof/src/install/iiwa_description/share/iiwa_description/meshes/lbr_iiwa_14_r820/visual/base_link.dae
+[2.413s] -- Symlinking: /home/jang/2024_7Dof/src/install/iiwa_description/share/iiwa_description/meshes/lbr_iiwa_14_r820/visual/link_1.dae
+[2.424s] -- Symlinking: /home/jang/2024_7Dof/src/install/iiwa_description/share/iiwa_description/meshes/lbr_iiwa_14_r820/visual/link_2.dae
+[2.431s] -- Symlinking: /home/jang/2024_7Dof/src/install/iiwa_description/share/iiwa_description/meshes/lbr_iiwa_14_r820/visual/link_3.dae
+[2.440s] -- Symlinking: /home/jang/2024_7Dof/src/install/iiwa_description/share/iiwa_description/meshes/lbr_iiwa_14_r820/visual/link_4.dae
+[2.446s] -- Symlinking: /home/jang/2024_7Dof/src/install/iiwa_description/share/iiwa_description/meshes/lbr_iiwa_14_r820/visual/link_5.dae
+[2.457s] -- Symlinking: /home/jang/2024_7Dof/src/install/iiwa_description/share/iiwa_description/meshes/lbr_iiwa_14_r820/visual/link_6.dae
+[2.463s] -- Symlinking: /home/jang/2024_7Dof/src/install/iiwa_description/share/iiwa_description/meshes/lbr_iiwa_14_r820/visual/link_7.dae
+[2.471s] -- Symlinking: /home/jang/2024_7Dof/src/install/iiwa_description/share/iiwa_description/meshes/lbr_iiwa_14_r820/visual/link_7_2.stl
+[2.480s] -- Symlinking: /home/jang/2024_7Dof/src/install/iiwa_description/share/iiwa_description/gazebo/iiwa.gazebo.xacro
+[2.490s] -- Symlinking: /home/jang/2024_7Dof/src/install/iiwa_description/share/iiwa_description/gazebo/worlds/empty.world
+[2.496s] -- Symlinking: /home/jang/2024_7Dof/src/install/iiwa_description/share/iiwa_description/gazebo/worlds/light.world
+[2.504s] -- Symlinking: /home/jang/2024_7Dof/src/install/iiwa_description/share/iiwa_description/rviz/iiwa.rviz
+[2.512s] -- Symlinking: /home/jang/2024_7Dof/src/install/iiwa_description/share/iiwa_description/rviz/moveit.rviz
+[2.521s] -- Symlinking: /home/jang/2024_7Dof/src/install/iiwa_description/share/iiwa_description/rviz/servo_rviz_config.rviz
+[2.529s] -- Symlinking: /home/jang/2024_7Dof/src/install/iiwa_description/share/iiwa_description/ros2_control/iiwa.r2c_hardware.xacro
+[2.540s] -- Symlinking: /home/jang/2024_7Dof/src/install/iiwa_description/share/iiwa_description/ros2_control/iiwa.r2c_hw_ds.xacro
+[2.549s] -- Symlinking: /home/jang/2024_7Dof/src/install/iiwa_description/share/iiwa_description/config/base_frame.yaml
+[2.557s] -- Symlinking: /home/jang/2024_7Dof/src/install/iiwa_description/share/iiwa_description/config/iiwa.config.xacro
+[2.562s] -- Symlinking: /home/jang/2024_7Dof/src/install/iiwa_description/share/iiwa_description/config/iiwa_controllers.yaml
+[2.569s] -- Symlinking: /home/jang/2024_7Dof/src/install/iiwa_description/share/iiwa_description/config/initial_positions.yaml
+[2.577s] -- Symlinking: /home/jang/2024_7Dof/src/install/iiwa_description/share/iiwa_description/moveit2/iiwa_cartesian_limits.yaml
+[2.585s] -- Symlinking: /home/jang/2024_7Dof/src/install/iiwa_description/share/iiwa_description/moveit2/iiwa_joint_limits.yaml
+[2.592s] -- Symlinking: /home/jang/2024_7Dof/src/install/iiwa_description/share/iiwa_description/moveit2/iiwa_moveit2_pose_tracking_config.yaml
+[2.598s] -- Symlinking: /home/jang/2024_7Dof/src/install/iiwa_description/share/iiwa_description/moveit2/iiwa_moveit2_pose_tracking_settings.yaml
+[2.606s] -- Symlinking: /home/jang/2024_7Dof/src/install/iiwa_description/share/iiwa_description/moveit2/iiwa_moveit2_servo_config.yaml
+[2.616s] -- Symlinking: /home/jang/2024_7Dof/src/install/iiwa_description/share/iiwa_description/moveit2/iiwa_moveit_controller_config.yaml
+[2.624s] -- Symlinking: /home/jang/2024_7Dof/src/install/iiwa_description/share/iiwa_description/moveit2/kinematics.yaml
+[2.634s] -- Symlinking: /home/jang/2024_7Dof/src/install/iiwa_description/share/iiwa_description/moveit2/ompl_planning.yaml
+[2.642s] -- Symlinking: /home/jang/2024_7Dof/src/install/iiwa_description/share/iiwa_description/moveit2/planning_pipelines_config.yaml
+[2.649s] -- Symlinking: /home/jang/2024_7Dof/src/install/iiwa_description/share/iiwa_description/srdf/iiwa.srdf.xacro
+[2.659s] -- Symlinking: /home/jang/2024_7Dof/src/install/iiwa_description/share/iiwa_description/srdf/iiwa_macro.srdf.xacro
+[2.666s] -- Symlinking: /home/jang/2024_7Dof/src/install/iiwa_description/share/iiwa_description/environment/iiwa_description.sh
+[2.674s] -- Symlinking: /home/jang/2024_7Dof/src/install/iiwa_description/share/ament_index/resource_index/package_run_dependencies/iiwa_description
+[2.682s] -- Symlinking: /home/jang/2024_7Dof/src/install/iiwa_description/share/ament_index/resource_index/parent_prefix_path/iiwa_description
+[2.699s] -- Symlinking: /home/jang/2024_7Dof/src/install/iiwa_description/share/iiwa_description/environment/ament_prefix_path.sh
+[2.710s] -- Symlinking: /home/jang/2024_7Dof/src/install/iiwa_description/share/iiwa_description/environment/ament_prefix_path.dsv
+[2.719s] -- Symlinking: /home/jang/2024_7Dof/src/install/iiwa_description/share/iiwa_description/environment/path.sh
+[2.729s] -- Symlinking: /home/jang/2024_7Dof/src/install/iiwa_description/share/iiwa_description/environment/path.dsv
+[2.738s] -- Symlinking: /home/jang/2024_7Dof/src/install/iiwa_description/share/iiwa_description/local_setup.bash
+[2.747s] -- Symlinking: /home/jang/2024_7Dof/src/install/iiwa_description/share/iiwa_description/local_setup.sh
+[2.757s] -- Symlinking: /home/jang/2024_7Dof/src/install/iiwa_description/share/iiwa_description/local_setup.zsh
+[2.768s] -- Symlinking: /home/jang/2024_7Dof/src/install/iiwa_description/share/iiwa_description/local_setup.dsv
+[2.777s] -- Symlinking: /home/jang/2024_7Dof/src/install/iiwa_description/share/iiwa_description/package.dsv
+[2.786s] -- Symlinking: /home/jang/2024_7Dof/src/install/iiwa_description/share/ament_index/resource_index/packages/iiwa_description
+[2.796s] -- Symlinking: /home/jang/2024_7Dof/src/install/iiwa_description/share/iiwa_description/cmake/iiwa_descriptionConfig.cmake
+[2.807s] -- Symlinking: /home/jang/2024_7Dof/src/install/iiwa_description/share/iiwa_description/cmake/iiwa_descriptionConfig-version.cmake
+[2.817s] -- Symlinking: /home/jang/2024_7Dof/src/install/iiwa_description/share/iiwa_description/package.xml
+[2.829s] Invoked command in '/home/jang/2024_7Dof/src/build/iiwa_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/jang/2024_7Dof/src/build/iiwa_description

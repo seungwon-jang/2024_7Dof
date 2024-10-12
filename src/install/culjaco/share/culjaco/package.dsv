@@ -1,0 +1,8 @@
+source;share/culjaco/hook/cmake_prefix_path.ps1
+source;share/culjaco/hook/cmake_prefix_path.dsv
+source;share/culjaco/hook/cmake_prefix_path.sh
+source;share/culjaco/local_setup.bash
+source;share/culjaco/local_setup.dsv
+source;share/culjaco/local_setup.ps1
+source;share/culjaco/local_setup.sh
+source;share/culjaco/local_setup.zsh
