@@ -1,0 +1,16 @@
+[0.162s] Invoking command in '/home/jang/2024_7Dof/build/culjaco': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jang/2024_7Dof/install/apf_nodes:/opt/ros/humble /usr/bin/cmake --build /home/jang/2024_7Dof/build/culjaco -- -j16 -l16
+[0.202s] [35m[1mConsolidate compiler generated dependencies of target jaco_node[0m
+[0.209s] [ 20%] Built target forward
+[0.214s] [ 40%] Built target talker
+[0.215s] [ 60%] Built target forward_node
+[0.215s] [ 80%] Built target listener
+[0.218s] [ 90%] [32mBuilding CXX object CMakeFiles/jaco_node.dir/src/cul_jaco.cpp.o[0m
+[1.662s] [01m[K/home/jang/2024_7Dof/src/culjaco/src/cul_jaco.cpp:[m[K In constructor ‘[01m[Kjaco_node::jaco_node()[m[K’:
+[1.662s] [01m[K/home/jang/2024_7Dof/src/culjaco/src/cul_jaco.cpp:21:54:[m[K [01;31m[Kerror: [m[Kexpected class-name before ‘[01m[K([m[K’ token
+[1.662s]    21 |     : Node("jaco_node"), std::chrono_literals::count_[01;31m[K([m[K0)
+[1.662s]       |                                                      [01;31m[K^[m[K
+[1.662s] [01m[K/home/jang/2024_7Dof/src/culjaco/src/cul_jaco.cpp:21:54:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K{[m[K’ before ‘[01m[K([m[K’ token
+[1.992s] gmake[2]: *** [CMakeFiles/jaco_node.dir/build.make:76: CMakeFiles/jaco_node.dir/src/cul_jaco.cpp.o] Error 1
+[1.992s] gmake[1]: *** [CMakeFiles/Makefile2:249: CMakeFiles/jaco_node.dir/all] Error 2
+[1.992s] gmake: *** [Makefile:146: all] Error 2
+[1.995s] Invoked command in '/home/jang/2024_7Dof/build/culjaco' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jang/2024_7Dof/install/apf_nodes:/opt/ros/humble /usr/bin/cmake --build /home/jang/2024_7Dof/build/culjaco -- -j16 -l16

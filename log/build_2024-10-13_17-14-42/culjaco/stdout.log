@@ -1,0 +1,6 @@
+[35m[1mConsolidate compiler generated dependencies of target jaco_node[0m
+[ 20%] Built target forward
+[ 60%] Built target forward_node
+[ 60%] Built target listener
+[ 80%] Built target talker
+[ 90%] [32mBuilding CXX object CMakeFiles/jaco_node.dir/src/cul_jaco.cpp.o[0m

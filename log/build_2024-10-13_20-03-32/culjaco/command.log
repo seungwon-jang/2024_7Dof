@@ -1,0 +1,1 @@
+Invoking command in '/home/jang/2024_7Dof/build/culjaco': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jang/2024_7Dof/install/apf_nodes:/opt/ros/humble /usr/bin/cmake --build /home/jang/2024_7Dof/build/culjaco -- -j16 -l16

@@ -1,0 +1,4 @@
+[35m[1mConsolidate compiler generated dependencies of target apf_main_node[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/apf_main_node.dir/src/apf_main_node.cpp.o[0m
+[100%] [32m[1mLinking CXX executable apf_main_node[0m
+[100%] Built target apf_main_node

@@ -13,6 +13,10 @@ find_package(std_msgs REQUIRED)
 # add eigen3
 find_package(eigen3_cmake_module REQUIRED)
 find_package(Eigen3)
+
+#find_iiwa_controler interface
+find_package(sensor_msgs REQUIRED)
+
 # uncomment the following section in order to fill in
 # further dependencies manually.
 # find_package(<dependency> REQUIRED)
@@ -33,11 +37,15 @@ ament_target_dependencies(listener rclcpp std_msgs)
 add_executable(forward_node src/forward_node.cpp)
 ament_target_dependencies(forward_node rclcpp std_msgs Eigen3)
 
+add_executable(jaco_node src/cul_jaco.cpp)
+ament_target_dependencies(jaco_node rclcpp std_msgs sensor_msgs)
+
 install(TARGETS 
   forward
   talker
   listener
   forward_node
+  jaco_node
   DESTINATION lib/${PROJECT_NAME})
 
 

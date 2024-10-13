@@ -1,0 +1,13 @@
+[35m[1mConsolidate compiler generated dependencies of target jaco_node[0m
+[ 20%] Built target forward
+[ 40%] Built target listener
+[ 90%] [32mBuilding CXX object CMakeFiles/jaco_node.dir/src/cul_jaco.cpp.o[0m
+[ 60%] Built target talker
+[ 90%] Built target forward_node
+[01m[K/home/jang/2024_7Dof/src/culjaco/src/cul_jaco.cpp:[m[K In constructor ‘[01m[Kjaco_node::jaco_node()[m[K’:
+[01m[K/home/jang/2024_7Dof/src/culjaco/src/cul_jaco.cpp:18:57:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K.[m[K’ token
+   18 |       double joint_position[sensor_msgs::msg::JointState[01;31m[K.[m[Kposition.size()] = {0,};
+      |                                                         [01;31m[K^[m[K
+gmake[2]: *** [CMakeFiles/jaco_node.dir/build.make:76: CMakeFiles/jaco_node.dir/src/cul_jaco.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:249: CMakeFiles/jaco_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

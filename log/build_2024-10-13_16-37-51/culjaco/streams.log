@@ -1,0 +1,73 @@
+[0.159s] Invoking command in '/home/jang/2024_7Dof/build/culjaco': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jang/2024_7Dof/install/apf_nodes:/opt/ros/humble /usr/bin/cmake --build /home/jang/2024_7Dof/build/culjaco -- -j16 -l16
+[0.340s] [ 20%] Built target forward
+[0.365s] [ 40%] Built target listener
+[0.373s] [ 50%] [32mBuilding CXX object CMakeFiles/jaco_node.dir/src/cul_jaco.cpp.o[0m
+[0.380s] [ 70%] Built target forward_node
+[0.381s] [ 90%] Built target talker
+[2.324s] [01m[K/home/jang/2024_7Dof/src/culjaco/src/cul_jaco.cpp:19:31:[m[K [01;31m[Kerror: [m[K‘[01m[Ksensor_msgs[m[K’ does not name a type
+[2.324s]    19 |     void topic_callback(const [01;31m[Ksensor_msgs[m[K::msg::position & msg) const
+[2.324s]       |                               [01;31m[K^~~~~~~~~~~[m[K
+[2.324s] [01m[K/home/jang/2024_7Dof/src/culjaco/src/cul_jaco.cpp:19:47:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K::[m[K’ token
+[2.324s]    19 |     void topic_callback(const sensor_msgs::msg[01;31m[K::[m[Kposition & msg) const
+[2.324s]       |                                               [01;31m[K^~[m[K
+[2.324s] [01m[K/home/jang/2024_7Dof/src/culjaco/src/cul_jaco.cpp:19:47:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K::[m[K’ token
+[2.324s]    19 |     void topic_callback[34m[K([m[Kconst sensor_msgs::msg[01;31m[K:[m[K[32m[K:[m[Kposition & msg) const
+[2.324s]       |                        [34m[K~[m[K                      [01;31m[K^[m[K[32m[K~[m[K
+[2.324s]       |                                               [32m[K)[m[K
+[2.324s] [01m[K/home/jang/2024_7Dof/src/culjaco/src/cul_jaco.cpp:19:44:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[2.324s]    19 |     void topic_callback(const sensor_msgs::[01;31m[Kmsg[m[K::position & msg) const
+[2.324s]       |                                            [01;31m[K^~~[m[K
+[2.324s]       |                                               [32m[K;[m[K
+[2.325s] [01m[K/home/jang/2024_7Dof/src/culjaco/src/cul_jaco.cpp:19:49:[m[K [01;31m[Kerror: [m[K‘[01m[Kposition[m[K’ in namespace ‘[01m[K::[m[K’ does not name a type
+[2.325s]    19 |     void topic_callback(const sensor_msgs::msg::[01;31m[Kposition[m[K & msg) const
+[2.325s]       |                                                 [01;31m[K^~~~~~~~[m[K
+[2.329s] [01m[K/home/jang/2024_7Dof/src/culjaco/src/cul_jaco.cpp:23:26:[m[K [01;31m[Kerror: [m[K‘[01m[Ksensor_msgs[m[K’ was not declared in this scope
+[2.329s]    23 |     rclcpp::Subscription<[01;31m[Ksensor_msgs[m[K::msg::position>::SharedPtr subscription_;
+[2.329s]       |                          [01;31m[K^~~~~~~~~~~[m[K
+[2.329s] [01m[K/home/jang/2024_7Dof/src/culjaco/src/cul_jaco.cpp:23:52:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[2.329s]    23 |     rclcpp::Subscription<sensor_msgs::msg::position[01;31m[K>[m[K::SharedPtr subscription_;
+[2.329s]       |                                                    [01;31m[K^[m[K
+[2.330s] [01m[K/home/jang/2024_7Dof/src/culjaco/src/cul_jaco.cpp:23:52:[m[K [01;31m[Kerror: [m[Ktemplate argument 3 is invalid
+[2.330s] [01m[K/home/jang/2024_7Dof/src/culjaco/src/cul_jaco.cpp:23:52:[m[K [01;31m[Kerror: [m[Ktemplate argument 4 is invalid
+[2.330s] [01m[K/home/jang/2024_7Dof/src/culjaco/src/cul_jaco.cpp:23:52:[m[K [01;31m[Kerror: [m[Ktemplate argument 5 is invalid
+[2.330s] [01m[K/home/jang/2024_7Dof/src/culjaco/src/cul_jaco.cpp:23:55:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[2.330s]    23 |     rclcpp::Subscription<sensor_msgs::msg::position>::[01;31m[KSharedPtr[m[K subscription_;
+[2.330s]       |                                                       [01;31m[K^~~~~~~~~[m[K
+[2.330s]       |                                                                [32m[K;[m[K
+[2.331s] [01m[K/home/jang/2024_7Dof/src/culjaco/src/cul_jaco.cpp:23:65:[m[K [01;31m[Kerror: [m[K‘[01m[Ksubscription_[m[K’ does not name a type; did you mean ‘[01m[Krmw_subscription_t[m[K’?
+[2.331s]    23 |     rclcpp::Subscription<sensor_msgs::msg::position>::SharedPtr [01;31m[Ksubscription_[m[K;
+[2.331s]       |                                                                 [01;31m[K^~~~~~~~~~~~~[m[K
+[2.331s]       |                                                                 [32m[Krmw_subscription_t[m[K
+[2.335s] [01m[K/home/jang/2024_7Dof/src/culjaco/src/cul_jaco.cpp:[m[K In constructor ‘[01m[Kjaco_node::jaco_node()[m[K’:
+[2.336s] [01m[K/home/jang/2024_7Dof/src/culjaco/src/cul_jaco.cpp:14:7:[m[K [01;31m[Kerror: [m[K‘[01m[Ksubscription_[m[K’ was not declared in this scope; did you mean ‘[01m[Krmw_subscription_t[m[K’?
+[2.336s]    14 |       [01;31m[Ksubscription_[m[K = this->create_subscription<sensor_msgs::msg::position>(
+[2.336s]       |       [01;31m[K^~~~~~~~~~~~~[m[K
+[2.336s]       |       [32m[Krmw_subscription_t[m[K
+[2.340s] [01m[K/home/jang/2024_7Dof/src/culjaco/src/cul_jaco.cpp:14:49:[m[K [01;31m[Kerror: [m[K‘[01m[Ksensor_msgs[m[K’ was not declared in this scope
+[2.340s]    14 |       subscription_ = this->create_subscription<[01;31m[Ksensor_msgs[m[K::msg::position>(
+[2.340s]       |                                                 [01;31m[K^~~~~~~~~~~[m[K
+[2.340s] [01m[K/home/jang/2024_7Dof/src/culjaco/src/cul_jaco.cpp:14:29:[m[K [01;31m[Kerror: [m[Kparse error in template argument list
+[2.340s]    14 |       subscription_ = this->[01;31m[Kcreate_subscription<sensor_msgs::msg::position>[m[K(
+[2.340s]       |                             [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.344s] [01m[K/home/jang/2024_7Dof/src/culjaco/src/cul_jaco.cpp:14:76:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kjaco_node::create_subscription<<expression error> >(const char [14], int, std::_Bind_helper<false, void (jaco_node::*)(...), jaco_node*, const std::_Placeholder<1>&>::type)[m[K’
+[2.344s]    14 |       subscription_ = [01;31m[Kthis->create_subscription<sensor_msgs::msg::position>([m[K
+[2.344s]       |                       [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+[2.344s]    15 | [01;31m[K      "/joint_states", 10, std::bind(&jaco_node::topic_callback, this, _1))[m[K;
+[2.344s]       |       [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K 
+[2.344s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[2.344s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[2.344s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[2.344s]                  from [01m[K/home/jang/2024_7Dof/src/culjaco/src/cul_jaco.cpp:3[m[K:
+[2.344s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:219:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT, class CallbackT, class AllocatorT, class SubscriptionT, class MessageMemoryStrategyT> std::shared_ptr<ROSMessageT> rclcpp::Node::create_subscription(const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr)[m[K’
+[2.344s]   219 |   [01;36m[Kcreate_subscription[m[K(
+[2.344s]       |   [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[2.344s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:219:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.344s] [01m[K/home/jang/2024_7Dof/src/culjaco/src/cul_jaco.cpp:14:76:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[2.344s]    14 |       subscription_ = [01;31m[Kthis->create_subscription<sensor_msgs::msg::position>([m[K
+[2.344s]       |                       [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+[2.344s]    15 | [01;31m[K      "/joint_states", 10, std::bind(&jaco_node::topic_callback, this, _1))[m[K;
+[2.344s]       |       [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K 
+[2.620s] gmake[2]: *** [CMakeFiles/jaco_node.dir/build.make:76: CMakeFiles/jaco_node.dir/src/cul_jaco.cpp.o] Error 1
+[2.620s] gmake[1]: *** [CMakeFiles/Makefile2:249: CMakeFiles/jaco_node.dir/all] Error 2
+[2.620s] gmake: *** [Makefile:146: all] Error 2
+[2.623s] Invoked command in '/home/jang/2024_7Dof/build/culjaco' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jang/2024_7Dof/install/apf_nodes:/opt/ros/humble /usr/bin/cmake --build /home/jang/2024_7Dof/build/culjaco -- -j16 -l16

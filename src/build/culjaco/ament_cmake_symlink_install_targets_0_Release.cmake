@@ -1,1 +1,1 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/home/jang/2024_7Dof/src/build/culjaco/forward" "TARGETS" "forward" "DESTINATION" "lib/culjaco")
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/jang/2024_7Dof/src/build/culjaco/forward" "/home/jang/2024_7Dof/src/build/culjaco/talker" "/home/jang/2024_7Dof/src/build/culjaco/listener" "/home/jang/2024_7Dof/src/build/culjaco/forward_node" "/home/jang/2024_7Dof/src/build/culjaco/jaco_node" "TARGETS" "forward" "talker" "listener" "forward_node" "jaco_node" "DESTINATION" "lib/culjaco")

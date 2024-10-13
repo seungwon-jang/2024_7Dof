@@ -1,0 +1,4 @@
+Invoking command in '/home/jang/2024_7Dof/src/build/iiwa_moveit2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jang/2024_7Dof/install/apf_nodes:/opt/ros/humble /usr/bin/cmake --build /home/jang/2024_7Dof/src/build/iiwa_moveit2 -- -j16 -l16
+Invoked command in '/home/jang/2024_7Dof/src/build/iiwa_moveit2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jang/2024_7Dof/install/apf_nodes:/opt/ros/humble /usr/bin/cmake --build /home/jang/2024_7Dof/src/build/iiwa_moveit2 -- -j16 -l16
+Invoking command in '/home/jang/2024_7Dof/src/build/iiwa_moveit2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jang/2024_7Dof/install/apf_nodes:/opt/ros/humble /usr/bin/cmake --install /home/jang/2024_7Dof/src/build/iiwa_moveit2
+Invoked command in '/home/jang/2024_7Dof/src/build/iiwa_moveit2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jang/2024_7Dof/install/apf_nodes:/opt/ros/humble /usr/bin/cmake --install /home/jang/2024_7Dof/src/build/iiwa_moveit2

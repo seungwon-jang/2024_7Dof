@@ -1,0 +1,29 @@
+[0.160s] Invoking command in '/home/jang/2024_7Dof/build/culjaco': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jang/2024_7Dof/install/apf_nodes:/opt/ros/humble /usr/bin/cmake --build /home/jang/2024_7Dof/build/culjaco -- -j16 -l16
+[0.339s] [ 20%] Built target forward
+[0.360s] [ 30%] [32mBuilding CXX object CMakeFiles/jaco_node.dir/src/cul_jaco.cpp.o[0m
+[0.365s] [ 50%] Built target listener
+[0.367s] [ 70%] Built target talker
+[0.387s] [ 90%] Built target forward_node
+[2.133s] [01m[K/home/jang/2024_7Dof/src/culjaco/src/cul_jaco.cpp:[m[K In member function ‘[01m[Kvoid jaco_node::topic_callback(const JointState&) const[m[K’:
+[2.133s] [01m[K/home/jang/2024_7Dof/src/culjaco/src/cul_jaco.cpp:22:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kpositions[m[K’ was not declared in this scope
+[2.133s]    22 |             [01;31m[Kpositions[m[K += std::to_string(msg.position[i]) + " ";
+[2.133s]       |             [01;31m[K^~~~~~~~~[m[K
+[2.137s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[2.137s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[2.137s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[2.137s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[2.137s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[2.137s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[2.137s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[2.137s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[2.137s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.137s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[2.137s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[2.137s]                  from [01m[K/home/jang/2024_7Dof/src/culjaco/src/cul_jaco.cpp:3[m[K:
+[2.137s] [01m[K/home/jang/2024_7Dof/src/culjaco/src/cul_jaco.cpp:24:66:[m[K [01;31m[Kerror: [m[K‘[01m[Kpositions[m[K’ was not declared in this scope
+[2.137s]    24 |         RCLCPP_INFO(this->get_logger(), "Joint positions: '%s'", [01;31m[Kpositions[m[K.c_str());
+[2.137s]       |                                                                  [01;31m[K^~~~~~~~~[m[K
+[3.604s] gmake[2]: *** [CMakeFiles/jaco_node.dir/build.make:76: CMakeFiles/jaco_node.dir/src/cul_jaco.cpp.o] Error 1
+[3.604s] gmake[1]: *** [CMakeFiles/Makefile2:249: CMakeFiles/jaco_node.dir/all] Error 2
+[3.604s] gmake: *** [Makefile:146: all] Error 2
+[3.607s] Invoked command in '/home/jang/2024_7Dof/build/culjaco' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jang/2024_7Dof/install/apf_nodes:/opt/ros/humble /usr/bin/cmake --build /home/jang/2024_7Dof/build/culjaco -- -j16 -l16

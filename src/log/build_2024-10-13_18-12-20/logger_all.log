@@ -1,0 +1,529 @@
+[0.060s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--cmake-args', '-DCMAKE_BUILD_TYPE=Release', '--symlink-install']
+[0.060s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=16, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=['-DCMAKE_BUILD_TYPE=Release'], cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x735264f3f5e0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x735264f3e8c0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x735264f3e8c0>>, mixin_verb=('build',))
+[0.160s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.160s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.160s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.160s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.160s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.160s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.160s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/jang/2024_7Dof/src'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(apf_nodes) by extensions ['ignore', 'ignore_ament_install']
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(apf_nodes) by extension 'ignore'
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(apf_nodes) by extension 'ignore_ament_install'
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(apf_nodes) by extensions ['colcon_pkg']
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(apf_nodes) by extension 'colcon_pkg'
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(apf_nodes) by extensions ['colcon_meta']
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(apf_nodes) by extension 'colcon_meta'
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(apf_nodes) by extensions ['ros']
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(apf_nodes) by extension 'ros'
+[0.178s] DEBUG:colcon.colcon_core.package_identification:Package 'apf_nodes' with type 'ros.ament_python' and name 'apf_nodes'
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(apf_package) by extensions ['ignore', 'ignore_ament_install']
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(apf_package) by extension 'ignore'
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(apf_package) by extension 'ignore_ament_install'
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(apf_package) by extensions ['colcon_pkg']
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(apf_package) by extension 'colcon_pkg'
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(apf_package) by extensions ['colcon_meta']
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(apf_package) by extension 'colcon_meta'
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(apf_package) by extensions ['ros']
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(apf_package) by extension 'ros'
+[0.179s] DEBUG:colcon.colcon_core.package_identification:Package 'apf_package' with type 'ros.ament_cmake' and name 'apf_package'
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(culjaco) by extensions ['ignore', 'ignore_ament_install']
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(culjaco) by extension 'ignore'
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(culjaco) by extension 'ignore_ament_install'
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(culjaco) by extensions ['colcon_pkg']
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(culjaco) by extension 'colcon_pkg'
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(culjaco) by extensions ['colcon_meta']
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(culjaco) by extension 'colcon_meta'
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(culjaco) by extensions ['ros']
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(culjaco) by extension 'ros'
+[0.179s] DEBUG:colcon.colcon_core.package_identification:Package 'culjaco' with type 'ros.ament_cmake' and name 'culjaco'
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(iiwa_ros2) by extensions ['ignore', 'ignore_ament_install']
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(iiwa_ros2) by extension 'ignore'
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(iiwa_ros2) by extension 'ignore_ament_install'
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(iiwa_ros2) by extensions ['colcon_pkg']
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(iiwa_ros2) by extension 'colcon_pkg'
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(iiwa_ros2) by extensions ['colcon_meta']
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(iiwa_ros2) by extension 'colcon_meta'
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(iiwa_ros2) by extensions ['ros']
+[0.179s] Level 1:colcon.colcon_core.package_identification:_identify(iiwa_ros2) by extension 'ros'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(iiwa_ros2) by extensions ['cmake', 'python']
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(iiwa_ros2) by extension 'cmake'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(iiwa_ros2) by extension 'python'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(iiwa_ros2) by extensions ['python_setup_py']
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(iiwa_ros2) by extension 'python_setup_py'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(iiwa_ros2/iiwa_bringup) by extensions ['ignore', 'ignore_ament_install']
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(iiwa_ros2/iiwa_bringup) by extension 'ignore'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(iiwa_ros2/iiwa_bringup) by extension 'ignore_ament_install'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(iiwa_ros2/iiwa_bringup) by extensions ['colcon_pkg']
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(iiwa_ros2/iiwa_bringup) by extension 'colcon_pkg'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(iiwa_ros2/iiwa_bringup) by extensions ['colcon_meta']
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(iiwa_ros2/iiwa_bringup) by extension 'colcon_meta'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(iiwa_ros2/iiwa_bringup) by extensions ['ros']
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(iiwa_ros2/iiwa_bringup) by extension 'ros'
+[0.180s] DEBUG:colcon.colcon_core.package_identification:Package 'iiwa_ros2/iiwa_bringup' with type 'ros.ament_cmake' and name 'iiwa_bringup'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(iiwa_ros2/iiwa_controllers) by extensions ['ignore', 'ignore_ament_install']
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(iiwa_ros2/iiwa_controllers) by extension 'ignore'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(iiwa_ros2/iiwa_controllers) by extension 'ignore_ament_install'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(iiwa_ros2/iiwa_controllers) by extensions ['colcon_pkg']
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(iiwa_ros2/iiwa_controllers) by extension 'colcon_pkg'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(iiwa_ros2/iiwa_controllers) by extensions ['colcon_meta']
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(iiwa_ros2/iiwa_controllers) by extension 'colcon_meta'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(iiwa_ros2/iiwa_controllers) by extensions ['ros']
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(iiwa_ros2/iiwa_controllers) by extension 'ros'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(iiwa_ros2/iiwa_controllers) by extensions ['cmake', 'python']
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(iiwa_ros2/iiwa_controllers) by extension 'cmake'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(iiwa_ros2/iiwa_controllers) by extension 'python'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(iiwa_ros2/iiwa_controllers) by extensions ['python_setup_py']
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(iiwa_ros2/iiwa_controllers) by extension 'python_setup_py'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(iiwa_ros2/iiwa_controllers/admittance_controller) by extensions ['ignore', 'ignore_ament_install']
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(iiwa_ros2/iiwa_controllers/admittance_controller) by extension 'ignore'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(iiwa_ros2/iiwa_controllers/admittance_controller) by extension 'ignore_ament_install'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(iiwa_ros2/iiwa_controllers/admittance_controller) by extensions ['colcon_pkg']
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(iiwa_ros2/iiwa_controllers/admittance_controller) by extension 'colcon_pkg'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(iiwa_ros2/iiwa_controllers/admittance_controller) by extensions ['colcon_meta']
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(iiwa_ros2/iiwa_controllers/admittance_controller) by extension 'colcon_meta'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(iiwa_ros2/iiwa_controllers/admittance_controller) by extensions ['ros']
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(iiwa_ros2/iiwa_controllers/admittance_controller) by extension 'ros'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(iiwa_ros2/iiwa_controllers/admittance_controller) ignored
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(iiwa_ros2/iiwa_controllers/external_torque_sensor_broadcaster) by extensions ['ignore', 'ignore_ament_install']
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(iiwa_ros2/iiwa_controllers/external_torque_sensor_broadcaster) by extension 'ignore'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(iiwa_ros2/iiwa_controllers/external_torque_sensor_broadcaster) by extension 'ignore_ament_install'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(iiwa_ros2/iiwa_controllers/external_torque_sensor_broadcaster) by extensions ['colcon_pkg']
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(iiwa_ros2/iiwa_controllers/external_torque_sensor_broadcaster) by extension 'colcon_pkg'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(iiwa_ros2/iiwa_controllers/external_torque_sensor_broadcaster) by extensions ['colcon_meta']
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(iiwa_ros2/iiwa_controllers/external_torque_sensor_broadcaster) by extension 'colcon_meta'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(iiwa_ros2/iiwa_controllers/external_torque_sensor_broadcaster) by extensions ['ros']
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(iiwa_ros2/iiwa_controllers/external_torque_sensor_broadcaster) by extension 'ros'
+[0.182s] DEBUG:colcon.colcon_core.package_identification:Package 'iiwa_ros2/iiwa_controllers/external_torque_sensor_broadcaster' with type 'ros.ament_cmake' and name 'external_torque_sensor_broadcaster'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(iiwa_ros2/iiwa_controllers/impedance_controller) by extensions ['ignore', 'ignore_ament_install']
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(iiwa_ros2/iiwa_controllers/impedance_controller) by extension 'ignore'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(iiwa_ros2/iiwa_controllers/impedance_controller) by extension 'ignore_ament_install'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(iiwa_ros2/iiwa_controllers/impedance_controller) by extensions ['colcon_pkg']
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(iiwa_ros2/iiwa_controllers/impedance_controller) by extension 'colcon_pkg'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(iiwa_ros2/iiwa_controllers/impedance_controller) by extensions ['colcon_meta']
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(iiwa_ros2/iiwa_controllers/impedance_controller) by extension 'colcon_meta'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(iiwa_ros2/iiwa_controllers/impedance_controller) by extensions ['ros']
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(iiwa_ros2/iiwa_controllers/impedance_controller) by extension 'ros'
+[0.182s] DEBUG:colcon.colcon_core.package_identification:Package 'iiwa_ros2/iiwa_controllers/impedance_controller' with type 'ros.ament_cmake' and name 'impedance_controller'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(iiwa_ros2/iiwa_description) by extensions ['ignore', 'ignore_ament_install']
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(iiwa_ros2/iiwa_description) by extension 'ignore'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(iiwa_ros2/iiwa_description) by extension 'ignore_ament_install'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(iiwa_ros2/iiwa_description) by extensions ['colcon_pkg']
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(iiwa_ros2/iiwa_description) by extension 'colcon_pkg'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(iiwa_ros2/iiwa_description) by extensions ['colcon_meta']
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(iiwa_ros2/iiwa_description) by extension 'colcon_meta'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(iiwa_ros2/iiwa_description) by extensions ['ros']
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(iiwa_ros2/iiwa_description) by extension 'ros'
+[0.183s] DEBUG:colcon.colcon_core.package_identification:Package 'iiwa_ros2/iiwa_description' with type 'ros.ament_cmake' and name 'iiwa_description'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(iiwa_ros2/iiwa_moveit2) by extensions ['ignore', 'ignore_ament_install']
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(iiwa_ros2/iiwa_moveit2) by extension 'ignore'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(iiwa_ros2/iiwa_moveit2) by extension 'ignore_ament_install'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(iiwa_ros2/iiwa_moveit2) by extensions ['colcon_pkg']
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(iiwa_ros2/iiwa_moveit2) by extension 'colcon_pkg'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(iiwa_ros2/iiwa_moveit2) by extensions ['colcon_meta']
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(iiwa_ros2/iiwa_moveit2) by extension 'colcon_meta'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(iiwa_ros2/iiwa_moveit2) by extensions ['ros']
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(iiwa_ros2/iiwa_moveit2) by extension 'ros'
+[0.184s] DEBUG:colcon.colcon_core.package_identification:Package 'iiwa_ros2/iiwa_moveit2' with type 'ros.ament_cmake' and name 'iiwa_moveit2'
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.184s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.184s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.184s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.184s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.184s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.197s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.197s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.198s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 7 installed packages in /home/jang/2024_7Dof/install
+[0.199s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 367 installed packages in /opt/ros/humble
+[0.199s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.222s] Level 5:colcon.colcon_core.verb:set package 'apf_nodes' build argument 'cmake_args' from command line to '['-DCMAKE_BUILD_TYPE=Release']'
+[0.222s] Level 5:colcon.colcon_core.verb:set package 'apf_nodes' build argument 'cmake_target' from command line to 'None'
+[0.222s] Level 5:colcon.colcon_core.verb:set package 'apf_nodes' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.222s] Level 5:colcon.colcon_core.verb:set package 'apf_nodes' build argument 'cmake_clean_cache' from command line to 'False'
+[0.222s] Level 5:colcon.colcon_core.verb:set package 'apf_nodes' build argument 'cmake_clean_first' from command line to 'False'
+[0.222s] Level 5:colcon.colcon_core.verb:set package 'apf_nodes' build argument 'cmake_force_configure' from command line to 'False'
+[0.222s] Level 5:colcon.colcon_core.verb:set package 'apf_nodes' build argument 'ament_cmake_args' from command line to 'None'
+[0.222s] Level 5:colcon.colcon_core.verb:set package 'apf_nodes' build argument 'catkin_cmake_args' from command line to 'None'
+[0.222s] Level 5:colcon.colcon_core.verb:set package 'apf_nodes' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.222s] DEBUG:colcon.colcon_core.verb:Building package 'apf_nodes' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/jang/2024_7Dof/src/build/apf_nodes', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DCMAKE_BUILD_TYPE=Release'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/jang/2024_7Dof/src/install/apf_nodes', 'merge_install': False, 'path': '/home/jang/2024_7Dof/src/apf_nodes', 'symlink_install': True, 'test_result_base': None}
+[0.222s] Level 5:colcon.colcon_core.verb:set package 'apf_package' build argument 'cmake_args' from command line to '['-DCMAKE_BUILD_TYPE=Release']'
+[0.222s] Level 5:colcon.colcon_core.verb:set package 'apf_package' build argument 'cmake_target' from command line to 'None'
+[0.222s] Level 5:colcon.colcon_core.verb:set package 'apf_package' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.222s] Level 5:colcon.colcon_core.verb:set package 'apf_package' build argument 'cmake_clean_cache' from command line to 'False'
+[0.222s] Level 5:colcon.colcon_core.verb:set package 'apf_package' build argument 'cmake_clean_first' from command line to 'False'
+[0.222s] Level 5:colcon.colcon_core.verb:set package 'apf_package' build argument 'cmake_force_configure' from command line to 'False'
+[0.222s] Level 5:colcon.colcon_core.verb:set package 'apf_package' build argument 'ament_cmake_args' from command line to 'None'
+[0.222s] Level 5:colcon.colcon_core.verb:set package 'apf_package' build argument 'catkin_cmake_args' from command line to 'None'
+[0.222s] Level 5:colcon.colcon_core.verb:set package 'apf_package' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.222s] DEBUG:colcon.colcon_core.verb:Building package 'apf_package' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/jang/2024_7Dof/src/build/apf_package', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DCMAKE_BUILD_TYPE=Release'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/jang/2024_7Dof/src/install/apf_package', 'merge_install': False, 'path': '/home/jang/2024_7Dof/src/apf_package', 'symlink_install': True, 'test_result_base': None}
+[0.223s] Level 5:colcon.colcon_core.verb:set package 'culjaco' build argument 'cmake_args' from command line to '['-DCMAKE_BUILD_TYPE=Release']'
+[0.223s] Level 5:colcon.colcon_core.verb:set package 'culjaco' build argument 'cmake_target' from command line to 'None'
+[0.223s] Level 5:colcon.colcon_core.verb:set package 'culjaco' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.223s] Level 5:colcon.colcon_core.verb:set package 'culjaco' build argument 'cmake_clean_cache' from command line to 'False'
+[0.223s] Level 5:colcon.colcon_core.verb:set package 'culjaco' build argument 'cmake_clean_first' from command line to 'False'
+[0.223s] Level 5:colcon.colcon_core.verb:set package 'culjaco' build argument 'cmake_force_configure' from command line to 'False'
+[0.223s] Level 5:colcon.colcon_core.verb:set package 'culjaco' build argument 'ament_cmake_args' from command line to 'None'
+[0.223s] Level 5:colcon.colcon_core.verb:set package 'culjaco' build argument 'catkin_cmake_args' from command line to 'None'
+[0.223s] Level 5:colcon.colcon_core.verb:set package 'culjaco' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.223s] DEBUG:colcon.colcon_core.verb:Building package 'culjaco' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/jang/2024_7Dof/src/build/culjaco', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DCMAKE_BUILD_TYPE=Release'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/jang/2024_7Dof/src/install/culjaco', 'merge_install': False, 'path': '/home/jang/2024_7Dof/src/culjaco', 'symlink_install': True, 'test_result_base': None}
+[0.223s] Level 5:colcon.colcon_core.verb:set package 'external_torque_sensor_broadcaster' build argument 'cmake_args' from command line to '['-DCMAKE_BUILD_TYPE=Release']'
+[0.223s] Level 5:colcon.colcon_core.verb:set package 'external_torque_sensor_broadcaster' build argument 'cmake_target' from command line to 'None'
+[0.223s] Level 5:colcon.colcon_core.verb:set package 'external_torque_sensor_broadcaster' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.223s] Level 5:colcon.colcon_core.verb:set package 'external_torque_sensor_broadcaster' build argument 'cmake_clean_cache' from command line to 'False'
+[0.223s] Level 5:colcon.colcon_core.verb:set package 'external_torque_sensor_broadcaster' build argument 'cmake_clean_first' from command line to 'False'
+[0.223s] Level 5:colcon.colcon_core.verb:set package 'external_torque_sensor_broadcaster' build argument 'cmake_force_configure' from command line to 'False'
+[0.223s] Level 5:colcon.colcon_core.verb:set package 'external_torque_sensor_broadcaster' build argument 'ament_cmake_args' from command line to 'None'
+[0.223s] Level 5:colcon.colcon_core.verb:set package 'external_torque_sensor_broadcaster' build argument 'catkin_cmake_args' from command line to 'None'
+[0.223s] Level 5:colcon.colcon_core.verb:set package 'external_torque_sensor_broadcaster' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.223s] DEBUG:colcon.colcon_core.verb:Building package 'external_torque_sensor_broadcaster' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/jang/2024_7Dof/src/build/external_torque_sensor_broadcaster', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DCMAKE_BUILD_TYPE=Release'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/jang/2024_7Dof/src/install/external_torque_sensor_broadcaster', 'merge_install': False, 'path': '/home/jang/2024_7Dof/src/iiwa_ros2/iiwa_controllers/external_torque_sensor_broadcaster', 'symlink_install': True, 'test_result_base': None}
+[0.223s] Level 5:colcon.colcon_core.verb:set package 'iiwa_description' build argument 'cmake_args' from command line to '['-DCMAKE_BUILD_TYPE=Release']'
+[0.223s] Level 5:colcon.colcon_core.verb:set package 'iiwa_description' build argument 'cmake_target' from command line to 'None'
+[0.223s] Level 5:colcon.colcon_core.verb:set package 'iiwa_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.223s] Level 5:colcon.colcon_core.verb:set package 'iiwa_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.223s] Level 5:colcon.colcon_core.verb:set package 'iiwa_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.223s] Level 5:colcon.colcon_core.verb:set package 'iiwa_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.223s] Level 5:colcon.colcon_core.verb:set package 'iiwa_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.223s] Level 5:colcon.colcon_core.verb:set package 'iiwa_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.223s] Level 5:colcon.colcon_core.verb:set package 'iiwa_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.223s] DEBUG:colcon.colcon_core.verb:Building package 'iiwa_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/jang/2024_7Dof/src/build/iiwa_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DCMAKE_BUILD_TYPE=Release'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/jang/2024_7Dof/src/install/iiwa_description', 'merge_install': False, 'path': '/home/jang/2024_7Dof/src/iiwa_ros2/iiwa_description', 'symlink_install': True, 'test_result_base': None}
+[0.223s] Level 5:colcon.colcon_core.verb:set package 'iiwa_moveit2' build argument 'cmake_args' from command line to '['-DCMAKE_BUILD_TYPE=Release']'
+[0.223s] Level 5:colcon.colcon_core.verb:set package 'iiwa_moveit2' build argument 'cmake_target' from command line to 'None'
+[0.223s] Level 5:colcon.colcon_core.verb:set package 'iiwa_moveit2' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.223s] Level 5:colcon.colcon_core.verb:set package 'iiwa_moveit2' build argument 'cmake_clean_cache' from command line to 'False'
+[0.223s] Level 5:colcon.colcon_core.verb:set package 'iiwa_moveit2' build argument 'cmake_clean_first' from command line to 'False'
+[0.223s] Level 5:colcon.colcon_core.verb:set package 'iiwa_moveit2' build argument 'cmake_force_configure' from command line to 'False'
+[0.223s] Level 5:colcon.colcon_core.verb:set package 'iiwa_moveit2' build argument 'ament_cmake_args' from command line to 'None'
+[0.223s] Level 5:colcon.colcon_core.verb:set package 'iiwa_moveit2' build argument 'catkin_cmake_args' from command line to 'None'
+[0.223s] Level 5:colcon.colcon_core.verb:set package 'iiwa_moveit2' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.223s] DEBUG:colcon.colcon_core.verb:Building package 'iiwa_moveit2' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/jang/2024_7Dof/src/build/iiwa_moveit2', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DCMAKE_BUILD_TYPE=Release'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/jang/2024_7Dof/src/install/iiwa_moveit2', 'merge_install': False, 'path': '/home/jang/2024_7Dof/src/iiwa_ros2/iiwa_moveit2', 'symlink_install': True, 'test_result_base': None}
+[0.224s] Level 5:colcon.colcon_core.verb:set package 'impedance_controller' build argument 'cmake_args' from command line to '['-DCMAKE_BUILD_TYPE=Release']'
+[0.224s] Level 5:colcon.colcon_core.verb:set package 'impedance_controller' build argument 'cmake_target' from command line to 'None'
+[0.224s] Level 5:colcon.colcon_core.verb:set package 'impedance_controller' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.224s] Level 5:colcon.colcon_core.verb:set package 'impedance_controller' build argument 'cmake_clean_cache' from command line to 'False'
+[0.224s] Level 5:colcon.colcon_core.verb:set package 'impedance_controller' build argument 'cmake_clean_first' from command line to 'False'
+[0.224s] Level 5:colcon.colcon_core.verb:set package 'impedance_controller' build argument 'cmake_force_configure' from command line to 'False'
+[0.224s] Level 5:colcon.colcon_core.verb:set package 'impedance_controller' build argument 'ament_cmake_args' from command line to 'None'
+[0.224s] Level 5:colcon.colcon_core.verb:set package 'impedance_controller' build argument 'catkin_cmake_args' from command line to 'None'
+[0.224s] Level 5:colcon.colcon_core.verb:set package 'impedance_controller' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.224s] DEBUG:colcon.colcon_core.verb:Building package 'impedance_controller' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/jang/2024_7Dof/src/build/impedance_controller', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DCMAKE_BUILD_TYPE=Release'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/jang/2024_7Dof/src/install/impedance_controller', 'merge_install': False, 'path': '/home/jang/2024_7Dof/src/iiwa_ros2/iiwa_controllers/impedance_controller', 'symlink_install': True, 'test_result_base': None}
+[0.224s] Level 5:colcon.colcon_core.verb:set package 'iiwa_bringup' build argument 'cmake_args' from command line to '['-DCMAKE_BUILD_TYPE=Release']'
+[0.224s] Level 5:colcon.colcon_core.verb:set package 'iiwa_bringup' build argument 'cmake_target' from command line to 'None'
+[0.224s] Level 5:colcon.colcon_core.verb:set package 'iiwa_bringup' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.224s] Level 5:colcon.colcon_core.verb:set package 'iiwa_bringup' build argument 'cmake_clean_cache' from command line to 'False'
+[0.224s] Level 5:colcon.colcon_core.verb:set package 'iiwa_bringup' build argument 'cmake_clean_first' from command line to 'False'
+[0.224s] Level 5:colcon.colcon_core.verb:set package 'iiwa_bringup' build argument 'cmake_force_configure' from command line to 'False'
+[0.224s] Level 5:colcon.colcon_core.verb:set package 'iiwa_bringup' build argument 'ament_cmake_args' from command line to 'None'
+[0.224s] Level 5:colcon.colcon_core.verb:set package 'iiwa_bringup' build argument 'catkin_cmake_args' from command line to 'None'
+[0.224s] Level 5:colcon.colcon_core.verb:set package 'iiwa_bringup' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.224s] DEBUG:colcon.colcon_core.verb:Building package 'iiwa_bringup' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/jang/2024_7Dof/src/build/iiwa_bringup', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DCMAKE_BUILD_TYPE=Release'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/jang/2024_7Dof/src/install/iiwa_bringup', 'merge_install': False, 'path': '/home/jang/2024_7Dof/src/iiwa_ros2/iiwa_bringup', 'symlink_install': True, 'test_result_base': None}
+[0.224s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.225s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.225s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/jang/2024_7Dof/src/iiwa_ros2/iiwa_description' with build type 'ament_cmake'
+[0.225s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/jang/2024_7Dof/src/iiwa_ros2/iiwa_description'
+[0.227s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.227s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.227s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.229s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/jang/2024_7Dof/src/apf_nodes' with build type 'ament_python'
+[0.229s] Level 1:colcon.colcon_core.shell:create_environment_hook('apf_nodes', 'ament_prefix_path')
+[0.230s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jang/2024_7Dof/src/install/apf_nodes/share/apf_nodes/hook/ament_prefix_path.ps1'
+[0.230s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jang/2024_7Dof/src/install/apf_nodes/share/apf_nodes/hook/ament_prefix_path.dsv'
+[0.230s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jang/2024_7Dof/src/install/apf_nodes/share/apf_nodes/hook/ament_prefix_path.sh'
+[0.231s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.231s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.233s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/jang/2024_7Dof/src/apf_package' with build type 'ament_cmake'
+[0.233s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/jang/2024_7Dof/src/apf_package'
+[0.233s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.233s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.235s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/jang/2024_7Dof/src/culjaco' with build type 'ament_cmake'
+[0.235s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/jang/2024_7Dof/src/culjaco'
+[0.235s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.235s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.237s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/jang/2024_7Dof/src/iiwa_ros2/iiwa_controllers/external_torque_sensor_broadcaster' with build type 'ament_cmake'
+[0.237s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/jang/2024_7Dof/src/iiwa_ros2/iiwa_controllers/external_torque_sensor_broadcaster'
+[0.237s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.237s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.240s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/jang/2024_7Dof/src/iiwa_ros2/iiwa_moveit2' with build type 'ament_cmake'
+[0.240s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/jang/2024_7Dof/src/iiwa_ros2/iiwa_moveit2'
+[0.240s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.240s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.242s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/jang/2024_7Dof/src/iiwa_ros2/iiwa_controllers/impedance_controller' with build type 'ament_cmake'
+[0.242s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/jang/2024_7Dof/src/iiwa_ros2/iiwa_controllers/impedance_controller'
+[0.242s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.242s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.249s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jang/2024_7Dof/src/build/iiwa_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jang/2024_7Dof/install/apf_nodes:/opt/ros/humble /usr/bin/cmake --build /home/jang/2024_7Dof/src/build/iiwa_description -- -j16 -l16
+[0.388s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/jang/2024_7Dof/src/apf_nodes'
+[0.388s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.388s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.394s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jang/2024_7Dof/src/build/apf_package': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jang/2024_7Dof/install/apf_nodes:/opt/ros/humble /usr/bin/cmake /home/jang/2024_7Dof/src/apf_package -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/jang/2024_7Dof/src/install/apf_package
+[0.402s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jang/2024_7Dof/src/build/culjaco': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jang/2024_7Dof/install/apf_nodes:/opt/ros/humble /usr/bin/cmake --build /home/jang/2024_7Dof/src/build/culjaco -- -j16 -l16
+[0.403s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jang/2024_7Dof/src/build/external_torque_sensor_broadcaster': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jang/2024_7Dof/install/apf_nodes:/opt/ros/humble /usr/bin/cmake --build /home/jang/2024_7Dof/src/build/external_torque_sensor_broadcaster -- -j16 -l16
+[0.406s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jang/2024_7Dof/src/build/iiwa_moveit2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jang/2024_7Dof/install/apf_nodes:/opt/ros/humble /usr/bin/cmake --build /home/jang/2024_7Dof/src/build/iiwa_moveit2 -- -j16 -l16
+[0.414s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jang/2024_7Dof/src/build/impedance_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jang/2024_7Dof/install/apf_nodes:/opt/ros/humble /usr/bin/cmake --build /home/jang/2024_7Dof/src/build/impedance_controller -- -j16 -l16
+[0.415s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jang/2024_7Dof/src/build/iiwa_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jang/2024_7Dof/install/apf_nodes:/opt/ros/humble /usr/bin/cmake --build /home/jang/2024_7Dof/src/build/iiwa_description -- -j16 -l16
+[0.445s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jang/2024_7Dof/src/build/iiwa_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jang/2024_7Dof/install/apf_nodes:/opt/ros/humble /usr/bin/cmake --install /home/jang/2024_7Dof/src/build/iiwa_description
+[0.476s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jang/2024_7Dof/src/build/impedance_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jang/2024_7Dof/install/apf_nodes:/opt/ros/humble /usr/bin/cmake --build /home/jang/2024_7Dof/src/build/impedance_controller -- -j16 -l16
+[0.479s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jang/2024_7Dof/src/build/external_torque_sensor_broadcaster' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jang/2024_7Dof/install/apf_nodes:/opt/ros/humble /usr/bin/cmake --build /home/jang/2024_7Dof/src/build/external_torque_sensor_broadcaster -- -j16 -l16
+[0.480s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(iiwa_description)
+[0.481s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jang/2024_7Dof/src/build/iiwa_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jang/2024_7Dof/install/apf_nodes:/opt/ros/humble /usr/bin/cmake --install /home/jang/2024_7Dof/src/build/iiwa_description
+[0.483s] Level 1:colcon.colcon_core.environment:checking '/home/jang/2024_7Dof/src/install/iiwa_description' for CMake module files
+[0.484s] Level 1:colcon.colcon_core.environment:checking '/home/jang/2024_7Dof/src/install/iiwa_description' for CMake config files
+[0.485s] Level 1:colcon.colcon_core.shell:create_environment_hook('iiwa_description', 'cmake_prefix_path')
+[0.485s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jang/2024_7Dof/src/install/iiwa_description/share/iiwa_description/hook/cmake_prefix_path.ps1'
+[0.486s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jang/2024_7Dof/src/install/iiwa_description/share/iiwa_description/hook/cmake_prefix_path.dsv'
+[0.486s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jang/2024_7Dof/src/install/iiwa_description/share/iiwa_description/hook/cmake_prefix_path.sh'
+[0.487s] Level 1:colcon.colcon_core.environment:checking '/home/jang/2024_7Dof/src/install/iiwa_description/bin'
+[0.487s] Level 1:colcon.colcon_core.environment:checking '/home/jang/2024_7Dof/src/install/iiwa_description/lib/pkgconfig/iiwa_description.pc'
+[0.487s] Level 1:colcon.colcon_core.environment:checking '/home/jang/2024_7Dof/src/install/iiwa_description/lib/python3.10/site-packages'
+[0.488s] Level 1:colcon.colcon_core.environment:checking '/home/jang/2024_7Dof/src/install/iiwa_description/bin'
+[0.488s] INFO:colcon.colcon_core.shell:Creating package script '/home/jang/2024_7Dof/src/install/iiwa_description/share/iiwa_description/package.ps1'
+[0.489s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jang/2024_7Dof/src/install/iiwa_description/share/iiwa_description/package.dsv'
+[0.490s] INFO:colcon.colcon_core.shell:Creating package script '/home/jang/2024_7Dof/src/install/iiwa_description/share/iiwa_description/package.sh'
+[0.490s] INFO:colcon.colcon_core.shell:Creating package script '/home/jang/2024_7Dof/src/install/iiwa_description/share/iiwa_description/package.bash'
+[0.491s] INFO:colcon.colcon_core.shell:Creating package script '/home/jang/2024_7Dof/src/install/iiwa_description/share/iiwa_description/package.zsh'
+[0.492s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jang/2024_7Dof/src/install/iiwa_description/share/colcon-core/packages/iiwa_description)
+[0.495s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jang/2024_7Dof/src/build/iiwa_moveit2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jang/2024_7Dof/install/apf_nodes:/opt/ros/humble /usr/bin/cmake --build /home/jang/2024_7Dof/src/build/iiwa_moveit2 -- -j16 -l16
+[0.498s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jang/2024_7Dof/src/build/impedance_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jang/2024_7Dof/install/apf_nodes:/opt/ros/humble /usr/bin/cmake --install /home/jang/2024_7Dof/src/build/impedance_controller
+[0.504s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jang/2024_7Dof/src/build/external_torque_sensor_broadcaster': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jang/2024_7Dof/install/apf_nodes:/opt/ros/humble /usr/bin/cmake --install /home/jang/2024_7Dof/src/build/external_torque_sensor_broadcaster
+[0.516s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(iiwa_description)
+[0.516s] Level 1:colcon.colcon_core.environment:checking '/home/jang/2024_7Dof/src/install/iiwa_description' for CMake module files
+[0.519s] Level 1:colcon.colcon_core.environment:checking '/home/jang/2024_7Dof/src/install/iiwa_description' for CMake config files
+[0.520s] Level 1:colcon.colcon_core.shell:create_environment_hook('iiwa_description', 'cmake_prefix_path')
+[0.520s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jang/2024_7Dof/src/install/iiwa_description/share/iiwa_description/hook/cmake_prefix_path.ps1'
+[0.521s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jang/2024_7Dof/src/install/iiwa_description/share/iiwa_description/hook/cmake_prefix_path.dsv'
+[0.523s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jang/2024_7Dof/src/install/iiwa_description/share/iiwa_description/hook/cmake_prefix_path.sh'
+[0.524s] Level 1:colcon.colcon_core.environment:checking '/home/jang/2024_7Dof/src/install/iiwa_description/bin'
+[0.524s] Level 1:colcon.colcon_core.environment:checking '/home/jang/2024_7Dof/src/install/iiwa_description/lib/pkgconfig/iiwa_description.pc'
+[0.524s] Level 1:colcon.colcon_core.environment:checking '/home/jang/2024_7Dof/src/install/iiwa_description/lib/python3.10/site-packages'
+[0.524s] Level 1:colcon.colcon_core.environment:checking '/home/jang/2024_7Dof/src/install/iiwa_description/bin'
+[0.525s] INFO:colcon.colcon_core.shell:Creating package script '/home/jang/2024_7Dof/src/install/iiwa_description/share/iiwa_description/package.ps1'
+[0.526s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jang/2024_7Dof/src/install/iiwa_description/share/iiwa_description/package.dsv'
+[0.528s] INFO:colcon.colcon_core.shell:Creating package script '/home/jang/2024_7Dof/src/install/iiwa_description/share/iiwa_description/package.sh'
+[0.529s] INFO:colcon.colcon_core.shell:Creating package script '/home/jang/2024_7Dof/src/install/iiwa_description/share/iiwa_description/package.bash'
+[0.529s] INFO:colcon.colcon_core.shell:Creating package script '/home/jang/2024_7Dof/src/install/iiwa_description/share/iiwa_description/package.zsh'
+[0.530s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jang/2024_7Dof/src/install/iiwa_description/share/colcon-core/packages/iiwa_description)
+[0.531s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/jang/2024_7Dof/src/iiwa_ros2/iiwa_bringup' with build type 'ament_cmake'
+[0.531s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/jang/2024_7Dof/src/iiwa_ros2/iiwa_bringup'
+[0.531s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.531s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.537s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(impedance_controller)
+[0.537s] Level 1:colcon.colcon_core.environment:checking '/home/jang/2024_7Dof/src/install/impedance_controller' for CMake module files
+[0.538s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jang/2024_7Dof/src/build/impedance_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jang/2024_7Dof/install/apf_nodes:/opt/ros/humble /usr/bin/cmake --install /home/jang/2024_7Dof/src/build/impedance_controller
+[0.538s] Level 1:colcon.colcon_core.environment:checking '/home/jang/2024_7Dof/src/install/impedance_controller' for CMake config files
+[0.538s] Level 1:colcon.colcon_core.shell:create_environment_hook('impedance_controller', 'cmake_prefix_path')
+[0.539s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jang/2024_7Dof/src/install/impedance_controller/share/impedance_controller/hook/cmake_prefix_path.ps1'
+[0.539s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jang/2024_7Dof/src/install/impedance_controller/share/impedance_controller/hook/cmake_prefix_path.dsv'
+[0.540s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jang/2024_7Dof/src/install/impedance_controller/share/impedance_controller/hook/cmake_prefix_path.sh'
+[0.540s] Level 1:colcon.colcon_core.environment:checking '/home/jang/2024_7Dof/src/install/impedance_controller/lib'
+[0.541s] Level 1:colcon.colcon_core.shell:create_environment_hook('impedance_controller', 'ld_library_path_lib')
+[0.541s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jang/2024_7Dof/src/install/impedance_controller/share/impedance_controller/hook/ld_library_path_lib.ps1'
+[0.541s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jang/2024_7Dof/src/install/impedance_controller/share/impedance_controller/hook/ld_library_path_lib.dsv'
+[0.542s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jang/2024_7Dof/src/install/impedance_controller/share/impedance_controller/hook/ld_library_path_lib.sh'
+[0.542s] Level 1:colcon.colcon_core.environment:checking '/home/jang/2024_7Dof/src/install/impedance_controller/bin'
+[0.542s] Level 1:colcon.colcon_core.environment:checking '/home/jang/2024_7Dof/src/install/impedance_controller/lib/pkgconfig/impedance_controller.pc'
+[0.542s] Level 1:colcon.colcon_core.environment:checking '/home/jang/2024_7Dof/src/install/impedance_controller/lib/python3.10/site-packages'
+[0.543s] Level 1:colcon.colcon_core.environment:checking '/home/jang/2024_7Dof/src/install/impedance_controller/bin'
+[0.543s] INFO:colcon.colcon_core.shell:Creating package script '/home/jang/2024_7Dof/src/install/impedance_controller/share/impedance_controller/package.ps1'
+[0.544s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jang/2024_7Dof/src/install/impedance_controller/share/impedance_controller/package.dsv'
+[0.544s] INFO:colcon.colcon_core.shell:Creating package script '/home/jang/2024_7Dof/src/install/impedance_controller/share/impedance_controller/package.sh'
+[0.545s] INFO:colcon.colcon_core.shell:Creating package script '/home/jang/2024_7Dof/src/install/impedance_controller/share/impedance_controller/package.bash'
+[0.545s] INFO:colcon.colcon_core.shell:Creating package script '/home/jang/2024_7Dof/src/install/impedance_controller/share/impedance_controller/package.zsh'
+[0.545s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jang/2024_7Dof/src/install/impedance_controller/share/colcon-core/packages/impedance_controller)
+[0.546s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(external_torque_sensor_broadcaster)
+[0.547s] Level 1:colcon.colcon_core.environment:checking '/home/jang/2024_7Dof/src/install/external_torque_sensor_broadcaster' for CMake module files
+[0.547s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jang/2024_7Dof/src/build/external_torque_sensor_broadcaster' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jang/2024_7Dof/install/apf_nodes:/opt/ros/humble /usr/bin/cmake --install /home/jang/2024_7Dof/src/build/external_torque_sensor_broadcaster
+[0.548s] Level 1:colcon.colcon_core.environment:checking '/home/jang/2024_7Dof/src/install/external_torque_sensor_broadcaster' for CMake config files
+[0.549s] Level 1:colcon.colcon_core.shell:create_environment_hook('external_torque_sensor_broadcaster', 'cmake_prefix_path')
+[0.549s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jang/2024_7Dof/src/install/external_torque_sensor_broadcaster/share/external_torque_sensor_broadcaster/hook/cmake_prefix_path.ps1'
+[0.550s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jang/2024_7Dof/src/install/external_torque_sensor_broadcaster/share/external_torque_sensor_broadcaster/hook/cmake_prefix_path.dsv'
+[0.550s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jang/2024_7Dof/src/install/external_torque_sensor_broadcaster/share/external_torque_sensor_broadcaster/hook/cmake_prefix_path.sh'
+[0.551s] Level 1:colcon.colcon_core.environment:checking '/home/jang/2024_7Dof/src/install/external_torque_sensor_broadcaster/lib'
+[0.551s] Level 1:colcon.colcon_core.shell:create_environment_hook('external_torque_sensor_broadcaster', 'ld_library_path_lib')
+[0.551s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jang/2024_7Dof/src/install/external_torque_sensor_broadcaster/share/external_torque_sensor_broadcaster/hook/ld_library_path_lib.ps1'
+[0.551s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jang/2024_7Dof/src/install/external_torque_sensor_broadcaster/share/external_torque_sensor_broadcaster/hook/ld_library_path_lib.dsv'
+[0.552s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jang/2024_7Dof/src/install/external_torque_sensor_broadcaster/share/external_torque_sensor_broadcaster/hook/ld_library_path_lib.sh'
+[0.552s] Level 1:colcon.colcon_core.environment:checking '/home/jang/2024_7Dof/src/install/external_torque_sensor_broadcaster/bin'
+[0.552s] Level 1:colcon.colcon_core.environment:checking '/home/jang/2024_7Dof/src/install/external_torque_sensor_broadcaster/lib/pkgconfig/external_torque_sensor_broadcaster.pc'
+[0.552s] Level 1:colcon.colcon_core.environment:checking '/home/jang/2024_7Dof/src/install/external_torque_sensor_broadcaster/lib/python3.10/site-packages'
+[0.552s] Level 1:colcon.colcon_core.environment:checking '/home/jang/2024_7Dof/src/install/external_torque_sensor_broadcaster/bin'
+[0.553s] INFO:colcon.colcon_core.shell:Creating package script '/home/jang/2024_7Dof/src/install/external_torque_sensor_broadcaster/share/external_torque_sensor_broadcaster/package.ps1'
+[0.553s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jang/2024_7Dof/src/install/external_torque_sensor_broadcaster/share/external_torque_sensor_broadcaster/package.dsv'
+[0.554s] INFO:colcon.colcon_core.shell:Creating package script '/home/jang/2024_7Dof/src/install/external_torque_sensor_broadcaster/share/external_torque_sensor_broadcaster/package.sh'
+[0.554s] INFO:colcon.colcon_core.shell:Creating package script '/home/jang/2024_7Dof/src/install/external_torque_sensor_broadcaster/share/external_torque_sensor_broadcaster/package.bash'
+[0.555s] INFO:colcon.colcon_core.shell:Creating package script '/home/jang/2024_7Dof/src/install/external_torque_sensor_broadcaster/share/external_torque_sensor_broadcaster/package.zsh'
+[0.555s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jang/2024_7Dof/src/install/external_torque_sensor_broadcaster/share/colcon-core/packages/external_torque_sensor_broadcaster)
+[0.558s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jang/2024_7Dof/src/build/iiwa_moveit2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jang/2024_7Dof/install/apf_nodes:/opt/ros/humble /usr/bin/cmake --install /home/jang/2024_7Dof/src/build/iiwa_moveit2
+[0.564s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jang/2024_7Dof/src/build/iiwa_bringup': AMENT_PREFIX_PATH=/home/jang/2024_7Dof/src/install/iiwa_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jang/2024_7Dof/src/install/iiwa_description:/home/jang/2024_7Dof/install/impedance_controller:/home/jang/2024_7Dof/install/iiwa_moveit2:/home/jang/2024_7Dof/install/iiwa_bringup:/home/jang/2024_7Dof/install/iiwa_description:/home/jang/2024_7Dof/install/external_torque_sensor_broadcaster:/home/jang/2024_7Dof/install/culjaco:/home/jang/2024_7Dof/install/apf_nodes:/opt/ros/humble GAZEBO_MODEL_PATH=/home/jang/2024_7Dof/src/install/iiwa_description/share/iiwa_description/meshes:${GAZEBO_MODEL_PATH} GAZEBO_RESOURCE_PATH=/home/jang/2024_7Dof/src/install/iiwa_description/share/iiwa_description/meshes:${GAZEBO_RESOURCE_PATH} GZ_SIM_RESOURCE_PATH=/home/jang/2024_7Dof/src/install/iiwa_description/share/iiwa_description/meshes:${GZ_SIM_RESOURCE_PATH} IGN_GAZEBO_RESOURCE_PATH=/home/jang/2024_7Dof/src/install/iiwa_description/share/iiwa_description/meshes:${IGN_GAZEBO_RESOURCE_PATH} /usr/bin/cmake --build /home/jang/2024_7Dof/src/build/iiwa_bringup -- -j16 -l16
+[0.571s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(impedance_controller)
+[0.572s] Level 1:colcon.colcon_core.environment:checking '/home/jang/2024_7Dof/src/install/impedance_controller' for CMake module files
+[0.572s] Level 1:colcon.colcon_core.environment:checking '/home/jang/2024_7Dof/src/install/impedance_controller' for CMake config files
+[0.573s] Level 1:colcon.colcon_core.shell:create_environment_hook('impedance_controller', 'cmake_prefix_path')
+[0.573s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jang/2024_7Dof/src/install/impedance_controller/share/impedance_controller/hook/cmake_prefix_path.ps1'
+[0.574s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jang/2024_7Dof/src/install/impedance_controller/share/impedance_controller/hook/cmake_prefix_path.dsv'
+[0.575s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jang/2024_7Dof/src/install/impedance_controller/share/impedance_controller/hook/cmake_prefix_path.sh'
+[0.576s] Level 1:colcon.colcon_core.environment:checking '/home/jang/2024_7Dof/src/install/impedance_controller/lib'
+[0.576s] Level 1:colcon.colcon_core.shell:create_environment_hook('impedance_controller', 'ld_library_path_lib')
+[0.577s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jang/2024_7Dof/src/install/impedance_controller/share/impedance_controller/hook/ld_library_path_lib.ps1'
+[0.578s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jang/2024_7Dof/src/install/impedance_controller/share/impedance_controller/hook/ld_library_path_lib.dsv'
+[0.579s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jang/2024_7Dof/src/install/impedance_controller/share/impedance_controller/hook/ld_library_path_lib.sh'
+[0.580s] Level 1:colcon.colcon_core.environment:checking '/home/jang/2024_7Dof/src/install/impedance_controller/bin'
+[0.580s] Level 1:colcon.colcon_core.environment:checking '/home/jang/2024_7Dof/src/install/impedance_controller/lib/pkgconfig/impedance_controller.pc'
+[0.580s] Level 1:colcon.colcon_core.environment:checking '/home/jang/2024_7Dof/src/install/impedance_controller/lib/python3.10/site-packages'
+[0.580s] Level 1:colcon.colcon_core.environment:checking '/home/jang/2024_7Dof/src/install/impedance_controller/bin'
+[0.580s] INFO:colcon.colcon_core.shell:Creating package script '/home/jang/2024_7Dof/src/install/impedance_controller/share/impedance_controller/package.ps1'
+[0.581s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jang/2024_7Dof/src/install/impedance_controller/share/impedance_controller/package.dsv'
+[0.581s] INFO:colcon.colcon_core.shell:Creating package script '/home/jang/2024_7Dof/src/install/impedance_controller/share/impedance_controller/package.sh'
+[0.582s] INFO:colcon.colcon_core.shell:Creating package script '/home/jang/2024_7Dof/src/install/impedance_controller/share/impedance_controller/package.bash'
+[0.582s] INFO:colcon.colcon_core.shell:Creating package script '/home/jang/2024_7Dof/src/install/impedance_controller/share/impedance_controller/package.zsh'
+[0.582s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jang/2024_7Dof/src/install/impedance_controller/share/colcon-core/packages/impedance_controller)
+[0.583s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(external_torque_sensor_broadcaster)
+[0.584s] Level 1:colcon.colcon_core.environment:checking '/home/jang/2024_7Dof/src/install/external_torque_sensor_broadcaster' for CMake module files
+[0.585s] Level 1:colcon.colcon_core.environment:checking '/home/jang/2024_7Dof/src/install/external_torque_sensor_broadcaster' for CMake config files
+[0.585s] Level 1:colcon.colcon_core.shell:create_environment_hook('external_torque_sensor_broadcaster', 'cmake_prefix_path')
+[0.585s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jang/2024_7Dof/src/install/external_torque_sensor_broadcaster/share/external_torque_sensor_broadcaster/hook/cmake_prefix_path.ps1'
+[0.586s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jang/2024_7Dof/src/install/external_torque_sensor_broadcaster/share/external_torque_sensor_broadcaster/hook/cmake_prefix_path.dsv'
+[0.587s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jang/2024_7Dof/src/install/external_torque_sensor_broadcaster/share/external_torque_sensor_broadcaster/hook/cmake_prefix_path.sh'
+[0.587s] Level 1:colcon.colcon_core.environment:checking '/home/jang/2024_7Dof/src/install/external_torque_sensor_broadcaster/lib'
+[0.588s] Level 1:colcon.colcon_core.shell:create_environment_hook('external_torque_sensor_broadcaster', 'ld_library_path_lib')
+[0.588s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jang/2024_7Dof/src/install/external_torque_sensor_broadcaster/share/external_torque_sensor_broadcaster/hook/ld_library_path_lib.ps1'
+[0.588s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jang/2024_7Dof/src/install/external_torque_sensor_broadcaster/share/external_torque_sensor_broadcaster/hook/ld_library_path_lib.dsv'
+[0.589s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jang/2024_7Dof/src/install/external_torque_sensor_broadcaster/share/external_torque_sensor_broadcaster/hook/ld_library_path_lib.sh'
+[0.589s] Level 1:colcon.colcon_core.environment:checking '/home/jang/2024_7Dof/src/install/external_torque_sensor_broadcaster/bin'
+[0.589s] Level 1:colcon.colcon_core.environment:checking '/home/jang/2024_7Dof/src/install/external_torque_sensor_broadcaster/lib/pkgconfig/external_torque_sensor_broadcaster.pc'
+[0.590s] Level 1:colcon.colcon_core.environment:checking '/home/jang/2024_7Dof/src/install/external_torque_sensor_broadcaster/lib/python3.10/site-packages'
+[0.590s] Level 1:colcon.colcon_core.environment:checking '/home/jang/2024_7Dof/src/install/external_torque_sensor_broadcaster/bin'
+[0.590s] INFO:colcon.colcon_core.shell:Creating package script '/home/jang/2024_7Dof/src/install/external_torque_sensor_broadcaster/share/external_torque_sensor_broadcaster/package.ps1'
+[0.592s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jang/2024_7Dof/src/install/external_torque_sensor_broadcaster/share/external_torque_sensor_broadcaster/package.dsv'
+[0.593s] INFO:colcon.colcon_core.shell:Creating package script '/home/jang/2024_7Dof/src/install/external_torque_sensor_broadcaster/share/external_torque_sensor_broadcaster/package.sh'
+[0.593s] INFO:colcon.colcon_core.shell:Creating package script '/home/jang/2024_7Dof/src/install/external_torque_sensor_broadcaster/share/external_torque_sensor_broadcaster/package.bash'
+[0.594s] INFO:colcon.colcon_core.shell:Creating package script '/home/jang/2024_7Dof/src/install/external_torque_sensor_broadcaster/share/external_torque_sensor_broadcaster/package.zsh'
+[0.595s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jang/2024_7Dof/src/install/external_torque_sensor_broadcaster/share/colcon-core/packages/external_torque_sensor_broadcaster)
+[0.595s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(iiwa_moveit2)
+[0.596s] Level 1:colcon.colcon_core.environment:checking '/home/jang/2024_7Dof/src/install/iiwa_moveit2' for CMake module files
+[0.597s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jang/2024_7Dof/src/build/iiwa_moveit2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jang/2024_7Dof/install/apf_nodes:/opt/ros/humble /usr/bin/cmake --install /home/jang/2024_7Dof/src/build/iiwa_moveit2
+[0.597s] Level 1:colcon.colcon_core.environment:checking '/home/jang/2024_7Dof/src/install/iiwa_moveit2' for CMake config files
+[0.598s] Level 1:colcon.colcon_core.shell:create_environment_hook('iiwa_moveit2', 'cmake_prefix_path')
+[0.598s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jang/2024_7Dof/src/install/iiwa_moveit2/share/iiwa_moveit2/hook/cmake_prefix_path.ps1'
+[0.599s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jang/2024_7Dof/src/install/iiwa_moveit2/share/iiwa_moveit2/hook/cmake_prefix_path.dsv'
+[0.600s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jang/2024_7Dof/src/install/iiwa_moveit2/share/iiwa_moveit2/hook/cmake_prefix_path.sh'
+[0.601s] Level 1:colcon.colcon_core.environment:checking '/home/jang/2024_7Dof/src/install/iiwa_moveit2/lib'
+[0.601s] Level 1:colcon.colcon_core.shell:create_environment_hook('iiwa_moveit2', 'ld_library_path_lib')
+[0.601s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jang/2024_7Dof/src/install/iiwa_moveit2/share/iiwa_moveit2/hook/ld_library_path_lib.ps1'
+[0.602s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jang/2024_7Dof/src/install/iiwa_moveit2/share/iiwa_moveit2/hook/ld_library_path_lib.dsv'
+[0.602s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jang/2024_7Dof/src/install/iiwa_moveit2/share/iiwa_moveit2/hook/ld_library_path_lib.sh'
+[0.603s] Level 1:colcon.colcon_core.environment:checking '/home/jang/2024_7Dof/src/install/iiwa_moveit2/bin'
+[0.603s] Level 1:colcon.colcon_core.environment:checking '/home/jang/2024_7Dof/src/install/iiwa_moveit2/lib/pkgconfig/iiwa_moveit2.pc'
+[0.603s] Level 1:colcon.colcon_core.environment:checking '/home/jang/2024_7Dof/src/install/iiwa_moveit2/lib/python3.10/site-packages'
+[0.603s] Level 1:colcon.colcon_core.environment:checking '/home/jang/2024_7Dof/src/install/iiwa_moveit2/bin'
+[0.604s] INFO:colcon.colcon_core.shell:Creating package script '/home/jang/2024_7Dof/src/install/iiwa_moveit2/share/iiwa_moveit2/package.ps1'
+[0.604s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jang/2024_7Dof/src/install/iiwa_moveit2/share/iiwa_moveit2/package.dsv'
+[0.605s] INFO:colcon.colcon_core.shell:Creating package script '/home/jang/2024_7Dof/src/install/iiwa_moveit2/share/iiwa_moveit2/package.sh'
+[0.606s] INFO:colcon.colcon_core.shell:Creating package script '/home/jang/2024_7Dof/src/install/iiwa_moveit2/share/iiwa_moveit2/package.bash'
+[0.606s] INFO:colcon.colcon_core.shell:Creating package script '/home/jang/2024_7Dof/src/install/iiwa_moveit2/share/iiwa_moveit2/package.zsh'
+[0.607s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jang/2024_7Dof/src/install/iiwa_moveit2/share/colcon-core/packages/iiwa_moveit2)
+[0.609s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jang/2024_7Dof/src/build/iiwa_bringup' returned '0': AMENT_PREFIX_PATH=/home/jang/2024_7Dof/src/install/iiwa_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jang/2024_7Dof/src/install/iiwa_description:/home/jang/2024_7Dof/install/impedance_controller:/home/jang/2024_7Dof/install/iiwa_moveit2:/home/jang/2024_7Dof/install/iiwa_bringup:/home/jang/2024_7Dof/install/iiwa_description:/home/jang/2024_7Dof/install/external_torque_sensor_broadcaster:/home/jang/2024_7Dof/install/culjaco:/home/jang/2024_7Dof/install/apf_nodes:/opt/ros/humble GAZEBO_MODEL_PATH=/home/jang/2024_7Dof/src/install/iiwa_description/share/iiwa_description/meshes:${GAZEBO_MODEL_PATH} GAZEBO_RESOURCE_PATH=/home/jang/2024_7Dof/src/install/iiwa_description/share/iiwa_description/meshes:${GAZEBO_RESOURCE_PATH} GZ_SIM_RESOURCE_PATH=/home/jang/2024_7Dof/src/install/iiwa_description/share/iiwa_description/meshes:${GZ_SIM_RESOURCE_PATH} IGN_GAZEBO_RESOURCE_PATH=/home/jang/2024_7Dof/src/install/iiwa_description/share/iiwa_description/meshes:${IGN_GAZEBO_RESOURCE_PATH} /usr/bin/cmake --build /home/jang/2024_7Dof/src/build/iiwa_bringup -- -j16 -l16
+[0.633s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jang/2024_7Dof/src/build/iiwa_bringup': AMENT_PREFIX_PATH=/home/jang/2024_7Dof/src/install/iiwa_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jang/2024_7Dof/src/install/iiwa_description:/home/jang/2024_7Dof/install/impedance_controller:/home/jang/2024_7Dof/install/iiwa_moveit2:/home/jang/2024_7Dof/install/iiwa_bringup:/home/jang/2024_7Dof/install/iiwa_description:/home/jang/2024_7Dof/install/external_torque_sensor_broadcaster:/home/jang/2024_7Dof/install/culjaco:/home/jang/2024_7Dof/install/apf_nodes:/opt/ros/humble GAZEBO_MODEL_PATH=/home/jang/2024_7Dof/src/install/iiwa_description/share/iiwa_description/meshes:${GAZEBO_MODEL_PATH} GAZEBO_RESOURCE_PATH=/home/jang/2024_7Dof/src/install/iiwa_description/share/iiwa_description/meshes:${GAZEBO_RESOURCE_PATH} GZ_SIM_RESOURCE_PATH=/home/jang/2024_7Dof/src/install/iiwa_description/share/iiwa_description/meshes:${GZ_SIM_RESOURCE_PATH} IGN_GAZEBO_RESOURCE_PATH=/home/jang/2024_7Dof/src/install/iiwa_description/share/iiwa_description/meshes:${IGN_GAZEBO_RESOURCE_PATH} /usr/bin/cmake --install /home/jang/2024_7Dof/src/build/iiwa_bringup
+[0.638s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(iiwa_moveit2)
+[0.638s] Level 1:colcon.colcon_core.environment:checking '/home/jang/2024_7Dof/src/install/iiwa_moveit2' for CMake module files
+[0.639s] Level 1:colcon.colcon_core.environment:checking '/home/jang/2024_7Dof/src/install/iiwa_moveit2' for CMake config files
+[0.639s] Level 1:colcon.colcon_core.shell:create_environment_hook('iiwa_moveit2', 'cmake_prefix_path')
+[0.640s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jang/2024_7Dof/src/install/iiwa_moveit2/share/iiwa_moveit2/hook/cmake_prefix_path.ps1'
+[0.640s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jang/2024_7Dof/src/install/iiwa_moveit2/share/iiwa_moveit2/hook/cmake_prefix_path.dsv'
+[0.641s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jang/2024_7Dof/src/install/iiwa_moveit2/share/iiwa_moveit2/hook/cmake_prefix_path.sh'
+[0.642s] Level 1:colcon.colcon_core.environment:checking '/home/jang/2024_7Dof/src/install/iiwa_moveit2/lib'
+[0.642s] Level 1:colcon.colcon_core.shell:create_environment_hook('iiwa_moveit2', 'ld_library_path_lib')
+[0.642s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jang/2024_7Dof/src/install/iiwa_moveit2/share/iiwa_moveit2/hook/ld_library_path_lib.ps1'
+[0.644s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jang/2024_7Dof/src/install/iiwa_moveit2/share/iiwa_moveit2/hook/ld_library_path_lib.dsv'
+[0.645s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jang/2024_7Dof/src/install/iiwa_moveit2/share/iiwa_moveit2/hook/ld_library_path_lib.sh'
+[0.646s] Level 1:colcon.colcon_core.environment:checking '/home/jang/2024_7Dof/src/install/iiwa_moveit2/bin'
+[0.647s] Level 1:colcon.colcon_core.environment:checking '/home/jang/2024_7Dof/src/install/iiwa_moveit2/lib/pkgconfig/iiwa_moveit2.pc'
+[0.647s] Level 1:colcon.colcon_core.environment:checking '/home/jang/2024_7Dof/src/install/iiwa_moveit2/lib/python3.10/site-packages'
+[0.647s] Level 1:colcon.colcon_core.environment:checking '/home/jang/2024_7Dof/src/install/iiwa_moveit2/bin'
+[0.648s] INFO:colcon.colcon_core.shell:Creating package script '/home/jang/2024_7Dof/src/install/iiwa_moveit2/share/iiwa_moveit2/package.ps1'
+[0.649s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jang/2024_7Dof/src/install/iiwa_moveit2/share/iiwa_moveit2/package.dsv'
+[0.649s] INFO:colcon.colcon_core.shell:Creating package script '/home/jang/2024_7Dof/src/install/iiwa_moveit2/share/iiwa_moveit2/package.sh'
+[0.650s] INFO:colcon.colcon_core.shell:Creating package script '/home/jang/2024_7Dof/src/install/iiwa_moveit2/share/iiwa_moveit2/package.bash'
+[0.650s] INFO:colcon.colcon_core.shell:Creating package script '/home/jang/2024_7Dof/src/install/iiwa_moveit2/share/iiwa_moveit2/package.zsh'
+[0.651s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jang/2024_7Dof/src/install/iiwa_moveit2/share/colcon-core/packages/iiwa_moveit2)
+[0.660s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(iiwa_bringup)
+[0.661s] Level 1:colcon.colcon_core.environment:checking '/home/jang/2024_7Dof/src/install/iiwa_bringup' for CMake module files
+[0.661s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jang/2024_7Dof/src/build/iiwa_bringup' returned '0': AMENT_PREFIX_PATH=/home/jang/2024_7Dof/src/install/iiwa_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jang/2024_7Dof/src/install/iiwa_description:/home/jang/2024_7Dof/install/impedance_controller:/home/jang/2024_7Dof/install/iiwa_moveit2:/home/jang/2024_7Dof/install/iiwa_bringup:/home/jang/2024_7Dof/install/iiwa_description:/home/jang/2024_7Dof/install/external_torque_sensor_broadcaster:/home/jang/2024_7Dof/install/culjaco:/home/jang/2024_7Dof/install/apf_nodes:/opt/ros/humble GAZEBO_MODEL_PATH=/home/jang/2024_7Dof/src/install/iiwa_description/share/iiwa_description/meshes:${GAZEBO_MODEL_PATH} GAZEBO_RESOURCE_PATH=/home/jang/2024_7Dof/src/install/iiwa_description/share/iiwa_description/meshes:${GAZEBO_RESOURCE_PATH} GZ_SIM_RESOURCE_PATH=/home/jang/2024_7Dof/src/install/iiwa_description/share/iiwa_description/meshes:${GZ_SIM_RESOURCE_PATH} IGN_GAZEBO_RESOURCE_PATH=/home/jang/2024_7Dof/src/install/iiwa_description/share/iiwa_description/meshes:${IGN_GAZEBO_RESOURCE_PATH} /usr/bin/cmake --install /home/jang/2024_7Dof/src/build/iiwa_bringup
+[0.662s] Level 1:colcon.colcon_core.environment:checking '/home/jang/2024_7Dof/src/install/iiwa_bringup' for CMake config files
+[0.662s] Level 1:colcon.colcon_core.shell:create_environment_hook('iiwa_bringup', 'cmake_prefix_path')
+[0.663s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jang/2024_7Dof/src/install/iiwa_bringup/share/iiwa_bringup/hook/cmake_prefix_path.ps1'
+[0.663s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jang/2024_7Dof/src/install/iiwa_bringup/share/iiwa_bringup/hook/cmake_prefix_path.dsv'
+[0.664s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jang/2024_7Dof/src/install/iiwa_bringup/share/iiwa_bringup/hook/cmake_prefix_path.sh'
+[0.665s] Level 1:colcon.colcon_core.environment:checking '/home/jang/2024_7Dof/src/install/iiwa_bringup/bin'
+[0.665s] Level 1:colcon.colcon_core.environment:checking '/home/jang/2024_7Dof/src/install/iiwa_bringup/lib/pkgconfig/iiwa_bringup.pc'
+[0.665s] Level 1:colcon.colcon_core.environment:checking '/home/jang/2024_7Dof/src/install/iiwa_bringup/lib/python3.10/site-packages'
+[0.666s] Level 1:colcon.colcon_core.environment:checking '/home/jang/2024_7Dof/src/install/iiwa_bringup/bin'
+[0.666s] INFO:colcon.colcon_core.shell:Creating package script '/home/jang/2024_7Dof/src/install/iiwa_bringup/share/iiwa_bringup/package.ps1'
+[0.667s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jang/2024_7Dof/src/install/iiwa_bringup/share/iiwa_bringup/package.dsv'
+[0.667s] INFO:colcon.colcon_core.shell:Creating package script '/home/jang/2024_7Dof/src/install/iiwa_bringup/share/iiwa_bringup/package.sh'
+[0.668s] INFO:colcon.colcon_core.shell:Creating package script '/home/jang/2024_7Dof/src/install/iiwa_bringup/share/iiwa_bringup/package.bash'
+[0.668s] INFO:colcon.colcon_core.shell:Creating package script '/home/jang/2024_7Dof/src/install/iiwa_bringup/share/iiwa_bringup/package.zsh'
+[0.669s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jang/2024_7Dof/src/install/iiwa_bringup/share/colcon-core/packages/iiwa_bringup)
+[0.686s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jang/2024_7Dof/src/build/apf_nodes': PYTHONPATH=/home/jang/2024_7Dof/src/build/apf_nodes/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jang/2024_7Dof/src/install/apf_nodes/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/jang/2024_7Dof/src/build/apf_nodes/build --no-deps symlink_data
+[0.694s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(iiwa_bringup)
+[0.694s] Level 1:colcon.colcon_core.environment:checking '/home/jang/2024_7Dof/src/install/iiwa_bringup' for CMake module files
+[0.695s] Level 1:colcon.colcon_core.environment:checking '/home/jang/2024_7Dof/src/install/iiwa_bringup' for CMake config files
+[0.695s] Level 1:colcon.colcon_core.shell:create_environment_hook('iiwa_bringup', 'cmake_prefix_path')
+[0.695s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jang/2024_7Dof/src/install/iiwa_bringup/share/iiwa_bringup/hook/cmake_prefix_path.ps1'
+[0.696s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jang/2024_7Dof/src/install/iiwa_bringup/share/iiwa_bringup/hook/cmake_prefix_path.dsv'
+[0.696s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jang/2024_7Dof/src/install/iiwa_bringup/share/iiwa_bringup/hook/cmake_prefix_path.sh'
+[0.697s] Level 1:colcon.colcon_core.environment:checking '/home/jang/2024_7Dof/src/install/iiwa_bringup/bin'
+[0.697s] Level 1:colcon.colcon_core.environment:checking '/home/jang/2024_7Dof/src/install/iiwa_bringup/lib/pkgconfig/iiwa_bringup.pc'
+[0.698s] Level 1:colcon.colcon_core.environment:checking '/home/jang/2024_7Dof/src/install/iiwa_bringup/lib/python3.10/site-packages'
+[0.698s] Level 1:colcon.colcon_core.environment:checking '/home/jang/2024_7Dof/src/install/iiwa_bringup/bin'
+[0.699s] INFO:colcon.colcon_core.shell:Creating package script '/home/jang/2024_7Dof/src/install/iiwa_bringup/share/iiwa_bringup/package.ps1'
+[0.699s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jang/2024_7Dof/src/install/iiwa_bringup/share/iiwa_bringup/package.dsv'
+[0.700s] INFO:colcon.colcon_core.shell:Creating package script '/home/jang/2024_7Dof/src/install/iiwa_bringup/share/iiwa_bringup/package.sh'
+[0.701s] INFO:colcon.colcon_core.shell:Creating package script '/home/jang/2024_7Dof/src/install/iiwa_bringup/share/iiwa_bringup/package.bash'
+[0.701s] INFO:colcon.colcon_core.shell:Creating package script '/home/jang/2024_7Dof/src/install/iiwa_bringup/share/iiwa_bringup/package.zsh'
+[0.701s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jang/2024_7Dof/src/install/iiwa_bringup/share/colcon-core/packages/iiwa_bringup)
+[1.060s] Level 1:colcon.colcon_core.shell:create_environment_hook('apf_nodes', 'pythonpath_develop')
+[1.061s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jang/2024_7Dof/src/build/apf_nodes/share/apf_nodes/hook/pythonpath_develop.ps1'
+[1.061s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jang/2024_7Dof/src/build/apf_nodes' returned '0': PYTHONPATH=/home/jang/2024_7Dof/src/build/apf_nodes/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jang/2024_7Dof/src/install/apf_nodes/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/jang/2024_7Dof/src/build/apf_nodes/build --no-deps symlink_data
+[1.062s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jang/2024_7Dof/src/build/apf_nodes/share/apf_nodes/hook/pythonpath_develop.dsv'
+[1.063s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jang/2024_7Dof/src/build/apf_nodes/share/apf_nodes/hook/pythonpath_develop.sh'
+[1.064s] Level 1:colcon.colcon_core.environment:checking '/home/jang/2024_7Dof/src/install/apf_nodes' for CMake module files
+[1.064s] Level 1:colcon.colcon_core.environment:checking '/home/jang/2024_7Dof/src/install/apf_nodes' for CMake config files
+[1.065s] Level 1:colcon.colcon_core.environment:checking '/home/jang/2024_7Dof/src/install/apf_nodes/lib'
+[1.065s] Level 1:colcon.colcon_core.environment:checking '/home/jang/2024_7Dof/src/install/apf_nodes/bin'
+[1.066s] Level 1:colcon.colcon_core.environment:checking '/home/jang/2024_7Dof/src/install/apf_nodes/lib/pkgconfig/apf_nodes.pc'
+[1.066s] Level 1:colcon.colcon_core.environment:checking '/home/jang/2024_7Dof/src/install/apf_nodes/lib/python3.10/site-packages'
+[1.066s] Level 1:colcon.colcon_core.shell:create_environment_hook('apf_nodes', 'pythonpath')
+[1.066s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jang/2024_7Dof/src/install/apf_nodes/share/apf_nodes/hook/pythonpath.ps1'
+[1.067s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jang/2024_7Dof/src/install/apf_nodes/share/apf_nodes/hook/pythonpath.dsv'
+[1.068s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jang/2024_7Dof/src/install/apf_nodes/share/apf_nodes/hook/pythonpath.sh'
+[1.069s] Level 1:colcon.colcon_core.environment:checking '/home/jang/2024_7Dof/src/install/apf_nodes/bin'
+[1.069s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(apf_nodes)
+[1.069s] INFO:colcon.colcon_core.shell:Creating package script '/home/jang/2024_7Dof/src/install/apf_nodes/share/apf_nodes/package.ps1'
+[1.070s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jang/2024_7Dof/src/install/apf_nodes/share/apf_nodes/package.dsv'
+[1.070s] INFO:colcon.colcon_core.shell:Creating package script '/home/jang/2024_7Dof/src/install/apf_nodes/share/apf_nodes/package.sh'
+[1.071s] INFO:colcon.colcon_core.shell:Creating package script '/home/jang/2024_7Dof/src/install/apf_nodes/share/apf_nodes/package.bash'
+[1.072s] INFO:colcon.colcon_core.shell:Creating package script '/home/jang/2024_7Dof/src/install/apf_nodes/share/apf_nodes/package.zsh'
+[1.072s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jang/2024_7Dof/src/install/apf_nodes/share/colcon-core/packages/apf_nodes)
+[1.452s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jang/2024_7Dof/src/build/apf_package' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jang/2024_7Dof/install/apf_nodes:/opt/ros/humble /usr/bin/cmake /home/jang/2024_7Dof/src/apf_package -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/jang/2024_7Dof/src/install/apf_package
+[1.455s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jang/2024_7Dof/src/build/apf_package': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jang/2024_7Dof/install/apf_nodes:/opt/ros/humble /usr/bin/cmake --build /home/jang/2024_7Dof/src/build/apf_package -- -j16 -l16

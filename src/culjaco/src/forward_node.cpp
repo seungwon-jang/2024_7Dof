@@ -7,7 +7,6 @@
 #include "rclcpp/rclcpp.hpp"
 #include "std_msgs/msg/string.hpp"
 #include <Eigen/Dense>
-#define pi 3.14
 
 using namespace std::chrono_literals;
 

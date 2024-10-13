@@ -1,0 +1,17 @@
+[0.162s] Invoking command in '/home/jang/2024_7Dof/build/culjaco': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jang/2024_7Dof/install/apf_nodes:/opt/ros/humble /usr/bin/cmake --build /home/jang/2024_7Dof/build/culjaco -- -j16 -l16
+[0.233s] [35m[1mConsolidate compiler generated dependencies of target jaco_node[0m
+[0.242s] [35m[1mConsolidate compiler generated dependencies of target forward_node[0m
+[0.260s] [35m[1mConsolidate compiler generated dependencies of target talker[0m
+[0.294s] [ 20%] Built target forward
+[0.328s] [ 40%] Built target listener
+[0.352s] [ 50%] [32mBuilding CXX object CMakeFiles/jaco_node.dir/src/cul_jaco.cpp.o[0m
+[0.366s] [ 70%] Built target forward_node
+[0.389s] [ 90%] Built target talker
+[2.239s] [01m[K/home/jang/2024_7Dof/src/culjaco/src/cul_jaco.cpp:[m[K In constructor ‘[01m[Kjaco_node::jaco_node()[m[K’:
+[2.240s] [01m[K/home/jang/2024_7Dof/src/culjaco/src/cul_jaco.cpp:14:30:[m[K [01;31m[Kerror: [m[K‘[01m[KMinimalSubscriber[m[K’ has not been declared
+[2.240s]    14 |       "jaco", 10, std::bind(&[01;31m[KMinimalSubscriber[m[K::topic_callback, this, _1));
+[2.240s]       |                              [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[2.515s] gmake[2]: *** [CMakeFiles/jaco_node.dir/build.make:76: CMakeFiles/jaco_node.dir/src/cul_jaco.cpp.o] Error 1
+[2.515s] gmake[1]: *** [CMakeFiles/Makefile2:249: CMakeFiles/jaco_node.dir/all] Error 2
+[2.516s] gmake: *** [Makefile:146: all] Error 2
+[2.519s] Invoked command in '/home/jang/2024_7Dof/build/culjaco' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jang/2024_7Dof/install/apf_nodes:/opt/ros/humble /usr/bin/cmake --build /home/jang/2024_7Dof/build/culjaco -- -j16 -l16

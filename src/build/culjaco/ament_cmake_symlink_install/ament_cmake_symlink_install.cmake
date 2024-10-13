@@ -310,7 +310,7 @@ message(STATUS "Execute custom install script")
 
 # begin of custom install code
 
-# install("TARGETS" "forward" "DESTINATION" "lib/culjaco")
+# install("TARGETS" "forward" "talker" "listener" "forward_node" "jaco_node" "DESTINATION" "lib/culjaco")
 include("/home/jang/2024_7Dof/src/build/culjaco/ament_cmake_symlink_install_targets_0_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
 # install(FILES "/home/jang/2024_7Dof/src/build/culjaco/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/culjaco" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
