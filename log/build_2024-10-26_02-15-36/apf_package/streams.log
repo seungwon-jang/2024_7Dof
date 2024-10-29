@@ -1,0 +1,25 @@
+[0.172s] Invoking command in '/home/jang/2024_7Dof/build/apf_package': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jang/2024_7Dof/install/apf_nodes:/opt/ros/humble /usr/bin/cmake --build /home/jang/2024_7Dof/build/apf_package -- -j16 -l16
+[0.441s] [100%] Built target cul_distance_node
+[0.442s] [100%] Built target apf_main_node
+[0.553s] Invoked command in '/home/jang/2024_7Dof/build/apf_package' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jang/2024_7Dof/install/apf_nodes:/opt/ros/humble /usr/bin/cmake --build /home/jang/2024_7Dof/build/apf_package -- -j16 -l16
+[0.754s] Invoking command in '/home/jang/2024_7Dof/build/apf_package': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jang/2024_7Dof/install/apf_nodes:/opt/ros/humble /usr/bin/cmake --install /home/jang/2024_7Dof/build/apf_package
+[0.799s] -- Install configuration: "Release"
+[0.803s] -- Execute custom install script
+[0.805s] -- Up-to-date symlink: /home/jang/2024_7Dof/install/apf_package/lib/apf_package/apf_main_node
+[0.806s] -- Up-to-date symlink: /home/jang/2024_7Dof/install/apf_package/lib/apf_package/cul_distance_node
+[0.812s] -- Up-to-date symlink: /home/jang/2024_7Dof/install/apf_package/share/ament_index/resource_index/package_run_dependencies/apf_package
+[0.823s] -- Up-to-date symlink: /home/jang/2024_7Dof/install/apf_package/share/ament_index/resource_index/parent_prefix_path/apf_package
+[0.829s] -- Up-to-date symlink: /home/jang/2024_7Dof/install/apf_package/share/apf_package/environment/ament_prefix_path.sh
+[0.836s] -- Up-to-date symlink: /home/jang/2024_7Dof/install/apf_package/share/apf_package/environment/ament_prefix_path.dsv
+[0.838s] -- Up-to-date symlink: /home/jang/2024_7Dof/install/apf_package/share/apf_package/environment/path.sh
+[0.840s] -- Up-to-date symlink: /home/jang/2024_7Dof/install/apf_package/share/apf_package/environment/path.dsv
+[0.854s] -- Up-to-date symlink: /home/jang/2024_7Dof/install/apf_package/share/apf_package/local_setup.bash
+[0.864s] -- Up-to-date symlink: /home/jang/2024_7Dof/install/apf_package/share/apf_package/local_setup.sh
+[0.867s] -- Up-to-date symlink: /home/jang/2024_7Dof/install/apf_package/share/apf_package/local_setup.zsh
+[0.868s] -- Up-to-date symlink: /home/jang/2024_7Dof/install/apf_package/share/apf_package/local_setup.dsv
+[0.868s] -- Symlinking: /home/jang/2024_7Dof/install/apf_package/share/apf_package/package.dsv
+[0.886s] -- Up-to-date symlink: /home/jang/2024_7Dof/install/apf_package/share/ament_index/resource_index/packages/apf_package
+[0.889s] -- Up-to-date symlink: /home/jang/2024_7Dof/install/apf_package/share/apf_package/cmake/apf_packageConfig.cmake
+[0.889s] -- Up-to-date symlink: /home/jang/2024_7Dof/install/apf_package/share/apf_package/cmake/apf_packageConfig-version.cmake
+[0.889s] -- Up-to-date symlink: /home/jang/2024_7Dof/install/apf_package/share/apf_package/package.xml
+[0.953s] Invoked command in '/home/jang/2024_7Dof/build/apf_package' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jang/2024_7Dof/install/apf_nodes:/opt/ros/humble /usr/bin/cmake --install /home/jang/2024_7Dof/build/apf_package

@@ -1,0 +1,19 @@
+[2.237s] Invoking command in '/home/jang/2024_7Dof/build/apf_nodes': PYTHONPATH=/home/jang/2024_7Dof/build/apf_nodes/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jang/2024_7Dof/install/apf_nodes/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/jang/2024_7Dof/build/apf_nodes/build --no-deps symlink_data
+[2.440s] running develop
+[2.440s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[2.440s]   warnings.warn(
+[2.544s] running egg_info
+[2.545s] writing apf_nodes.egg-info/PKG-INFO
+[2.545s] writing dependency_links to apf_nodes.egg-info/dependency_links.txt
+[2.545s] writing entry points to apf_nodes.egg-info/entry_points.txt
+[2.545s] writing requirements to apf_nodes.egg-info/requires.txt
+[2.545s] writing top-level names to apf_nodes.egg-info/top_level.txt
+[2.546s] reading manifest file 'apf_nodes.egg-info/SOURCES.txt'
+[2.547s] writing manifest file 'apf_nodes.egg-info/SOURCES.txt'
+[2.548s] running build_ext
+[2.548s] Creating /home/jang/2024_7Dof/install/apf_nodes/lib/python3.10/site-packages/apf-nodes.egg-link (link to .)
+[2.548s] Installing jt_test_node script to /home/jang/2024_7Dof/install/apf_nodes/lib/apf_nodes
+[2.549s] 
+[2.549s] Installed /home/jang/2024_7Dof/build/apf_nodes
+[2.549s] running symlink_data
+[2.571s] Invoked command in '/home/jang/2024_7Dof/build/apf_nodes' returned '0': PYTHONPATH=/home/jang/2024_7Dof/build/apf_nodes/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jang/2024_7Dof/install/apf_nodes/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/jang/2024_7Dof/build/apf_nodes/build --no-deps symlink_data

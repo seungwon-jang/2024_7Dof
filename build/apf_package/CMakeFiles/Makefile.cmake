@@ -211,6 +211,10 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/opt/ros/humble/share/builtin_interfaces/cmake/rosidl_cmake-extras.cmake"
   "/opt/ros/humble/share/builtin_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake"
   "/opt/ros/humble/share/builtin_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake"
+  "/opt/ros/humble/share/eigen3_cmake_module/cmake/Modules/FindEigen3.cmake"
+  "/opt/ros/humble/share/eigen3_cmake_module/cmake/eigen3_cmake_module-extras.cmake"
+  "/opt/ros/humble/share/eigen3_cmake_module/cmake/eigen3_cmake_moduleConfig-version.cmake"
+  "/opt/ros/humble/share/eigen3_cmake_module/cmake/eigen3_cmake_moduleConfig.cmake"
   "/opt/ros/humble/share/fastrtps/cmake/fast-discovery-server-targets-none.cmake"
   "/opt/ros/humble/share/fastrtps/cmake/fast-discovery-server-targets.cmake"
   "/opt/ros/humble/share/fastrtps/cmake/fastrtps-config-version.cmake"
@@ -616,6 +620,9 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/usr/share/cmake-3.22/Modules/Platform/Linux-GNU.cmake"
   "/usr/share/cmake-3.22/Modules/Platform/Linux.cmake"
   "/usr/share/cmake-3.22/Modules/Platform/UnixPaths.cmake"
+  "/usr/share/eigen3/cmake/Eigen3Config.cmake"
+  "/usr/share/eigen3/cmake/Eigen3ConfigVersion.cmake"
+  "/usr/share/eigen3/cmake/Eigen3Targets.cmake"
   )
 
 # The corresponding makefile is:

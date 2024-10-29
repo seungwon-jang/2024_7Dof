@@ -1,0 +1,5 @@
+[ 20%] Built target forward
+[ 50%] Built target forward_node
+[ 60%] Built target listener
+[ 80%] Built target talker
+[ 90%] [32mBuilding CXX object CMakeFiles/jaco_node.dir/src/cul_jaco.cpp.o[0m

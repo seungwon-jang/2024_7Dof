@@ -11,15 +11,19 @@ find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(std_msgs REQUIRED)
 
+# add eigen3
+find_package(eigen3_cmake_module REQUIRED)
+find_package(Eigen3)
+
 # uncomment the following section in order to fill in
 # further dependencies manually.
 # find_package(<dependency> REQUIRED)
 
 add_executable(apf_main_node src/apf_main_node.cpp)
-ament_target_dependencies(apf_main_node rclcpp std_msgs)
+ament_target_dependencies(apf_main_node rclcpp std_msgs Eigen3)
 
 add_executable(cul_distance_node src/cul_distance_node.cpp)
-ament_target_dependencies(cul_distance_node rclcpp std_msgs)
+ament_target_dependencies(cul_distance_node rclcpp std_msgs Eigen3)
 
 
 target_include_directories(apf_main_node PUBLIC

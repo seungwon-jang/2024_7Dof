@@ -38,7 +38,7 @@ add_executable(forward_node src/forward_node.cpp)
 ament_target_dependencies(forward_node rclcpp std_msgs Eigen3)
 
 add_executable(jaco_node src/cul_jaco.cpp)
-ament_target_dependencies(jaco_node rclcpp std_msgs sensor_msgs)
+ament_target_dependencies(jaco_node rclcpp std_msgs sensor_msgs Eigen3)
 
 install(TARGETS 
   forward

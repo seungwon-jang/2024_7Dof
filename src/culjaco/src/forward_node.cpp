@@ -10,6 +10,8 @@
 
 using namespace std::chrono_literals;
 
+//이 노드는 실제로 쓰는 노드가 아니라 정기구학이 제대로 나오는 것이 맞는지 테스트 한 노드다.
+
 class forward_node : public rclcpp::Node
 {
 public:
