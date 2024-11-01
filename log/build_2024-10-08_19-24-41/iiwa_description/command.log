@@ -1,6 +1,0 @@
-Invoking command in '/home/jang/2024_7Dof/build/iiwa_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/jang/2024_7Dof/src/iiwa_ros2/iiwa_description -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/jang/2024_7Dof/install/iiwa_description
-Invoked command in '/home/jang/2024_7Dof/build/iiwa_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/jang/2024_7Dof/src/iiwa_ros2/iiwa_description -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/jang/2024_7Dof/install/iiwa_description
-Invoking command in '/home/jang/2024_7Dof/build/iiwa_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/jang/2024_7Dof/build/iiwa_description -- -j16 -l16
-Invoked command in '/home/jang/2024_7Dof/build/iiwa_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/jang/2024_7Dof/build/iiwa_description -- -j16 -l16
-Invoking command in '/home/jang/2024_7Dof/build/iiwa_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/jang/2024_7Dof/build/iiwa_description
-Invoked command in '/home/jang/2024_7Dof/build/iiwa_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/jang/2024_7Dof/build/iiwa_description

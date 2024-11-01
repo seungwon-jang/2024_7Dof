@@ -21,6 +21,10 @@ find_package(sensor_msgs REQUIRED)
 # further dependencies manually.
 # find_package(<dependency> REQUIRED)
 
+# find my_interfaces
+find_package(apf_interfaces REQUIRED)
+
+
 add_executable(forward src/forward.cpp)
 target_include_directories(forward PUBLIC
   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
@@ -38,7 +42,7 @@ add_executable(forward_node src/forward_node.cpp)
 ament_target_dependencies(forward_node rclcpp std_msgs Eigen3)
 
 add_executable(jaco_node src/cul_jaco.cpp)
-ament_target_dependencies(jaco_node rclcpp std_msgs sensor_msgs Eigen3)
+ament_target_dependencies(jaco_node rclcpp std_msgs sensor_msgs Eigen3 apf_interfaces)
 
 install(TARGETS 
   forward

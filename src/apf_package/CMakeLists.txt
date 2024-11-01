@@ -10,25 +10,39 @@ find_package(ament_cmake REQUIRED)
 
 find_package(rclcpp REQUIRED)
 find_package(std_msgs REQUIRED)
+find_package(nav_msgs REQUIRED)
+find_package(geometry_msgs REQUIRED)
+find_package(visualization_msgs REQUIRED)
+find_package(trajectory_msgs REQUIRED)
+
+find_package(sensor_msgs REQUIRED)
+
+# add tf2
+find_package(tf2 REQUIRED)
+find_package(tf2_ros REQUIRED)
 
 # add eigen3
 find_package(eigen3_cmake_module REQUIRED)
 find_package(Eigen3)
+
+# my_interfaces
+find_package(apf_interfaces REQUIRED)
 
 # uncomment the following section in order to fill in
 # further dependencies manually.
 # find_package(<dependency> REQUIRED)
 
 add_executable(apf_main_node src/apf_main_node.cpp)
-ament_target_dependencies(apf_main_node rclcpp std_msgs Eigen3)
+ament_target_dependencies(apf_main_node rclcpp std_msgs Eigen3 apf_interfaces visualization_msgs geometry_msgs trajectory_msgs sensor_msgs )
 
 add_executable(cul_distance_node src/cul_distance_node.cpp)
-ament_target_dependencies(cul_distance_node rclcpp std_msgs Eigen3)
+ament_target_dependencies(cul_distance_node rclcpp std_msgs Eigen3 nav_msgs apf_interfaces tf2 tf2_ros)
 
 
 target_include_directories(apf_main_node PUBLIC
   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
-  $<INSTALL_INTERFACE:include>)
+  $<INSTALL_INTERFACE:include>
+  )
 target_compile_features(apf_main_node PUBLIC c_std_99 cxx_std_17)  # Require C99 and C++17
 
 install(TARGETS 

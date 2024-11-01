@@ -1,5 +1,0 @@
-[0.164s] Invoking command in '/home/jang/2024_7Dof/build/apf_package': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jang/2024_7Dof/install/apf_nodes:/opt/ros/humble /usr/bin/cmake --build /home/jang/2024_7Dof/build/apf_package -- -j16 -l16
-[0.196s] [35m[1mConsolidate compiler generated dependencies of target apf_main_node[0m
-[0.214s] [ 50%] [32mBuilding CXX object CMakeFiles/apf_main_node.dir/src/apf_main_node.cpp.o[0m
-[6.415s] [100%] [32m[1mLinking CXX executable apf_main_node[0m
-[6.513s] [100%] Built target apf_main_node

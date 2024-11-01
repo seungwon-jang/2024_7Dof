@@ -13,6 +13,14 @@
   <test_depend>ament_lint_common</test_depend>
   <depend>rclcpp</depend>
   <depend>std_msgs</depend>
+  <depend>nav_msgs</depend>
+  <depend>apf_interfaces</depend>
+  <depend>visualization_msgs</depend>
+  <depend>geometry_msgs</depend>
+  <depend>trajectory_msgs</depend>
+  <depend>tf2</depend>
+  <depend>tf2_ros2</depend>
+  <depend>sensor_msgs</depend>
 
   <buildtool_depend>eigen3_cmake_module</buildtool_depend>
   <build_depend>eigen</build_depend>

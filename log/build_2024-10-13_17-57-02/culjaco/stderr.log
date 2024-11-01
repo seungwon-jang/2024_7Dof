@@ -1,7 +1,0 @@
-[01m[K/home/jang/2024_7Dof/src/culjaco/src/cul_jaco.cpp:[m[K In constructor ‘[01m[Kjaco_node::jaco_node()[m[K’:
-[01m[K/home/jang/2024_7Dof/src/culjaco/src/cul_jaco.cpp:28:9:[m[K [01;31m[Kerror: [m[Kunable to find numeric literal operator ‘[01m[Koperator""ms[m[K’
-   28 |         [01;31m[K500ms[m[K, std::bind(&jaco_node::timer_callback, this));
-      |         [01;31m[K^~~~~[m[K
-gmake[2]: *** [CMakeFiles/jaco_node.dir/build.make:76: CMakeFiles/jaco_node.dir/src/cul_jaco.cpp.o] Error 1
-gmake[1]: *** [CMakeFiles/Makefile2:249: CMakeFiles/jaco_node.dir/all] Error 2
-gmake: *** [Makefile:146: all] Error 2

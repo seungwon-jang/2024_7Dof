@@ -1,0 +1,21 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from apf_interfaces/msg/Distance.msg
+// generated code does not contain a copyright notice
+
+#include "geometry_msgs/msg/Point.idl"
+
+module apf_interfaces {
+  module msg {
+    struct Distance {
+      geometry_msgs::msg::Point end_point;
+
+      geometry_msgs::msg::Point direction_vector;
+
+      geometry_msgs::msg::Point target_point;
+
+      double end_distance;
+
+      geometry_msgs::msg::Point end_angle_distance;
+    };
+  };
+};

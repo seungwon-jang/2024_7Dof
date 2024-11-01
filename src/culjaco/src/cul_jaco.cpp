@@ -8,9 +8,10 @@
 #include "std_msgs/msg/string.hpp"
 #include "sensor_msgs/msg/joint_state.hpp"
 #include "std_msgs/msg/float64_multi_array.hpp"
+#include "apf_interfaces/msg/jacobian.hpp"
 #include <Eigen/Dense>
 
-//지금 이게 최종 자코비안을 보내는 내가 만들어 놓은 노드인 것 같다
+//지금 이게 최종 자코비안을 보내는 내가 만들어 놓은 노드이다.
 
 
 using namespace std::chrono_literals;
@@ -24,6 +25,8 @@ class jaco_node : public rclcpp::Node
     std::vector<double> joint_position;
     int position_size = 7;
     double joint_array[7];
+    //joint 개수
+    const int joint_EA = 7;
 
     //DH파라미터 저장할 배열 전역 변수로 선언
     //a | alpha | d | theta 순으로 배열 되었다.
@@ -50,7 +53,7 @@ class jaco_node : public rclcpp::Node
         "/joint_states", 10, std::bind(&jaco_node::joint_state_callback, this, _1));
 
         //자코비안을 계산하는 publisher
-        publisher_jacobian = this->create_publisher<std_msgs::msg::String>("/jacobian", 10);
+        publisher_jacobian = this->create_publisher<apf_interfaces::msg::Jacobian>("/jacobian", 5);
         
         //링크들의 현재 위치를 보내는 publisher
         publisher_link_pose = this->create_publisher<std_msgs::msg::Float64MultiArray>("/link_pose", 10);
@@ -80,8 +83,7 @@ class jaco_node : public rclcpp::Node
 
     //받아와서 출력하는 함수
     void joint_state_callback(const sensor_msgs::msg::JointState & msg) 
-    {
-        
+    {   
         //받은 데이터를 배열로 변환해서 넣자. - 이렇게 받은 것이 앞에서 부터 joint 1부터 시작한다.
         std::string positions; 
         for (int i = 0; i < position_size; i++) {
@@ -146,12 +148,9 @@ class jaco_node : public rclcpp::Node
         //행렬 형식에 맞게 행렬을 출력한다.
         Eigen:: IOFormat ros2_format(Eigen::StreamPrecision, 0, ", ", ";\n", "[", "]", "[", "]");
         std::stringstream output_mat;
-        output_mat << result_vel.format(ros2_format);
+        output_mat << jacobian_mat.format(ros2_format);
 
         RCLCPP_INFO(this->get_logger(), "Publishing: \n'%s'\n", output_mat.str().c_str());
-
-        //보낼 데이터들을 정리해서 넣기
-        auto message = std_msgs::msg::String();
 
         auto link_pose_msg = std_msgs::msg::Float64MultiArray();
         link_pose_msg.data.clear();
@@ -159,8 +158,17 @@ class jaco_node : public rclcpp::Node
         link_pose_msg.data.push_back(1.1);
 
         //실제로 노드들로 publish 하는 파트
-        message.data = "Hello, world! " + std::to_string(jacobian_mat(0,0));
-        publisher_jacobian->publish(message);
+        // 데이터 채우기
+        //jacobian 메세지 넣기 - 먼저 우리는 가변 배열이니까 크기를 지정해 주기
+        auto jaco_msg = apf_interfaces::msg::Jacobian();
+        jaco_msg.flat_jacobian.resize(6*joint_EA);
+
+        //데이터 보내주기
+        std::vector<double> flat_data(jacobian_mat.data(), jacobian_mat.data() + jacobian_mat.size());
+        std::copy(flat_data.begin(), flat_data.end(), jaco_msg.flat_jacobian.begin());
+
+        jaco_msg.col_num = joint_EA;
+        publisher_jacobian->publish(jaco_msg);
         publisher_link_pose->publish(link_pose_msg);
 
 
@@ -171,10 +179,9 @@ class jaco_node : public rclcpp::Node
         
     }
 
-
     rclcpp::Subscription<sensor_msgs::msg::JointState>::SharedPtr subscription_jointstate;
     rclcpp::TimerBase::SharedPtr timer;
-    rclcpp::Publisher<std_msgs::msg::String>::SharedPtr publisher_jacobian;
+    rclcpp::Publisher<apf_interfaces::msg::Jacobian>::SharedPtr publisher_jacobian;
     rclcpp::Publisher<std_msgs::msg::Float64MultiArray>::SharedPtr publisher_link_pose;
 };
 
