@@ -195,4 +195,5 @@ CMakeFiles/apf_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_
  /usr/include/c++/11/stdlib.h \
  /home/jang/2024_7Dof/build/apf_interfaces/rosidl_generator_c/apf_interfaces/msg/rosidl_generator_c__visibility_control.h \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__functions.h \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/rosidl_generator_c__visibility_control.h
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/rosidl_generator_c__visibility_control.h \
+ /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence_functions.h

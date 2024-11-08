@@ -1,0 +1,33 @@
+[0.010s] Invoking command in '/home/jang/2024_7Dof/build/culjaco': CMAKE_PREFIX_PATH=/home/jang/2024_7Dof/install/apf_interfaces:/home/jang/2024_7Dof/install/impedance_controller:/home/jang/2024_7Dof/install/iiwa_moveit2:/home/jang/2024_7Dof/install/iiwa_bringup:/home/jang/2024_7Dof/install/iiwa_description:/home/jang/2024_7Dof/install/external_torque_sensor_broadcaster:/home/jang/2024_7Dof/install/culjaco:/home/jang/2024_7Dof/install/apf_package:/home/jang/2024_7Dof/install/apf_nodes:/opt/ros/humble LD_LIBRARY_PATH=/home/jang/2024_7Dof/install/apf_interfaces/lib:/home/jang/2024_7Dof/install/impedance_controller/lib:/home/jang/2024_7Dof/install/iiwa_moveit2/lib:/home/jang/2024_7Dof/install/external_torque_sensor_broadcaster/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins /usr/bin/cmake --build /home/jang/2024_7Dof/build/culjaco -- -j16 -l16
+[0.151s] [ 16%] Built target forward
+[0.179s] [ 33%] Built target listener
+[0.182s] [ 50%] Built target talker
+[0.199s] [ 66%] Built target save_position
+[0.204s] [ 83%] Built target forward_node
+[0.204s] [100%] Built target jaco_node
+[0.220s] Invoked command in '/home/jang/2024_7Dof/build/culjaco' returned '0': CMAKE_PREFIX_PATH=/home/jang/2024_7Dof/install/apf_interfaces:/home/jang/2024_7Dof/install/impedance_controller:/home/jang/2024_7Dof/install/iiwa_moveit2:/home/jang/2024_7Dof/install/iiwa_bringup:/home/jang/2024_7Dof/install/iiwa_description:/home/jang/2024_7Dof/install/external_torque_sensor_broadcaster:/home/jang/2024_7Dof/install/culjaco:/home/jang/2024_7Dof/install/apf_package:/home/jang/2024_7Dof/install/apf_nodes:/opt/ros/humble LD_LIBRARY_PATH=/home/jang/2024_7Dof/install/apf_interfaces/lib:/home/jang/2024_7Dof/install/impedance_controller/lib:/home/jang/2024_7Dof/install/iiwa_moveit2/lib:/home/jang/2024_7Dof/install/external_torque_sensor_broadcaster/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins /usr/bin/cmake --build /home/jang/2024_7Dof/build/culjaco -- -j16 -l16
+[0.282s] Invoking command in '/home/jang/2024_7Dof/build/culjaco': CMAKE_PREFIX_PATH=/home/jang/2024_7Dof/install/apf_interfaces:/home/jang/2024_7Dof/install/impedance_controller:/home/jang/2024_7Dof/install/iiwa_moveit2:/home/jang/2024_7Dof/install/iiwa_bringup:/home/jang/2024_7Dof/install/iiwa_description:/home/jang/2024_7Dof/install/external_torque_sensor_broadcaster:/home/jang/2024_7Dof/install/culjaco:/home/jang/2024_7Dof/install/apf_package:/home/jang/2024_7Dof/install/apf_nodes:/opt/ros/humble LD_LIBRARY_PATH=/home/jang/2024_7Dof/install/apf_interfaces/lib:/home/jang/2024_7Dof/install/impedance_controller/lib:/home/jang/2024_7Dof/install/iiwa_moveit2/lib:/home/jang/2024_7Dof/install/external_torque_sensor_broadcaster/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins /usr/bin/cmake --install /home/jang/2024_7Dof/build/culjaco
+[0.289s] -- Install configuration: "Release"
+[0.289s] -- Execute custom install script
+[0.289s] -- Up-to-date symlink: /home/jang/2024_7Dof/install/culjaco/lib/culjaco/forward
+[0.289s] -- Up-to-date symlink: /home/jang/2024_7Dof/install/culjaco/lib/culjaco/talker
+[0.290s] -- Up-to-date symlink: /home/jang/2024_7Dof/install/culjaco/lib/culjaco/listener
+[0.291s] -- Up-to-date symlink: /home/jang/2024_7Dof/install/culjaco/lib/culjaco/forward_node
+[0.292s] -- Up-to-date symlink: /home/jang/2024_7Dof/install/culjaco/lib/culjaco/jaco_node
+[0.293s] -- Up-to-date symlink: /home/jang/2024_7Dof/install/culjaco/lib/culjaco/save_position
+[0.295s] -- Up-to-date symlink: /home/jang/2024_7Dof/install/culjaco/share/ament_index/resource_index/package_run_dependencies/culjaco
+[0.296s] -- Up-to-date symlink: /home/jang/2024_7Dof/install/culjaco/share/ament_index/resource_index/parent_prefix_path/culjaco
+[0.296s] -- Up-to-date symlink: /home/jang/2024_7Dof/install/culjaco/share/culjaco/environment/ament_prefix_path.sh
+[0.296s] -- Up-to-date symlink: /home/jang/2024_7Dof/install/culjaco/share/culjaco/environment/ament_prefix_path.dsv
+[0.297s] -- Up-to-date symlink: /home/jang/2024_7Dof/install/culjaco/share/culjaco/environment/path.sh
+[0.297s] -- Up-to-date symlink: /home/jang/2024_7Dof/install/culjaco/share/culjaco/environment/path.dsv
+[0.297s] -- Up-to-date symlink: /home/jang/2024_7Dof/install/culjaco/share/culjaco/local_setup.bash
+[0.298s] -- Up-to-date symlink: /home/jang/2024_7Dof/install/culjaco/share/culjaco/local_setup.sh
+[0.298s] -- Up-to-date symlink: /home/jang/2024_7Dof/install/culjaco/share/culjaco/local_setup.zsh
+[0.299s] -- Up-to-date symlink: /home/jang/2024_7Dof/install/culjaco/share/culjaco/local_setup.dsv
+[0.299s] -- Symlinking: /home/jang/2024_7Dof/install/culjaco/share/culjaco/package.dsv
+[0.306s] -- Up-to-date symlink: /home/jang/2024_7Dof/install/culjaco/share/ament_index/resource_index/packages/culjaco
+[0.306s] -- Up-to-date symlink: /home/jang/2024_7Dof/install/culjaco/share/culjaco/cmake/culjacoConfig.cmake
+[0.306s] -- Up-to-date symlink: /home/jang/2024_7Dof/install/culjaco/share/culjaco/cmake/culjacoConfig-version.cmake
+[0.306s] -- Up-to-date symlink: /home/jang/2024_7Dof/install/culjaco/share/culjaco/package.xml
+[0.308s] Invoked command in '/home/jang/2024_7Dof/build/culjaco' returned '0': CMAKE_PREFIX_PATH=/home/jang/2024_7Dof/install/apf_interfaces:/home/jang/2024_7Dof/install/impedance_controller:/home/jang/2024_7Dof/install/iiwa_moveit2:/home/jang/2024_7Dof/install/iiwa_bringup:/home/jang/2024_7Dof/install/iiwa_description:/home/jang/2024_7Dof/install/external_torque_sensor_broadcaster:/home/jang/2024_7Dof/install/culjaco:/home/jang/2024_7Dof/install/apf_package:/home/jang/2024_7Dof/install/apf_nodes:/opt/ros/humble LD_LIBRARY_PATH=/home/jang/2024_7Dof/install/apf_interfaces/lib:/home/jang/2024_7Dof/install/impedance_controller/lib:/home/jang/2024_7Dof/install/iiwa_moveit2/lib:/home/jang/2024_7Dof/install/external_torque_sensor_broadcaster/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins /usr/bin/cmake --install /home/jang/2024_7Dof/build/culjaco

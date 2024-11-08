@@ -262,6 +262,19 @@ jaco_node/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/jaco_node.dir/build.make CMakeFiles/jaco_node.dir/build
 .PHONY : jaco_node/fast
 
+#=============================================================================
+# Target rules for targets named save_position
+
+# Build rule for target.
+save_position: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 save_position
+.PHONY : save_position
+
+# fast build rule for target.
+save_position/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/save_position.dir/build.make CMakeFiles/save_position.dir/build
+.PHONY : save_position/fast
+
 src/cul_jaco.o: src/cul_jaco.cpp.o
 .PHONY : src/cul_jaco.o
 
@@ -358,6 +371,30 @@ src/publisher_member_function.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/talker.dir/build.make CMakeFiles/talker.dir/src/publisher_member_function.cpp.s
 .PHONY : src/publisher_member_function.cpp.s
 
+src/save_position.o: src/save_position.cpp.o
+.PHONY : src/save_position.o
+
+# target to build an object file
+src/save_position.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/save_position.dir/build.make CMakeFiles/save_position.dir/src/save_position.cpp.o
+.PHONY : src/save_position.cpp.o
+
+src/save_position.i: src/save_position.cpp.i
+.PHONY : src/save_position.i
+
+# target to preprocess a source file
+src/save_position.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/save_position.dir/build.make CMakeFiles/save_position.dir/src/save_position.cpp.i
+.PHONY : src/save_position.cpp.i
+
+src/save_position.s: src/save_position.cpp.s
+.PHONY : src/save_position.s
+
+# target to generate assembly for a file
+src/save_position.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/save_position.dir/build.make CMakeFiles/save_position.dir/src/save_position.cpp.s
+.PHONY : src/save_position.cpp.s
+
 src/subscriber_member_function.o: src/subscriber_member_function.cpp.o
 .PHONY : src/subscriber_member_function.o
 
@@ -401,6 +438,7 @@ help:
 	@echo "... forward_node"
 	@echo "... jaco_node"
 	@echo "... listener"
+	@echo "... save_position"
 	@echo "... talker"
 	@echo "... src/cul_jaco.o"
 	@echo "... src/cul_jaco.i"
@@ -414,6 +452,9 @@ help:
 	@echo "... src/publisher_member_function.o"
 	@echo "... src/publisher_member_function.i"
 	@echo "... src/publisher_member_function.s"
+	@echo "... src/save_position.o"
+	@echo "... src/save_position.i"
+	@echo "... src/save_position.s"
 	@echo "... src/subscriber_member_function.o"
 	@echo "... src/subscriber_member_function.i"
 	@echo "... src/subscriber_member_function.s"

@@ -22,7 +22,10 @@ extern "C"
 // Member 'direction_vector'
 // Member 'target_point'
 // Member 'end_angle_distance'
+// Member 'obstacle_direction_vector'
 #include "geometry_msgs/msg/detail/point__struct.h"
+// Member 'obstacle_distance'
+#include "rosidl_runtime_c/primitives_sequence.h"
 
 /// Struct defined in msg/Distance in the package apf_interfaces.
 typedef struct apf_interfaces__msg__Distance
@@ -32,6 +35,9 @@ typedef struct apf_interfaces__msg__Distance
   geometry_msgs__msg__Point target_point;
   double end_distance;
   geometry_msgs__msg__Point end_angle_distance;
+  rosidl_runtime_c__double__Sequence obstacle_distance;
+  geometry_msgs__msg__Point__Sequence obstacle_direction_vector;
+  int32_t obstacle_count;
 } apf_interfaces__msg__Distance;
 
 // Struct for a sequence of apf_interfaces__msg__Distance.

@@ -16,7 +16,10 @@
 // Member `direction_vector`
 // Member `target_point`
 // Member `end_angle_distance`
+// Member `obstacle_direction_vector`
 #include "geometry_msgs/msg/detail/point__functions.h"
+// Member `obstacle_distance`
+#include "rosidl_runtime_c/primitives_sequence_functions.h"
 
 bool
 apf_interfaces__msg__Distance__init(apf_interfaces__msg__Distance * msg)
@@ -45,6 +48,17 @@ apf_interfaces__msg__Distance__init(apf_interfaces__msg__Distance * msg)
     apf_interfaces__msg__Distance__fini(msg);
     return false;
   }
+  // obstacle_distance
+  if (!rosidl_runtime_c__double__Sequence__init(&msg->obstacle_distance, 0)) {
+    apf_interfaces__msg__Distance__fini(msg);
+    return false;
+  }
+  // obstacle_direction_vector
+  if (!geometry_msgs__msg__Point__Sequence__init(&msg->obstacle_direction_vector, 0)) {
+    apf_interfaces__msg__Distance__fini(msg);
+    return false;
+  }
+  // obstacle_count
   return true;
 }
 
@@ -63,6 +77,11 @@ apf_interfaces__msg__Distance__fini(apf_interfaces__msg__Distance * msg)
   // end_distance
   // end_angle_distance
   geometry_msgs__msg__Point__fini(&msg->end_angle_distance);
+  // obstacle_distance
+  rosidl_runtime_c__double__Sequence__fini(&msg->obstacle_distance);
+  // obstacle_direction_vector
+  geometry_msgs__msg__Point__Sequence__fini(&msg->obstacle_direction_vector);
+  // obstacle_count
 }
 
 bool
@@ -97,6 +116,22 @@ apf_interfaces__msg__Distance__are_equal(const apf_interfaces__msg__Distance * l
   if (!geometry_msgs__msg__Point__are_equal(
       &(lhs->end_angle_distance), &(rhs->end_angle_distance)))
   {
+    return false;
+  }
+  // obstacle_distance
+  if (!rosidl_runtime_c__double__Sequence__are_equal(
+      &(lhs->obstacle_distance), &(rhs->obstacle_distance)))
+  {
+    return false;
+  }
+  // obstacle_direction_vector
+  if (!geometry_msgs__msg__Point__Sequence__are_equal(
+      &(lhs->obstacle_direction_vector), &(rhs->obstacle_direction_vector)))
+  {
+    return false;
+  }
+  // obstacle_count
+  if (lhs->obstacle_count != rhs->obstacle_count) {
     return false;
   }
   return true;
@@ -136,6 +171,20 @@ apf_interfaces__msg__Distance__copy(
   {
     return false;
   }
+  // obstacle_distance
+  if (!rosidl_runtime_c__double__Sequence__copy(
+      &(input->obstacle_distance), &(output->obstacle_distance)))
+  {
+    return false;
+  }
+  // obstacle_direction_vector
+  if (!geometry_msgs__msg__Point__Sequence__copy(
+      &(input->obstacle_direction_vector), &(output->obstacle_direction_vector)))
+  {
+    return false;
+  }
+  // obstacle_count
+  output->obstacle_count = input->obstacle_count;
   return true;
 }
 

@@ -46,6 +46,8 @@ max_serialized_size_Point(
 
 // functions for geometry_msgs::msg::Point already declared above
 
+// functions for geometry_msgs::msg::Point already declared above
+
 
 namespace apf_interfaces
 {
@@ -80,6 +82,22 @@ cdr_serialize(
   geometry_msgs::msg::typesupport_fastrtps_cpp::cdr_serialize(
     ros_message.end_angle_distance,
     cdr);
+  // Member: obstacle_distance
+  {
+    cdr << ros_message.obstacle_distance;
+  }
+  // Member: obstacle_direction_vector
+  {
+    size_t size = ros_message.obstacle_direction_vector.size();
+    cdr << static_cast<uint32_t>(size);
+    for (size_t i = 0; i < size; i++) {
+      geometry_msgs::msg::typesupport_fastrtps_cpp::cdr_serialize(
+        ros_message.obstacle_direction_vector[i],
+        cdr);
+    }
+  }
+  // Member: obstacle_count
+  cdr << ros_message.obstacle_count;
   return true;
 }
 
@@ -107,6 +125,26 @@ cdr_deserialize(
   // Member: end_angle_distance
   geometry_msgs::msg::typesupport_fastrtps_cpp::cdr_deserialize(
     cdr, ros_message.end_angle_distance);
+
+  // Member: obstacle_distance
+  {
+    cdr >> ros_message.obstacle_distance;
+  }
+
+  // Member: obstacle_direction_vector
+  {
+    uint32_t cdrSize;
+    cdr >> cdrSize;
+    size_t size = static_cast<size_t>(cdrSize);
+    ros_message.obstacle_direction_vector.resize(size);
+    for (size_t i = 0; i < size; i++) {
+      geometry_msgs::msg::typesupport_fastrtps_cpp::cdr_deserialize(
+        cdr, ros_message.obstacle_direction_vector[i]);
+    }
+  }
+
+  // Member: obstacle_count
+  cdr >> ros_message.obstacle_count;
 
   return true;
 }
@@ -150,6 +188,35 @@ get_serialized_size(
   current_alignment +=
     geometry_msgs::msg::typesupport_fastrtps_cpp::get_serialized_size(
     ros_message.end_angle_distance, current_alignment);
+  // Member: obstacle_distance
+  {
+    size_t array_size = ros_message.obstacle_distance.size();
+
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+    size_t item_size = sizeof(ros_message.obstacle_distance[0]);
+    current_alignment += array_size * item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // Member: obstacle_direction_vector
+  {
+    size_t array_size = ros_message.obstacle_direction_vector.size();
+
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+
+    for (size_t index = 0; index < array_size; ++index) {
+      current_alignment +=
+        geometry_msgs::msg::typesupport_fastrtps_cpp::get_serialized_size(
+        ros_message.obstacle_direction_vector[index], current_alignment);
+    }
+  }
+  // Member: obstacle_count
+  {
+    size_t item_size = sizeof(ros_message.obstacle_count);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
 
   return current_alignment - initial_alignment;
 }
@@ -259,6 +326,51 @@ max_serialized_size_Distance(
     }
   }
 
+  // Member: obstacle_distance
+  {
+    size_t array_size = 0;
+    full_bounded = false;
+    is_plain = false;
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+
+    last_member_size = array_size * sizeof(uint64_t);
+    current_alignment += array_size * sizeof(uint64_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
+  }
+
+  // Member: obstacle_direction_vector
+  {
+    size_t array_size = 0;
+    full_bounded = false;
+    is_plain = false;
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+
+
+    last_member_size = 0;
+    for (size_t index = 0; index < array_size; ++index) {
+      bool inner_full_bounded;
+      bool inner_is_plain;
+      size_t inner_size =
+        geometry_msgs::msg::typesupport_fastrtps_cpp::max_serialized_size_Point(
+        inner_full_bounded, inner_is_plain, current_alignment);
+      last_member_size += inner_size;
+      current_alignment += inner_size;
+      full_bounded &= inner_full_bounded;
+      is_plain &= inner_is_plain;
+    }
+  }
+
+  // Member: obstacle_count
+  {
+    size_t array_size = 1;
+
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+
   size_t ret_val = current_alignment - initial_alignment;
   if (is_plain) {
     // All members are plain, and type is not empty.
@@ -267,7 +379,7 @@ max_serialized_size_Distance(
     using DataType = apf_interfaces::msg::Distance;
     is_plain =
       (
-      offsetof(DataType, end_angle_distance) +
+      offsetof(DataType, obstacle_count) +
       last_member_size
       ) == ret_val;
   }

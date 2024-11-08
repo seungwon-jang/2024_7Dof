@@ -1,1 +1,1 @@
-rclcpp;std_msgs;apf_interfaces;sensor_msgs;ament_lint_auto;ament_lint_common
+rclcpp;std_msgs;apf_interfaces;nav_msgs;sensor_msgs;ament_lint_auto;ament_lint_common

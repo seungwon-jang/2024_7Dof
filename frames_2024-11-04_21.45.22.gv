@@ -1,0 +1,15 @@
+digraph G {
+"iiwa_base" -> "link_0"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"world" -> "iiwa_base"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"link_0" -> "link_1"[label=" Broadcaster: default_authority\nAverage rate: 20.2\nBuffer length: 5.0\nMost recent transform: 1014.063\nOldest transform: 1009.063\n"];
+"link_1" -> "link_2"[label=" Broadcaster: default_authority\nAverage rate: 20.2\nBuffer length: 5.0\nMost recent transform: 1014.063\nOldest transform: 1009.063\n"];
+"link_2" -> "link_3"[label=" Broadcaster: default_authority\nAverage rate: 20.2\nBuffer length: 5.0\nMost recent transform: 1014.063\nOldest transform: 1009.063\n"];
+"link_3" -> "link_4"[label=" Broadcaster: default_authority\nAverage rate: 20.2\nBuffer length: 5.0\nMost recent transform: 1014.063\nOldest transform: 1009.063\n"];
+"link_4" -> "link_5"[label=" Broadcaster: default_authority\nAverage rate: 20.2\nBuffer length: 5.0\nMost recent transform: 1014.063\nOldest transform: 1009.063\n"];
+"link_5" -> "link_6"[label=" Broadcaster: default_authority\nAverage rate: 20.2\nBuffer length: 5.0\nMost recent transform: 1014.063\nOldest transform: 1009.063\n"];
+"link_6" -> "link_7"[label=" Broadcaster: default_authority\nAverage rate: 20.2\nBuffer length: 5.0\nMost recent transform: 1014.063\nOldest transform: 1009.063\n"];
+edge [style=invis];
+ subgraph cluster_legend { style=bold; color=black; label ="view_frames Result";
+"Recorded at time: 1730724322.8162355"[ shape=plaintext ] ;
+}->"world";
+}

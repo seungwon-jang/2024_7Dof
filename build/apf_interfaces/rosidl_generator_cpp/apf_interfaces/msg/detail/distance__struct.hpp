@@ -20,6 +20,7 @@
 // Member 'direction_vector'
 // Member 'target_point'
 // Member 'end_angle_distance'
+// Member 'obstacle_direction_vector'
 #include "geometry_msgs/msg/detail/point__struct.hpp"
 
 #ifndef _WIN32
@@ -50,6 +51,7 @@ struct Distance_
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
       this->end_distance = 0.0;
+      this->obstacle_count = 0l;
     }
   }
 
@@ -63,6 +65,7 @@ struct Distance_
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
       this->end_distance = 0.0;
+      this->obstacle_count = 0l;
     }
   }
 
@@ -82,6 +85,15 @@ struct Distance_
   using _end_angle_distance_type =
     geometry_msgs::msg::Point_<ContainerAllocator>;
   _end_angle_distance_type end_angle_distance;
+  using _obstacle_distance_type =
+    std::vector<double, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<double>>;
+  _obstacle_distance_type obstacle_distance;
+  using _obstacle_direction_vector_type =
+    std::vector<geometry_msgs::msg::Point_<ContainerAllocator>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<geometry_msgs::msg::Point_<ContainerAllocator>>>;
+  _obstacle_direction_vector_type obstacle_direction_vector;
+  using _obstacle_count_type =
+    int32_t;
+  _obstacle_count_type obstacle_count;
 
   // setters for named parameter idiom
   Type & set__end_point(
@@ -112,6 +124,24 @@ struct Distance_
     const geometry_msgs::msg::Point_<ContainerAllocator> & _arg)
   {
     this->end_angle_distance = _arg;
+    return *this;
+  }
+  Type & set__obstacle_distance(
+    const std::vector<double, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<double>> & _arg)
+  {
+    this->obstacle_distance = _arg;
+    return *this;
+  }
+  Type & set__obstacle_direction_vector(
+    const std::vector<geometry_msgs::msg::Point_<ContainerAllocator>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<geometry_msgs::msg::Point_<ContainerAllocator>>> & _arg)
+  {
+    this->obstacle_direction_vector = _arg;
+    return *this;
+  }
+  Type & set__obstacle_count(
+    const int32_t & _arg)
+  {
+    this->obstacle_count = _arg;
     return *this;
   }
 
@@ -170,6 +200,15 @@ struct Distance_
       return false;
     }
     if (this->end_angle_distance != other.end_angle_distance) {
+      return false;
+    }
+    if (this->obstacle_distance != other.obstacle_distance) {
+      return false;
+    }
+    if (this->obstacle_direction_vector != other.obstacle_direction_vector) {
+      return false;
+    }
+    if (this->obstacle_count != other.obstacle_count) {
       return false;
     }
     return true;

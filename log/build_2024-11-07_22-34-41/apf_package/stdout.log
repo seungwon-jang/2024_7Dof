@@ -1,0 +1,4 @@
+[35m[1mConsolidate compiler generated dependencies of target cul_distance_node[0m
+[ 33%] Built target save_jaco
+[ 66%] Built target apf_main_node
+[ 83%] [32mBuilding CXX object CMakeFiles/cul_distance_node.dir/src/cul_distance_node.cpp.o[0m

@@ -3,6 +3,7 @@
 /home/jang/2024_7Dof/install/culjaco/lib/culjaco/listener
 /home/jang/2024_7Dof/install/culjaco/lib/culjaco/forward_node
 /home/jang/2024_7Dof/install/culjaco/lib/culjaco/jaco_node
+/home/jang/2024_7Dof/install/culjaco/lib/culjaco/save_position
 /home/jang/2024_7Dof/install/culjaco/share/ament_index/resource_index/package_run_dependencies/culjaco
 /home/jang/2024_7Dof/install/culjaco/share/ament_index/resource_index/parent_prefix_path/culjaco
 /home/jang/2024_7Dof/install/culjaco/share/culjaco/environment/ament_prefix_path.sh

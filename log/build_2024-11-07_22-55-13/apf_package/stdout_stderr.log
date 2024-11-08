@@ -1,0 +1,24 @@
+[35m[1mConsolidate compiler generated dependencies of target cul_distance_node[0m
+[ 33%] Built target apf_main_node
+[ 66%] Built target save_jaco
+[ 83%] [32mBuilding CXX object CMakeFiles/cul_distance_node.dir/src/cul_distance_node.cpp.o[0m
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/opt/ros/humble/include/tf2_ros/tf2_ros/transform_listener.h:45[m[K,
+                 from [01m[K/home/jang/2024_7Dof/src/apf_package/src/cul_distance_node.cpp:3[m[K:
+[01m[K/home/jang/2024_7Dof/src/apf_package/src/cul_distance_node.cpp:[m[K In member function ‘[01m[Kvoid cul_distance_node::topic_callback(const Odometry&)[m[K’:
+[01m[K/home/jang/2024_7Dof/src/apf_package/src/cul_distance_node.cpp:191:138:[m[K [01;31m[Kerror: [m[Kinvalid use of member function ‘[01m[KEigen::DenseCoeffsBase<Derived, 1>::Scalar& Eigen::DenseCoeffsBase<Derived, 1>::x() [with Derived = Eigen::Matrix<double, 3, 1>; Eigen::DenseCoeffsBase<Derived, 1>::Scalar = double][m[K’ (did you forget the ‘[01m[K()[m[K’ ?)
+  191 |         RCLCPP_INFO(this->get_logger(), "Distance between link and obstacle: %f, => [%f, %f, %f]", result.min_distance, [01;31m[Kdirection_vector.x[m[K, direction_vector.y, direction_vector.z);
+      |                                                                                                                         [01;31m[K~~~~~~~~~~~~~~~~~^[m[K
+gmake[2]: *** [CMakeFiles/cul_distance_node.dir/build.make:76: CMakeFiles/cul_distance_node.dir/src/cul_distance_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:167: CMakeFiles/cul_distance_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

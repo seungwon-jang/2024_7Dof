@@ -310,7 +310,7 @@ message(STATUS "Execute custom install script")
 
 # begin of custom install code
 
-# install("TARGETS" "apf_main_node" "cul_distance_node" "DESTINATION" "lib/apf_package")
+# install("TARGETS" "apf_main_node" "cul_distance_node" "save_jaco" "DESTINATION" "lib/apf_package")
 include("/home/jang/2024_7Dof/build/apf_package/ament_cmake_symlink_install_targets_0_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
 # install(FILES "/home/jang/2024_7Dof/build/apf_package/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/apf_package" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")

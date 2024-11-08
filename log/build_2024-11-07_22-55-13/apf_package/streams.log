@@ -1,0 +1,26 @@
+[0.007s] Invoking command in '/home/jang/2024_7Dof/build/apf_package': CMAKE_PREFIX_PATH=/home/jang/2024_7Dof/install/apf_interfaces:/home/jang/2024_7Dof/install/impedance_controller:/home/jang/2024_7Dof/install/iiwa_moveit2:/home/jang/2024_7Dof/install/iiwa_bringup:/home/jang/2024_7Dof/install/iiwa_description:/home/jang/2024_7Dof/install/external_torque_sensor_broadcaster:/home/jang/2024_7Dof/install/culjaco:/home/jang/2024_7Dof/install/apf_package:/home/jang/2024_7Dof/install/apf_nodes:/opt/ros/humble LD_LIBRARY_PATH=/home/jang/2024_7Dof/install/apf_interfaces/lib:/home/jang/2024_7Dof/install/impedance_controller/lib:/home/jang/2024_7Dof/install/iiwa_moveit2/lib:/home/jang/2024_7Dof/install/external_torque_sensor_broadcaster/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins /usr/bin/cmake --build /home/jang/2024_7Dof/build/apf_package -- -j16 -l16
+[0.126s] [35m[1mConsolidate compiler generated dependencies of target cul_distance_node[0m
+[0.183s] [ 33%] Built target apf_main_node
+[0.195s] [ 66%] Built target save_jaco
+[0.209s] [ 83%] [32mBuilding CXX object CMakeFiles/cul_distance_node.dir/src/cul_distance_node.cpp.o[0m
+[3.081s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[3.081s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[3.081s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[3.081s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[3.081s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[3.081s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[3.081s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[3.081s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[3.081s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[3.081s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[3.081s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[3.081s]                  from [01m[K/opt/ros/humble/include/tf2_ros/tf2_ros/transform_listener.h:45[m[K,
+[3.081s]                  from [01m[K/home/jang/2024_7Dof/src/apf_package/src/cul_distance_node.cpp:3[m[K:
+[3.081s] [01m[K/home/jang/2024_7Dof/src/apf_package/src/cul_distance_node.cpp:[m[K In member function ‘[01m[Kvoid cul_distance_node::topic_callback(const Odometry&)[m[K’:
+[3.081s] [01m[K/home/jang/2024_7Dof/src/apf_package/src/cul_distance_node.cpp:191:138:[m[K [01;31m[Kerror: [m[Kinvalid use of member function ‘[01m[KEigen::DenseCoeffsBase<Derived, 1>::Scalar& Eigen::DenseCoeffsBase<Derived, 1>::x() [with Derived = Eigen::Matrix<double, 3, 1>; Eigen::DenseCoeffsBase<Derived, 1>::Scalar = double][m[K’ (did you forget the ‘[01m[K()[m[K’ ?)
+[3.081s]   191 |         RCLCPP_INFO(this->get_logger(), "Distance between link and obstacle: %f, => [%f, %f, %f]", result.min_distance, [01;31m[Kdirection_vector.x[m[K, direction_vector.y, direction_vector.z);
+[3.081s]       |                                                                                                                         [01;31m[K~~~~~~~~~~~~~~~~~^[m[K
+[5.568s] gmake[2]: *** [CMakeFiles/cul_distance_node.dir/build.make:76: CMakeFiles/cul_distance_node.dir/src/cul_distance_node.cpp.o] Error 1
+[5.568s] gmake[1]: *** [CMakeFiles/Makefile2:167: CMakeFiles/cul_distance_node.dir/all] Error 2
+[5.568s] gmake: *** [Makefile:146: all] Error 2
+[5.570s] Invoked command in '/home/jang/2024_7Dof/build/apf_package' returned '2': CMAKE_PREFIX_PATH=/home/jang/2024_7Dof/install/apf_interfaces:/home/jang/2024_7Dof/install/impedance_controller:/home/jang/2024_7Dof/install/iiwa_moveit2:/home/jang/2024_7Dof/install/iiwa_bringup:/home/jang/2024_7Dof/install/iiwa_description:/home/jang/2024_7Dof/install/external_torque_sensor_broadcaster:/home/jang/2024_7Dof/install/culjaco:/home/jang/2024_7Dof/install/apf_package:/home/jang/2024_7Dof/install/apf_nodes:/opt/ros/humble LD_LIBRARY_PATH=/home/jang/2024_7Dof/install/apf_interfaces/lib:/home/jang/2024_7Dof/install/impedance_controller/lib:/home/jang/2024_7Dof/install/iiwa_moveit2/lib:/home/jang/2024_7Dof/install/external_torque_sensor_broadcaster/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins /usr/bin/cmake --build /home/jang/2024_7Dof/build/apf_package -- -j16 -l16

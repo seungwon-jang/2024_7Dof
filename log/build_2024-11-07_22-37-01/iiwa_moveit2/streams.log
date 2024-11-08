@@ -1,0 +1,34 @@
+[0.407s] Invoking command in '/home/jang/2024_7Dof/build/iiwa_moveit2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jang/2024_7Dof/install/apf_nodes:/opt/ros/humble /usr/bin/cmake --build /home/jang/2024_7Dof/build/iiwa_moveit2 -- -j16 -l16
+[0.711s] [ 33%] Built target servo_controller_input
+[0.739s] [ 66%] Built target pose_tracking_servo_node
+[0.740s] [100%] Built target servo_node
+[0.775s] Invoked command in '/home/jang/2024_7Dof/build/iiwa_moveit2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jang/2024_7Dof/install/apf_nodes:/opt/ros/humble /usr/bin/cmake --build /home/jang/2024_7Dof/build/iiwa_moveit2 -- -j16 -l16
+[0.911s] Invoking command in '/home/jang/2024_7Dof/build/iiwa_moveit2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jang/2024_7Dof/install/apf_nodes:/opt/ros/humble /usr/bin/cmake --install /home/jang/2024_7Dof/build/iiwa_moveit2
+[0.954s] -- Install configuration: "Release"
+[0.966s] -- Execute custom install script
+[0.966s] -- Up-to-date symlink: /home/jang/2024_7Dof/install/iiwa_moveit2/lib/iiwa_moveit2/pose_tracking_servo_node
+[0.967s] -- Up-to-date symlink: /home/jang/2024_7Dof/install/iiwa_moveit2/lib/iiwa_moveit2/servo_node
+[0.967s] -- Up-to-date symlink: /home/jang/2024_7Dof/install/iiwa_moveit2/share/iiwa_moveit2/environment/library_path.sh
+[0.967s] -- Up-to-date symlink: /home/jang/2024_7Dof/install/iiwa_moveit2/share/iiwa_moveit2/environment/library_path.dsv
+[0.968s] -- Up-to-date symlink: /home/jang/2024_7Dof/install/iiwa_moveit2/share/ament_index/resource_index/package_run_dependencies/iiwa_moveit2
+[0.968s] -- Up-to-date symlink: /home/jang/2024_7Dof/install/iiwa_moveit2/share/ament_index/resource_index/parent_prefix_path/iiwa_moveit2
+[0.968s] -- Up-to-date symlink: /home/jang/2024_7Dof/install/iiwa_moveit2/share/iiwa_moveit2/environment/ament_prefix_path.sh
+[0.969s] -- Up-to-date symlink: /home/jang/2024_7Dof/install/iiwa_moveit2/share/iiwa_moveit2/environment/ament_prefix_path.dsv
+[0.969s] -- Up-to-date symlink: /home/jang/2024_7Dof/install/iiwa_moveit2/share/iiwa_moveit2/environment/path.sh
+[0.971s] -- Up-to-date symlink: /home/jang/2024_7Dof/install/iiwa_moveit2/share/iiwa_moveit2/environment/path.dsv
+[0.972s] -- Up-to-date symlink: /home/jang/2024_7Dof/install/iiwa_moveit2/share/iiwa_moveit2/local_setup.bash
+[0.972s] -- Up-to-date symlink: /home/jang/2024_7Dof/install/iiwa_moveit2/share/iiwa_moveit2/local_setup.sh
+[0.972s] -- Up-to-date symlink: /home/jang/2024_7Dof/install/iiwa_moveit2/share/iiwa_moveit2/local_setup.zsh
+[0.973s] -- Up-to-date symlink: /home/jang/2024_7Dof/install/iiwa_moveit2/share/iiwa_moveit2/local_setup.dsv
+[0.973s] -- Symlinking: /home/jang/2024_7Dof/install/iiwa_moveit2/share/iiwa_moveit2/package.dsv
+[1.063s] -- Up-to-date symlink: /home/jang/2024_7Dof/install/iiwa_moveit2/share/ament_index/resource_index/packages/iiwa_moveit2
+[1.087s] -- Up-to-date symlink: /home/jang/2024_7Dof/install/iiwa_moveit2/share/ament_index/resource_index/rclcpp_components/iiwa_moveit2
+[1.089s] -- Up-to-date symlink: /home/jang/2024_7Dof/install/iiwa_moveit2/share/iiwa_moveit2/cmake/ament_cmake_export_targets-extras.cmake
+[1.090s] -- Up-to-date symlink: /home/jang/2024_7Dof/install/iiwa_moveit2/share/iiwa_moveit2/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.090s] -- Up-to-date symlink: /home/jang/2024_7Dof/install/iiwa_moveit2/share/iiwa_moveit2/cmake/iiwa_moveit2Config.cmake
+[1.095s] -- Up-to-date symlink: /home/jang/2024_7Dof/install/iiwa_moveit2/share/iiwa_moveit2/cmake/iiwa_moveit2Config-version.cmake
+[1.098s] -- Up-to-date symlink: /home/jang/2024_7Dof/install/iiwa_moveit2/share/iiwa_moveit2/package.xml
+[1.100s] -- Up-to-date: /home/jang/2024_7Dof/install/iiwa_moveit2/lib/libservo_controller_input.so
+[1.102s] -- Up-to-date: /home/jang/2024_7Dof/install/iiwa_moveit2/share/iiwa_moveit2/cmake/export_iiwa_moveit2Export.cmake
+[1.105s] -- Up-to-date: /home/jang/2024_7Dof/install/iiwa_moveit2/share/iiwa_moveit2/cmake/export_iiwa_moveit2Export-release.cmake
+[1.132s] Invoked command in '/home/jang/2024_7Dof/build/iiwa_moveit2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jang/2024_7Dof/install/apf_nodes:/opt/ros/humble /usr/bin/cmake --install /home/jang/2024_7Dof/build/iiwa_moveit2

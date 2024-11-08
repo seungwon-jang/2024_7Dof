@@ -21,16 +21,64 @@ namespace msg
 namespace builder
 {
 
+class Init_Distance_obstacle_count
+{
+public:
+  explicit Init_Distance_obstacle_count(::apf_interfaces::msg::Distance & msg)
+  : msg_(msg)
+  {}
+  ::apf_interfaces::msg::Distance obstacle_count(::apf_interfaces::msg::Distance::_obstacle_count_type arg)
+  {
+    msg_.obstacle_count = std::move(arg);
+    return std::move(msg_);
+  }
+
+private:
+  ::apf_interfaces::msg::Distance msg_;
+};
+
+class Init_Distance_obstacle_direction_vector
+{
+public:
+  explicit Init_Distance_obstacle_direction_vector(::apf_interfaces::msg::Distance & msg)
+  : msg_(msg)
+  {}
+  Init_Distance_obstacle_count obstacle_direction_vector(::apf_interfaces::msg::Distance::_obstacle_direction_vector_type arg)
+  {
+    msg_.obstacle_direction_vector = std::move(arg);
+    return Init_Distance_obstacle_count(msg_);
+  }
+
+private:
+  ::apf_interfaces::msg::Distance msg_;
+};
+
+class Init_Distance_obstacle_distance
+{
+public:
+  explicit Init_Distance_obstacle_distance(::apf_interfaces::msg::Distance & msg)
+  : msg_(msg)
+  {}
+  Init_Distance_obstacle_direction_vector obstacle_distance(::apf_interfaces::msg::Distance::_obstacle_distance_type arg)
+  {
+    msg_.obstacle_distance = std::move(arg);
+    return Init_Distance_obstacle_direction_vector(msg_);
+  }
+
+private:
+  ::apf_interfaces::msg::Distance msg_;
+};
+
 class Init_Distance_end_angle_distance
 {
 public:
   explicit Init_Distance_end_angle_distance(::apf_interfaces::msg::Distance & msg)
   : msg_(msg)
   {}
-  ::apf_interfaces::msg::Distance end_angle_distance(::apf_interfaces::msg::Distance::_end_angle_distance_type arg)
+  Init_Distance_obstacle_distance end_angle_distance(::apf_interfaces::msg::Distance::_end_angle_distance_type arg)
   {
     msg_.end_angle_distance = std::move(arg);
-    return std::move(msg_);
+    return Init_Distance_obstacle_distance(msg_);
   }
 
 private:

@@ -5,6 +5,9 @@
 
 # Import statements for member types
 
+# Member 'obstacle_distance'
+import array  # noqa: E402, I100
+
 import builtins  # noqa: E402, I100
 
 import math  # noqa: E402, I100
@@ -66,6 +69,9 @@ class Distance(metaclass=Metaclass_Distance):
         '_target_point',
         '_end_distance',
         '_end_angle_distance',
+        '_obstacle_distance',
+        '_obstacle_direction_vector',
+        '_obstacle_count',
     ]
 
     _fields_and_field_types = {
@@ -74,6 +80,9 @@ class Distance(metaclass=Metaclass_Distance):
         'target_point': 'geometry_msgs/Point',
         'end_distance': 'double',
         'end_angle_distance': 'geometry_msgs/Point',
+        'obstacle_distance': 'sequence<double>',
+        'obstacle_direction_vector': 'sequence<geometry_msgs/Point>',
+        'obstacle_count': 'int32',
     }
 
     SLOT_TYPES = (
@@ -82,6 +91,9 @@ class Distance(metaclass=Metaclass_Distance):
         rosidl_parser.definition.NamespacedType(['geometry_msgs', 'msg'], 'Point'),  # noqa: E501
         rosidl_parser.definition.BasicType('double'),  # noqa: E501
         rosidl_parser.definition.NamespacedType(['geometry_msgs', 'msg'], 'Point'),  # noqa: E501
+        rosidl_parser.definition.UnboundedSequence(rosidl_parser.definition.BasicType('double')),  # noqa: E501
+        rosidl_parser.definition.UnboundedSequence(rosidl_parser.definition.NamespacedType(['geometry_msgs', 'msg'], 'Point')),  # noqa: E501
+        rosidl_parser.definition.BasicType('int32'),  # noqa: E501
     )
 
     def __init__(self, **kwargs):
@@ -97,6 +109,9 @@ class Distance(metaclass=Metaclass_Distance):
         self.end_distance = kwargs.get('end_distance', float())
         from geometry_msgs.msg import Point
         self.end_angle_distance = kwargs.get('end_angle_distance', Point())
+        self.obstacle_distance = array.array('d', kwargs.get('obstacle_distance', []))
+        self.obstacle_direction_vector = kwargs.get('obstacle_direction_vector', [])
+        self.obstacle_count = kwargs.get('obstacle_count', int())
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -136,6 +151,12 @@ class Distance(metaclass=Metaclass_Distance):
         if self.end_distance != other.end_distance:
             return False
         if self.end_angle_distance != other.end_angle_distance:
+            return False
+        if self.obstacle_distance != other.obstacle_distance:
+            return False
+        if self.obstacle_direction_vector != other.obstacle_direction_vector:
+            return False
+        if self.obstacle_count != other.obstacle_count:
             return False
         return True
 
@@ -214,3 +235,70 @@ class Distance(metaclass=Metaclass_Distance):
                 isinstance(value, Point), \
                 "The 'end_angle_distance' field must be a sub message of type 'Point'"
         self._end_angle_distance = value
+
+    @builtins.property
+    def obstacle_distance(self):
+        """Message field 'obstacle_distance'."""
+        return self._obstacle_distance
+
+    @obstacle_distance.setter
+    def obstacle_distance(self, value):
+        if isinstance(value, array.array):
+            assert value.typecode == 'd', \
+                "The 'obstacle_distance' array.array() must have the type code of 'd'"
+            self._obstacle_distance = value
+            return
+        if __debug__:
+            from collections.abc import Sequence
+            from collections.abc import Set
+            from collections import UserList
+            from collections import UserString
+            assert \
+                ((isinstance(value, Sequence) or
+                  isinstance(value, Set) or
+                  isinstance(value, UserList)) and
+                 not isinstance(value, str) and
+                 not isinstance(value, UserString) and
+                 all(isinstance(v, float) for v in value) and
+                 all(not (val < -1.7976931348623157e+308 or val > 1.7976931348623157e+308) or math.isinf(val) for val in value)), \
+                "The 'obstacle_distance' field must be a set or sequence and each value of type 'float' and each double in [-179769313486231570814527423731704356798070567525844996598917476803157260780028538760589558632766878171540458953514382464234321326889464182768467546703537516986049910576551282076245490090389328944075868508455133942304583236903222948165808559332123348274797826204144723168738177180919299881250404026184124858368.000000, 179769313486231570814527423731704356798070567525844996598917476803157260780028538760589558632766878171540458953514382464234321326889464182768467546703537516986049910576551282076245490090389328944075868508455133942304583236903222948165808559332123348274797826204144723168738177180919299881250404026184124858368.000000]"
+        self._obstacle_distance = array.array('d', value)
+
+    @builtins.property
+    def obstacle_direction_vector(self):
+        """Message field 'obstacle_direction_vector'."""
+        return self._obstacle_direction_vector
+
+    @obstacle_direction_vector.setter
+    def obstacle_direction_vector(self, value):
+        if __debug__:
+            from geometry_msgs.msg import Point
+            from collections.abc import Sequence
+            from collections.abc import Set
+            from collections import UserList
+            from collections import UserString
+            assert \
+                ((isinstance(value, Sequence) or
+                  isinstance(value, Set) or
+                  isinstance(value, UserList)) and
+                 not isinstance(value, str) and
+                 not isinstance(value, UserString) and
+                 all(isinstance(v, Point) for v in value) and
+                 True), \
+                "The 'obstacle_direction_vector' field must be a set or sequence and each value of type 'Point'"
+        self._obstacle_direction_vector = value
+
+    @builtins.property
+    def obstacle_count(self):
+        """Message field 'obstacle_count'."""
+        return self._obstacle_count
+
+    @obstacle_count.setter
+    def obstacle_count(self, value):
+        if __debug__:
+            assert \
+                isinstance(value, int), \
+                "The 'obstacle_count' field must be of type 'int'"
+            assert value >= -2147483648 and value < 2147483648, \
+                "The 'obstacle_count' field must be an integer in [-2147483648, 2147483647]"
+        self._obstacle_count = value

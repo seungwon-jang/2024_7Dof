@@ -1,0 +1,29 @@
+[ 16%] Built target forward
+[ 33%] Built target talker
+[ 50%] Built target listener
+[ 66%] Built target forward_node
+[ 83%] Built target save_position
+[100%] Built target jaco_node
+-- Install configuration: "Release"
+-- Execute custom install script
+-- Up-to-date symlink: /home/jang/2024_7Dof/install/culjaco/lib/culjaco/forward
+-- Up-to-date symlink: /home/jang/2024_7Dof/install/culjaco/lib/culjaco/talker
+-- Up-to-date symlink: /home/jang/2024_7Dof/install/culjaco/lib/culjaco/listener
+-- Up-to-date symlink: /home/jang/2024_7Dof/install/culjaco/lib/culjaco/forward_node
+-- Up-to-date symlink: /home/jang/2024_7Dof/install/culjaco/lib/culjaco/jaco_node
+-- Up-to-date symlink: /home/jang/2024_7Dof/install/culjaco/lib/culjaco/save_position
+-- Up-to-date symlink: /home/jang/2024_7Dof/install/culjaco/share/ament_index/resource_index/package_run_dependencies/culjaco
+-- Up-to-date symlink: /home/jang/2024_7Dof/install/culjaco/share/ament_index/resource_index/parent_prefix_path/culjaco
+-- Up-to-date symlink: /home/jang/2024_7Dof/install/culjaco/share/culjaco/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/jang/2024_7Dof/install/culjaco/share/culjaco/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/jang/2024_7Dof/install/culjaco/share/culjaco/environment/path.sh
+-- Up-to-date symlink: /home/jang/2024_7Dof/install/culjaco/share/culjaco/environment/path.dsv
+-- Up-to-date symlink: /home/jang/2024_7Dof/install/culjaco/share/culjaco/local_setup.bash
+-- Up-to-date symlink: /home/jang/2024_7Dof/install/culjaco/share/culjaco/local_setup.sh
+-- Up-to-date symlink: /home/jang/2024_7Dof/install/culjaco/share/culjaco/local_setup.zsh
+-- Up-to-date symlink: /home/jang/2024_7Dof/install/culjaco/share/culjaco/local_setup.dsv
+-- Symlinking: /home/jang/2024_7Dof/install/culjaco/share/culjaco/package.dsv
+-- Up-to-date symlink: /home/jang/2024_7Dof/install/culjaco/share/ament_index/resource_index/packages/culjaco
+-- Up-to-date symlink: /home/jang/2024_7Dof/install/culjaco/share/culjaco/cmake/culjacoConfig.cmake
+-- Up-to-date symlink: /home/jang/2024_7Dof/install/culjaco/share/culjaco/cmake/culjacoConfig-version.cmake
+-- Up-to-date symlink: /home/jang/2024_7Dof/install/culjaco/share/culjaco/package.xml

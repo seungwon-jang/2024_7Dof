@@ -105,6 +105,10 @@ class apf_main_node : public rclcpp::Node
       // jaco_mat과 att_force 곱하기, 
       joint_vel = Eigen::Transpose(jaco_mat) * att_force;
 
+      for (int i = 0; i < joint_vel.size(); i++){
+        if (joint_vel[i]> 0.5) joint_vel[i] = 0.5;
+      }
+
       
       // 결과 출력
       Eigen::IOFormat ros2_format(Eigen::StreamPrecision, 0, ", ", ";\n", "[", "]", "[", "]");

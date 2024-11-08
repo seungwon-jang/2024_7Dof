@@ -16,6 +16,7 @@
   <exec_depend>sensor_msgs</exec_depend>
 
   <depend>apf_interfaces</depend>
+  <depend>nav_msgs</depend>
 
 
   <buildtool_depend>eigen3_cmake_module</buildtool_depend>

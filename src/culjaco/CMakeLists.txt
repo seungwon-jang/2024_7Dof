@@ -24,6 +24,8 @@ find_package(sensor_msgs REQUIRED)
 # find my_interfaces
 find_package(apf_interfaces REQUIRED)
 
+find_package(nav_msgs REQUIRED)
+
 
 add_executable(forward src/forward.cpp)
 target_include_directories(forward PUBLIC
@@ -44,12 +46,16 @@ ament_target_dependencies(forward_node rclcpp std_msgs Eigen3)
 add_executable(jaco_node src/cul_jaco.cpp)
 ament_target_dependencies(jaco_node rclcpp std_msgs sensor_msgs Eigen3 apf_interfaces)
 
+add_executable(save_position src/save_position.cpp)
+ament_target_dependencies(save_position rclcpp std_msgs sensor_msgs Eigen3 apf_interfaces nav_msgs)
+
 install(TARGETS 
   forward
   talker
   listener
   forward_node
   jaco_node
+  save_position
   DESTINATION lib/${PROJECT_NAME})
 
 
