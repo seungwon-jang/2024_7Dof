@@ -119,17 +119,17 @@ class jaco_node : public rclcpp::Node
 
         //Z 매트릭스랑 O 매트릭스 잘라서 써야 한다. 필요한 것은 zi와 t7, ti이다.
         for(int i = 0; i < 7; i++){
-        //먼저 z0부터 계산. 마지막 z7이 아니라, z6까지가 필요하다. 
-        Z_mat[i] = mat_arry[i].block<3,1>(0,2);
-        //지금 O도 구하기 얘도 z랑 같다.
-        Eigen::Vector3d cur_O(3,1);
-        cur_O = mat_arry[i].block<3,1>(0,3);
-        //마지막 매트릭스는 이거 하나만 필요하다.
-        Eigen::Vector3d final_O(3,1);
-        final_O = mat_arry[7].block<3,1>(0,3);
-        
-        //최종적으로 Zi cross(O최종 - Oi가 필요하다)
-        O_mat[i] = Z_mat[i].cross(final_O-cur_O);
+            //먼저 z0부터 계산. 마지막 z7이 아니라, z6까지가 필요하다. 
+            Z_mat[i] = mat_arry[i].block<3,1>(0,2);
+            //지금 O도 구하기 얘도 z랑 같다.
+            Eigen::Vector3d cur_O(3,1);
+            cur_O = mat_arry[i].block<3,1>(0,3);
+            //마지막 매트릭스는 이거 하나만 필요하다.
+            Eigen::Vector3d final_O(3,1);
+            final_O = mat_arry[7].block<3,1>(0,3);
+            
+            //최종적으로 Zi cross(O최종 - Oi가 필요하다)
+            O_mat[i] = Z_mat[i].cross(final_O-cur_O);
         }
 
         //위아래로 합치기

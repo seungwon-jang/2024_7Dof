@@ -1,7 +1,0 @@
-[35m[1mConsolidate compiler generated dependencies of target apf_main_node[0m
-[35m[1mConsolidate compiler generated dependencies of target cul_distance_node[0m
-[ 33%] Built target save_jaco
-[ 50%] [32mBuilding CXX object CMakeFiles/apf_main_node.dir/src/apf_main_node.cpp.o[0m
-[ 66%] [32mBuilding CXX object CMakeFiles/cul_distance_node.dir/src/cul_distance_node.cpp.o[0m
-[ 83%] [32m[1mLinking CXX executable cul_distance_node[0m
-[ 83%] Built target cul_distance_node

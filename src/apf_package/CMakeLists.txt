@@ -39,7 +39,7 @@ add_executable(apf_main_node src/apf_main_node.cpp)
 ament_target_dependencies(apf_main_node rclcpp std_msgs Eigen3 apf_interfaces visualization_msgs geometry_msgs trajectory_msgs sensor_msgs)
 
 add_executable(cul_distance_node src/cul_distance_node.cpp)
-ament_target_dependencies(cul_distance_node rclcpp std_msgs Eigen3 nav_msgs apf_interfaces tf2 tf2_ros fcl)
+ament_target_dependencies(cul_distance_node rclcpp std_msgs Eigen3 nav_msgs apf_interfaces tf2 tf2_ros fcl visualization_msgs)
 target_link_libraries(cul_distance_node fcl)
 
 add_executable(save_jaco src/save_jaco.cpp)

@@ -8,6 +8,8 @@
 #include "nav_msgs/msg/odometry.hpp"
 #include "apf_interfaces/msg/distance.hpp"
 
+#include "visualization_msgs/msg/marker.hpp"
+
 #include "fcl/fcl.h"
 
 using std::placeholders::_1;
@@ -31,6 +33,10 @@ class cul_distance_node : public rclcpp::Node
       subscription_ = this->create_subscription<nav_msgs::msg::Odometry>(
       "/odom", 10, std::bind(&cul_distance_node::topic_callback, this, _1));
       distance_publisher_ = this->create_publisher<apf_interfaces::msg::Distance>("/distance", 10);
+      
+      //rviz에 출력하는 파트
+      marker_publisher_ = this->create_publisher<visualization_msgs::msg::Marker>("vector_marker", 10);
+
       //FCL link와 기본 장애물 설정
       set_fcl();
     }
@@ -219,12 +225,13 @@ class cul_distance_node : public rclcpp::Node
 
       // FCL 충돌 감지 및 거리 계산 - 이거 된다. 이거 기반으로 뭘 해보면 될듯
       //장애물 정의 - 일단 임시 장애물
-      fcl::Sphered obstacle_Sphered(0.1);
-      Eigen::Translation3d obstacle_trans(0,0,0);
+      double obstacle_radidus = 0.05;
+      fcl::Sphered obstacle_Sphered(obstacle_radidus);
+      Eigen::Translation3d obstacle_trans(0.3,0.3,0.8);
 
       //장애물2 
-      fcl::Sphered obstacle_Sphered2(0.1);
-      Eigen::Translation3d obstacle_trans2(0,0,1.0);
+      fcl::Sphered obstacle_Sphered2(obstacle_radidus);
+      Eigen::Translation3d obstacle_trans2(-0.3,-0.3,0.8);
 
       //거리 테스트할 캡슐 링크 정의하기
       fcl::Capsuled test_capsule(0.1, 0.5);
@@ -259,8 +266,43 @@ class cul_distance_node : public rclcpp::Node
       link.push_back(link3_object);
       link.push_back(link5_object);
       link.push_back(link7_object);
+
+      publish_obstacle(obstacle_trans.x(), obstacle_trans.y(), obstacle_trans.z(), obstacle_radidus, "obstacle1", 2);
+      publish_obstacle(obstacle_trans2.x(), obstacle_trans2.y(), obstacle_trans2.z(), obstacle_radidus, "obstacle2", 3);
     }
 
+    //이 함수는 구형 장애물을 rviz 상에 표현하려고 만든 함수이다.
+    void publish_obstacle(double obstacle_x, double obstacle_y, double obstacle_z, double radius, const std::string& maker_namespace, int marker_id) 
+    {
+      ////////////여기는 목표 점을 만드는 파트
+      auto target_marker = visualization_msgs::msg::Marker();
+      target_marker.header.frame_id = "world";  // RViz에서 사용하는 기준 프레임
+      target_marker.header.stamp = this->get_clock()->now();
+      
+      target_marker.ns = maker_namespace;
+      target_marker.id = marker_id;  // 마커 아이디
+      target_marker.type = visualization_msgs::msg::Marker::SPHERE;  // 구형 장애물로 표시
+      target_marker.action = visualization_msgs::msg::Marker::ADD;
+
+      // 위치 설정
+      target_marker.pose.position.x = obstacle_x;
+      target_marker.pose.position.y = obstacle_y;
+      target_marker.pose.position.z = obstacle_z;
+
+      // 크기 설정 (반지름을 반영)
+      target_marker.scale.x = radius * 2;  // 구형의 직경
+      target_marker.scale.y = radius * 2;
+      target_marker.scale.z = radius * 2;
+
+      // 색상과 투명도 설정
+      target_marker.color.a = 1.0;  // 투명도
+      target_marker.color.b = 1.0;  // 파란색
+
+      // 마커 퍼블리시
+      marker_publisher_->publish(target_marker);
+    }
+
+    rclcpp::Publisher<visualization_msgs::msg::Marker>::SharedPtr marker_publisher_;
     rclcpp::Subscription<nav_msgs::msg::Odometry>::SharedPtr subscription_;
     rclcpp::Publisher<apf_interfaces::msg::Distance>::SharedPtr distance_publisher_;
     tf2_ros::Buffer tf_buffer_;
