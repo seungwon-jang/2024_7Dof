@@ -127,7 +127,7 @@ void resize_function__Distance__obstacle_direction_vector(void * untyped_member,
   member->resize(size);
 }
 
-static const ::rosidl_typesupport_introspection_cpp::MessageMember Distance_message_member_array[8] = {
+static const ::rosidl_typesupport_introspection_cpp::MessageMember Distance_message_member_array[9] = {
   {
     "end_point",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_MESSAGE,  // type
@@ -263,13 +263,30 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember Distance_mess
     nullptr,  // fetch(index, &value) function pointer
     nullptr,  // assign(index, value) function pointer
     nullptr  // resize(index) function pointer
+  },
+  {
+    "link_count",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_INT32,  // type
+    0,  // upper bound of string
+    nullptr,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(apf_interfaces::msg::Distance, link_count),  // bytes offset in struct
+    nullptr,  // default value
+    nullptr,  // size() function pointer
+    nullptr,  // get_const(index) function pointer
+    nullptr,  // get(index) function pointer
+    nullptr,  // fetch(index, &value) function pointer
+    nullptr,  // assign(index, value) function pointer
+    nullptr  // resize(index) function pointer
   }
 };
 
 static const ::rosidl_typesupport_introspection_cpp::MessageMembers Distance_message_members = {
   "apf_interfaces::msg",  // message namespace
   "Distance",  // message name
-  8,  // number of fields
+  9,  // number of fields
   sizeof(apf_interfaces::msg::Distance),
   Distance_message_member_array,  // message members
   Distance_init_function,  // function to initialize message memory (memory has to be allocated)

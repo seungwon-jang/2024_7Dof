@@ -159,6 +159,11 @@ static bool _Distance__cdr_serialize(
     cdr << ros_message->obstacle_count;
   }
 
+  // Field name: link_count
+  {
+    cdr << ros_message->link_count;
+  }
+
   return true;
 }
 
@@ -280,6 +285,11 @@ static bool _Distance__cdr_deserialize(
     cdr >> ros_message->obstacle_count;
   }
 
+  // Field name: link_count
+  {
+    cdr >> ros_message->link_count;
+  }
+
   return true;
 }  // NOLINT(readability/fn_size)
 
@@ -345,6 +355,12 @@ size_t get_serialized_size_apf_interfaces__msg__Distance(
   // field.name obstacle_count
   {
     size_t item_size = sizeof(ros_message->obstacle_count);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // field.name link_count
+  {
+    size_t item_size = sizeof(ros_message->link_count);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -504,6 +520,14 @@ size_t max_serialized_size_apf_interfaces__msg__Distance(
     current_alignment += array_size * sizeof(uint32_t) +
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
+  // member: link_count
+  {
+    size_t array_size = 1;
+
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
 
   size_t ret_val = current_alignment - initial_alignment;
   if (is_plain) {
@@ -513,7 +537,7 @@ size_t max_serialized_size_apf_interfaces__msg__Distance(
     using DataType = apf_interfaces__msg__Distance;
     is_plain =
       (
-      offsetof(DataType, obstacle_count) +
+      offsetof(DataType, link_count) +
       last_member_size
       ) == ret_val;
   }

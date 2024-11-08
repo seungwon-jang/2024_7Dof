@@ -38,6 +38,7 @@ typedef struct apf_interfaces__msg__Distance
   rosidl_runtime_c__double__Sequence obstacle_distance;
   geometry_msgs__msg__Point__Sequence obstacle_direction_vector;
   int32_t obstacle_count;
+  int32_t link_count;
 } apf_interfaces__msg__Distance;
 
 // Struct for a sequence of apf_interfaces__msg__Distance.

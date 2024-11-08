@@ -1,0 +1,40 @@
+[0.008s] Invoking command in '/home/jang/2024_7Dof/build/apf_package': CMAKE_PREFIX_PATH=/home/jang/2024_7Dof/install/apf_interfaces:/home/jang/2024_7Dof/install/impedance_controller:/home/jang/2024_7Dof/install/iiwa_moveit2:/home/jang/2024_7Dof/install/iiwa_bringup:/home/jang/2024_7Dof/install/iiwa_description:/home/jang/2024_7Dof/install/external_torque_sensor_broadcaster:/home/jang/2024_7Dof/install/culjaco:/home/jang/2024_7Dof/install/apf_package:/home/jang/2024_7Dof/install/apf_nodes:/opt/ros/humble LD_LIBRARY_PATH=/home/jang/2024_7Dof/install/apf_interfaces/lib:/home/jang/2024_7Dof/install/impedance_controller/lib:/home/jang/2024_7Dof/install/iiwa_moveit2/lib:/home/jang/2024_7Dof/install/external_torque_sensor_broadcaster/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins /usr/bin/cmake --build /home/jang/2024_7Dof/build/apf_package -- -j16 -l16
+[0.109s] [35m[1mConsolidate compiler generated dependencies of target cul_distance_node[0m
+[0.117s] [35m[1mConsolidate compiler generated dependencies of target apf_main_node[0m
+[0.121s] [35m[1mConsolidate compiler generated dependencies of target save_jaco[0m
+[0.181s] gmake[2]: Warning: File '/home/jang/2024_7Dof/src/apf_package/src/cul_distance_node.cpp' has modification time 31752 s in the future
+[0.231s] [ 33%] Built target save_jaco
+[0.233s] [ 50%] [32mBuilding CXX object CMakeFiles/apf_main_node.dir/src/apf_main_node.cpp.o[0m
+[0.239s] [ 66%] [32mBuilding CXX object CMakeFiles/cul_distance_node.dir/src/cul_distance_node.cpp.o[0m
+[2.725s] [01m[K/home/jang/2024_7Dof/src/apf_package/src/apf_main_node.cpp:[m[K In member function ‘[01m[Kvoid apf_main_node::topic_callback(const Jacobian&)[m[K’:
+[2.725s] [01m[K/home/jang/2024_7Dof/src/apf_package/src/apf_main_node.cpp:135:18:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ktime_diff[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[2.725s]   135 |             auto [01;35m[Ktime_diff[m[K = (current_time - last_msg_time_).seconds();
+[2.725s]       |                  [01;35m[K^~~~~~~~~[m[K
+[10.075s] [ 83%] [32m[1mLinking CXX executable cul_distance_node[0m
+[10.232s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[10.240s] [ 83%] Built target cul_distance_node
+[13.505s] [100%] [32m[1mLinking CXX executable apf_main_node[0m
+[13.656s] [100%] Built target apf_main_node
+[13.665s] Invoked command in '/home/jang/2024_7Dof/build/apf_package' returned '0': CMAKE_PREFIX_PATH=/home/jang/2024_7Dof/install/apf_interfaces:/home/jang/2024_7Dof/install/impedance_controller:/home/jang/2024_7Dof/install/iiwa_moveit2:/home/jang/2024_7Dof/install/iiwa_bringup:/home/jang/2024_7Dof/install/iiwa_description:/home/jang/2024_7Dof/install/external_torque_sensor_broadcaster:/home/jang/2024_7Dof/install/culjaco:/home/jang/2024_7Dof/install/apf_package:/home/jang/2024_7Dof/install/apf_nodes:/opt/ros/humble LD_LIBRARY_PATH=/home/jang/2024_7Dof/install/apf_interfaces/lib:/home/jang/2024_7Dof/install/impedance_controller/lib:/home/jang/2024_7Dof/install/iiwa_moveit2/lib:/home/jang/2024_7Dof/install/external_torque_sensor_broadcaster/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins /usr/bin/cmake --build /home/jang/2024_7Dof/build/apf_package -- -j16 -l16
+[13.693s] Invoking command in '/home/jang/2024_7Dof/build/apf_package': CMAKE_PREFIX_PATH=/home/jang/2024_7Dof/install/apf_interfaces:/home/jang/2024_7Dof/install/impedance_controller:/home/jang/2024_7Dof/install/iiwa_moveit2:/home/jang/2024_7Dof/install/iiwa_bringup:/home/jang/2024_7Dof/install/iiwa_description:/home/jang/2024_7Dof/install/external_torque_sensor_broadcaster:/home/jang/2024_7Dof/install/culjaco:/home/jang/2024_7Dof/install/apf_package:/home/jang/2024_7Dof/install/apf_nodes:/opt/ros/humble LD_LIBRARY_PATH=/home/jang/2024_7Dof/install/apf_interfaces/lib:/home/jang/2024_7Dof/install/impedance_controller/lib:/home/jang/2024_7Dof/install/iiwa_moveit2/lib:/home/jang/2024_7Dof/install/external_torque_sensor_broadcaster/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins /usr/bin/cmake --install /home/jang/2024_7Dof/build/apf_package
+[13.700s] -- Install configuration: "Release"
+[13.700s] -- Execute custom install script
+[13.700s] -- Up-to-date symlink: /home/jang/2024_7Dof/install/apf_package/lib/apf_package/apf_main_node
+[13.701s] -- Up-to-date symlink: /home/jang/2024_7Dof/install/apf_package/lib/apf_package/cul_distance_node
+[13.701s] -- Up-to-date symlink: /home/jang/2024_7Dof/install/apf_package/lib/apf_package/save_jaco
+[13.701s] -- Up-to-date symlink: /home/jang/2024_7Dof/install/apf_package/share/ament_index/resource_index/package_run_dependencies/apf_package
+[13.701s] -- Up-to-date symlink: /home/jang/2024_7Dof/install/apf_package/share/ament_index/resource_index/parent_prefix_path/apf_package
+[13.701s] -- Up-to-date symlink: /home/jang/2024_7Dof/install/apf_package/share/apf_package/environment/ament_prefix_path.sh
+[13.701s] -- Up-to-date symlink: /home/jang/2024_7Dof/install/apf_package/share/apf_package/environment/ament_prefix_path.dsv
+[13.701s] -- Up-to-date symlink: /home/jang/2024_7Dof/install/apf_package/share/apf_package/environment/path.sh
+[13.701s] -- Up-to-date symlink: /home/jang/2024_7Dof/install/apf_package/share/apf_package/environment/path.dsv
+[13.702s] -- Up-to-date symlink: /home/jang/2024_7Dof/install/apf_package/share/apf_package/local_setup.bash
+[13.702s] -- Up-to-date symlink: /home/jang/2024_7Dof/install/apf_package/share/apf_package/local_setup.sh
+[13.702s] -- Up-to-date symlink: /home/jang/2024_7Dof/install/apf_package/share/apf_package/local_setup.zsh
+[13.702s] -- Up-to-date symlink: /home/jang/2024_7Dof/install/apf_package/share/apf_package/local_setup.dsv
+[13.702s] -- Symlinking: /home/jang/2024_7Dof/install/apf_package/share/apf_package/package.dsv
+[13.709s] -- Up-to-date symlink: /home/jang/2024_7Dof/install/apf_package/share/ament_index/resource_index/packages/apf_package
+[13.709s] -- Up-to-date symlink: /home/jang/2024_7Dof/install/apf_package/share/apf_package/cmake/apf_packageConfig.cmake
+[13.709s] -- Up-to-date symlink: /home/jang/2024_7Dof/install/apf_package/share/apf_package/cmake/apf_packageConfig-version.cmake
+[13.709s] -- Up-to-date symlink: /home/jang/2024_7Dof/install/apf_package/share/apf_package/package.xml
+[13.711s] Invoked command in '/home/jang/2024_7Dof/build/apf_package' returned '0': CMAKE_PREFIX_PATH=/home/jang/2024_7Dof/install/apf_interfaces:/home/jang/2024_7Dof/install/impedance_controller:/home/jang/2024_7Dof/install/iiwa_moveit2:/home/jang/2024_7Dof/install/iiwa_bringup:/home/jang/2024_7Dof/install/iiwa_description:/home/jang/2024_7Dof/install/external_torque_sensor_broadcaster:/home/jang/2024_7Dof/install/culjaco:/home/jang/2024_7Dof/install/apf_package:/home/jang/2024_7Dof/install/apf_nodes:/opt/ros/humble LD_LIBRARY_PATH=/home/jang/2024_7Dof/install/apf_interfaces/lib:/home/jang/2024_7Dof/install/impedance_controller/lib:/home/jang/2024_7Dof/install/iiwa_moveit2/lib:/home/jang/2024_7Dof/install/external_torque_sensor_broadcaster/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins /usr/bin/cmake --install /home/jang/2024_7Dof/build/apf_package

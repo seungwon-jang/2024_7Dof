@@ -22,6 +22,8 @@ module apf_interfaces {
       sequence<geometry_msgs::msg::Point> obstacle_direction_vector;
 
       int32 obstacle_count;
+
+      int32 link_count;
     };
   };
 };

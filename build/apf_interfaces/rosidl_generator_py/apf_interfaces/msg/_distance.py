@@ -72,6 +72,7 @@ class Distance(metaclass=Metaclass_Distance):
         '_obstacle_distance',
         '_obstacle_direction_vector',
         '_obstacle_count',
+        '_link_count',
     ]
 
     _fields_and_field_types = {
@@ -83,6 +84,7 @@ class Distance(metaclass=Metaclass_Distance):
         'obstacle_distance': 'sequence<double>',
         'obstacle_direction_vector': 'sequence<geometry_msgs/Point>',
         'obstacle_count': 'int32',
+        'link_count': 'int32',
     }
 
     SLOT_TYPES = (
@@ -93,6 +95,7 @@ class Distance(metaclass=Metaclass_Distance):
         rosidl_parser.definition.NamespacedType(['geometry_msgs', 'msg'], 'Point'),  # noqa: E501
         rosidl_parser.definition.UnboundedSequence(rosidl_parser.definition.BasicType('double')),  # noqa: E501
         rosidl_parser.definition.UnboundedSequence(rosidl_parser.definition.NamespacedType(['geometry_msgs', 'msg'], 'Point')),  # noqa: E501
+        rosidl_parser.definition.BasicType('int32'),  # noqa: E501
         rosidl_parser.definition.BasicType('int32'),  # noqa: E501
     )
 
@@ -112,6 +115,7 @@ class Distance(metaclass=Metaclass_Distance):
         self.obstacle_distance = array.array('d', kwargs.get('obstacle_distance', []))
         self.obstacle_direction_vector = kwargs.get('obstacle_direction_vector', [])
         self.obstacle_count = kwargs.get('obstacle_count', int())
+        self.link_count = kwargs.get('link_count', int())
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -157,6 +161,8 @@ class Distance(metaclass=Metaclass_Distance):
         if self.obstacle_direction_vector != other.obstacle_direction_vector:
             return False
         if self.obstacle_count != other.obstacle_count:
+            return False
+        if self.link_count != other.link_count:
             return False
         return True
 
@@ -302,3 +308,18 @@ class Distance(metaclass=Metaclass_Distance):
             assert value >= -2147483648 and value < 2147483648, \
                 "The 'obstacle_count' field must be an integer in [-2147483648, 2147483647]"
         self._obstacle_count = value
+
+    @builtins.property
+    def link_count(self):
+        """Message field 'link_count'."""
+        return self._link_count
+
+    @link_count.setter
+    def link_count(self, value):
+        if __debug__:
+            assert \
+                isinstance(value, int), \
+                "The 'link_count' field must be of type 'int'"
+            assert value >= -2147483648 and value < 2147483648, \
+                "The 'link_count' field must be an integer in [-2147483648, 2147483647]"
+        self._link_count = value

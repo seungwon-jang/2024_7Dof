@@ -259,8 +259,12 @@ CMakeFiles/apf_interfaces__rosidl_generator_py.dir/rosidl_generator_py/apf_inter
   /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h \
   rosidl_generator_c/apf_interfaces/msg/detail/distance__struct.h \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.h \
+  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h \
   rosidl_generator_c/apf_interfaces/msg/detail/distance__functions.h \
-  rosidl_generator_c/apf_interfaces/msg/rosidl_generator_c__visibility_control.h
+  rosidl_generator_c/apf_interfaces/msg/rosidl_generator_c__visibility_control.h \
+  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence_functions.h \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__functions.h \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/rosidl_generator_c__visibility_control.h
 
 CMakeFiles/apf_interfaces__rosidl_generator_py.dir/rosidl_generator_py/apf_interfaces/msg/_jacobian_s.c.o: rosidl_generator_py/apf_interfaces/msg/_jacobian_s.c \
   /usr/include/stdc-predef.h \
@@ -527,11 +531,15 @@ CMakeFiles/apf_interfaces__rosidl_generator_py.dir/rosidl_generator_py/apf_inter
 
 rosidl_generator_c/apf_interfaces/msg/detail/jacobian__functions.h:
 
-/opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h:
-
 rosidl_generator_py/apf_interfaces/msg/_jacobian_s.c:
 
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/rosidl_generator_c__visibility_control.h:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__functions.h:
+
 rosidl_generator_c/apf_interfaces/msg/detail/distance__functions.h:
+
+/opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h:
 
 /usr/include/x86_64-linux-gnu/asm/types.h:
 

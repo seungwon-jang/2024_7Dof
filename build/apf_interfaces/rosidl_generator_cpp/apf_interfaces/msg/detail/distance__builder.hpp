@@ -21,16 +21,32 @@ namespace msg
 namespace builder
 {
 
+class Init_Distance_link_count
+{
+public:
+  explicit Init_Distance_link_count(::apf_interfaces::msg::Distance & msg)
+  : msg_(msg)
+  {}
+  ::apf_interfaces::msg::Distance link_count(::apf_interfaces::msg::Distance::_link_count_type arg)
+  {
+    msg_.link_count = std::move(arg);
+    return std::move(msg_);
+  }
+
+private:
+  ::apf_interfaces::msg::Distance msg_;
+};
+
 class Init_Distance_obstacle_count
 {
 public:
   explicit Init_Distance_obstacle_count(::apf_interfaces::msg::Distance & msg)
   : msg_(msg)
   {}
-  ::apf_interfaces::msg::Distance obstacle_count(::apf_interfaces::msg::Distance::_obstacle_count_type arg)
+  Init_Distance_link_count obstacle_count(::apf_interfaces::msg::Distance::_obstacle_count_type arg)
   {
     msg_.obstacle_count = std::move(arg);
-    return std::move(msg_);
+    return Init_Distance_link_count(msg_);
   }
 
 private:

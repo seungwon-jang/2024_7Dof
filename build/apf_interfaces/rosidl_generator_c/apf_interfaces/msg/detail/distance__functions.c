@@ -59,6 +59,7 @@ apf_interfaces__msg__Distance__init(apf_interfaces__msg__Distance * msg)
     return false;
   }
   // obstacle_count
+  // link_count
   return true;
 }
 
@@ -82,6 +83,7 @@ apf_interfaces__msg__Distance__fini(apf_interfaces__msg__Distance * msg)
   // obstacle_direction_vector
   geometry_msgs__msg__Point__Sequence__fini(&msg->obstacle_direction_vector);
   // obstacle_count
+  // link_count
 }
 
 bool
@@ -132,6 +134,10 @@ apf_interfaces__msg__Distance__are_equal(const apf_interfaces__msg__Distance * l
   }
   // obstacle_count
   if (lhs->obstacle_count != rhs->obstacle_count) {
+    return false;
+  }
+  // link_count
+  if (lhs->link_count != rhs->link_count) {
     return false;
   }
   return true;
@@ -185,6 +191,8 @@ apf_interfaces__msg__Distance__copy(
   }
   // obstacle_count
   output->obstacle_count = input->obstacle_count;
+  // link_count
+  output->link_count = input->link_count;
   return true;
 }
 

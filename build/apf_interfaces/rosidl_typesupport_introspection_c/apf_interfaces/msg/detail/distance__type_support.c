@@ -157,7 +157,7 @@ bool apf_interfaces__msg__Distance__rosidl_typesupport_introspection_c__resize_f
   return geometry_msgs__msg__Point__Sequence__init(member, size);
 }
 
-static rosidl_typesupport_introspection_c__MessageMember apf_interfaces__msg__Distance__rosidl_typesupport_introspection_c__Distance_message_member_array[8] = {
+static rosidl_typesupport_introspection_c__MessageMember apf_interfaces__msg__Distance__rosidl_typesupport_introspection_c__Distance_message_member_array[9] = {
   {
     "end_point",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_MESSAGE,  // type
@@ -293,13 +293,30 @@ static rosidl_typesupport_introspection_c__MessageMember apf_interfaces__msg__Di
     NULL,  // fetch(index, &value) function pointer
     NULL,  // assign(index, value) function pointer
     NULL  // resize(index) function pointer
+  },
+  {
+    "link_count",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_INT32,  // type
+    0,  // upper bound of string
+    NULL,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(apf_interfaces__msg__Distance, link_count),  // bytes offset in struct
+    NULL,  // default value
+    NULL,  // size() function pointer
+    NULL,  // get_const(index) function pointer
+    NULL,  // get(index) function pointer
+    NULL,  // fetch(index, &value) function pointer
+    NULL,  // assign(index, value) function pointer
+    NULL  // resize(index) function pointer
   }
 };
 
 static const rosidl_typesupport_introspection_c__MessageMembers apf_interfaces__msg__Distance__rosidl_typesupport_introspection_c__Distance_message_members = {
   "apf_interfaces__msg",  // message namespace
   "Distance",  // message name
-  8,  // number of fields
+  9,  // number of fields
   sizeof(apf_interfaces__msg__Distance),
   apf_interfaces__msg__Distance__rosidl_typesupport_introspection_c__Distance_message_member_array,  // message members
   apf_interfaces__msg__Distance__rosidl_typesupport_introspection_c__Distance_init_function,  // function to initialize message memory (memory has to be allocated)

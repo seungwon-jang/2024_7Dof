@@ -233,6 +233,15 @@ bool apf_interfaces__msg__distance__convert_from_py(PyObject * _pymsg, void * _r
     ros_message->obstacle_count = (int32_t)PyLong_AsLong(field);
     Py_DECREF(field);
   }
+  {  // link_count
+    PyObject * field = PyObject_GetAttrString(_pymsg, "link_count");
+    if (!field) {
+      return false;
+    }
+    assert(PyLong_Check(field));
+    ros_message->link_count = (int32_t)PyLong_AsLong(field);
+    Py_DECREF(field);
+  }
 
   return true;
 }
@@ -412,6 +421,17 @@ PyObject * apf_interfaces__msg__distance__convert_to_py(void * raw_ros_message)
     field = PyLong_FromLong(ros_message->obstacle_count);
     {
       int rc = PyObject_SetAttrString(_pymessage, "obstacle_count", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
+  {  // link_count
+    PyObject * field = NULL;
+    field = PyLong_FromLong(ros_message->link_count);
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "link_count", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;

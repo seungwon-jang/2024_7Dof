@@ -176,11 +176,12 @@ class cul_distance_node : public rclcpp::Node
       fcl::DistanceResultd result;
       //장애물의 방향벡터와 거리를 저장하는 배열, 장애물 개수 저장
       std::vector<double> obstacle_distance;
-      std::vector<geometry_msgs/Point> obstacle_dirc;
+      std::vector<geometry_msgs::msg::Point> obstacle_dirc;
       int obstacle_count = (int)obstacle.size();
-      
+      int link_count = (int)link.size();
+
       // 링크 하나씩 
-      for (int i = 0; i < (int)link.size();i++){
+      for (int i = 0; i < link_count ;i++){
         // 각 링크마다 장애물 다 확인하기
         for (int j = 0; j < obstacle_count; j++){
         // 링크와 장애물 간의 거리 계산 시 매번 결과를 초기화
@@ -190,10 +191,23 @@ class cul_distance_node : public rclcpp::Node
         //최근접 점
         Eigen::Vector3d direction_vector = result.nearest_points[1] - result.nearest_points[0];
         direction_vector.normalize();
+        //구한 값들 대입하기
+        obstacle_distance.push_back(result.min_distance);
+        geometry_msgs::msg::Point p;
+        p.x = direction_vector[0];
+        p.y = direction_vector[1];
+        p.z = direction_vector[2];
+
+        obstacle_dirc.push_back(p);
+
         RCLCPP_INFO(this->get_logger(), "Distance between link and obstacle: %f, => [%f, %f, %f]", result.min_distance, direction_vector[0], direction_vector[1], direction_vector[2]);
         }
       }
 
+      pub_distance.obstacle_distance = obstacle_distance;
+      pub_distance.obstacle_direction_vector = obstacle_dirc;
+      pub_distance.obstacle_count = obstacle_count;
+      pub_distance.link_count = link_count;
 
       //거리 데이터 보내기
       distance_publisher_->publish(pub_distance);

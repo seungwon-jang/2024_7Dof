@@ -1,0 +1,96 @@
+[0.187s] Invoking command in '/home/jang/2024_7Dof/build/iiwa_moveit2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jang/2024_7Dof/install/apf_nodes:/opt/ros/humble /usr/bin/cmake /home/jang/2024_7Dof/src/iiwa_ros2/iiwa_moveit2 -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/jang/2024_7Dof/install/iiwa_moveit2
+[0.340s] -- The C compiler identification is GNU 11.4.0
+[0.660s] -- The CXX compiler identification is GNU 11.4.0
+[0.688s] -- Detecting C compiler ABI info
+[0.913s] -- Detecting C compiler ABI info - done
+[0.954s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.954s] -- Detecting C compile features
+[0.956s] -- Detecting C compile features - done
+[0.966s] -- Detecting CXX compiler ABI info
+[1.293s] -- Detecting CXX compiler ABI info - done
+[1.322s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.325s] -- Detecting CXX compile features
+[1.328s] -- Detecting CXX compile features - done
+[1.333s] -- Found moveit_common: 2.5.5 (/opt/ros/humble/share/moveit_common/cmake)
+[1.335s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.763s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.859s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[2.186s] -- Found control_msgs: 4.6.0 (/opt/ros/humble/share/control_msgs/cmake)
+[2.358s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[2.368s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[2.392s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[2.401s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.412s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.523s] -- Found moveit_core: 2.5.5 (/opt/ros/humble/share/moveit_core/cmake)
+[2.682s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: chrono date_time filesystem iostreams program_options regex serialization system thread 
+[2.693s] -- Found parameter_traits: 0.3.8 (/opt/ros/humble/share/parameter_traits/cmake)
+[2.720s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[2.722s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[2.805s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[2.833s] -- Found FastRTPS: /opt/ros/humble/include  
+[2.872s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.887s] -- Found Threads: TRUE  
+[2.935s] -- Found rclcpp_lifecycle: 16.0.10 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)
+[2.975s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: filesystem 
+[3.072s] -- library: /usr/lib/x86_64-linux-gnu/libcurl.so
+[3.126s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[3.126s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[3.287s] -- Found moveit_servo: 2.5.5 (/opt/ros/humble/share/moveit_servo/cmake)
+[3.307s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread chrono 
+[3.349s] -- Found ament_cmake_gtest: 1.3.10 (/opt/ros/humble/share/ament_cmake_gtest/cmake)
+[3.350s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[3.364s] -- Added test 'copyright' to check source files copyright and LICENSE
+[3.365s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[3.367s] -- Configured cppcheck include dirs: 
+[3.368s] -- Configured cppcheck exclude dirs and/or files: 
+[3.371s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[3.372s] -- Configured cpplint exclude dirs and/or files: 
+[3.375s] -- Added test 'lint_cmake' to check CMake code style
+[3.375s] -- Added test 'uncrustify' to check C / C++ code style
+[3.375s] -- Configured uncrustify additional arguments: 
+[3.375s] -- Added test 'xmllint' to check XML markup files
+[3.377s] -- Configuring done
+[3.423s] -- Generating done
+[3.427s] -- Build files have been written to: /home/jang/2024_7Dof/build/iiwa_moveit2
+[3.451s] Invoked command in '/home/jang/2024_7Dof/build/iiwa_moveit2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jang/2024_7Dof/install/apf_nodes:/opt/ros/humble /usr/bin/cmake /home/jang/2024_7Dof/src/iiwa_ros2/iiwa_moveit2 -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/jang/2024_7Dof/install/iiwa_moveit2
+[3.453s] Invoking command in '/home/jang/2024_7Dof/build/iiwa_moveit2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jang/2024_7Dof/install/apf_nodes:/opt/ros/humble /usr/bin/cmake --build /home/jang/2024_7Dof/build/iiwa_moveit2 -- -j16 -l16
+[3.537s] [ 16%] [32mBuilding CXX object CMakeFiles/servo_node.dir/src/servo_node.cpp.o[0m
+[3.537s] [ 33%] [32mBuilding CXX object CMakeFiles/pose_tracking_servo_node.dir/src/pose_tracking_servo.cpp.o[0m
+[3.544s] [ 50%] [32mBuilding CXX object CMakeFiles/servo_controller_input.dir/src/joystick_servo.cpp.o[0m
+[18.678s] [ 66%] [32m[1mLinking CXX executable servo_node[0m
+[19.090s] [ 66%] Built target servo_node
+[22.996s] [ 83%] [32m[1mLinking CXX shared library libservo_controller_input.so[0m
+[23.028s] [100%] [32m[1mLinking CXX executable pose_tracking_servo_node[0m
+[23.438s] [100%] Built target servo_controller_input
+[23.495s] [100%] Built target pose_tracking_servo_node
+[23.511s] Invoked command in '/home/jang/2024_7Dof/build/iiwa_moveit2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jang/2024_7Dof/install/apf_nodes:/opt/ros/humble /usr/bin/cmake --build /home/jang/2024_7Dof/build/iiwa_moveit2 -- -j16 -l16
+[23.557s] Invoking command in '/home/jang/2024_7Dof/build/iiwa_moveit2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jang/2024_7Dof/install/apf_nodes:/opt/ros/humble /usr/bin/cmake --install /home/jang/2024_7Dof/build/iiwa_moveit2
+[23.566s] -- Install configuration: "Release"
+[23.566s] -- Execute custom install script
+[23.567s] -- Symlinking: /home/jang/2024_7Dof/install/iiwa_moveit2/lib/iiwa_moveit2/pose_tracking_servo_node
+[23.579s] -- Symlinking: /home/jang/2024_7Dof/install/iiwa_moveit2/lib/iiwa_moveit2/servo_node
+[23.590s] -- Symlinking: /home/jang/2024_7Dof/install/iiwa_moveit2/share/iiwa_moveit2/environment/library_path.sh
+[23.602s] -- Symlinking: /home/jang/2024_7Dof/install/iiwa_moveit2/share/iiwa_moveit2/environment/library_path.dsv
+[23.614s] -- Symlinking: /home/jang/2024_7Dof/install/iiwa_moveit2/share/ament_index/resource_index/package_run_dependencies/iiwa_moveit2
+[23.624s] -- Symlinking: /home/jang/2024_7Dof/install/iiwa_moveit2/share/ament_index/resource_index/parent_prefix_path/iiwa_moveit2
+[23.637s] -- Symlinking: /home/jang/2024_7Dof/install/iiwa_moveit2/share/iiwa_moveit2/environment/ament_prefix_path.sh
+[23.649s] -- Symlinking: /home/jang/2024_7Dof/install/iiwa_moveit2/share/iiwa_moveit2/environment/ament_prefix_path.dsv
+[23.658s] -- Symlinking: /home/jang/2024_7Dof/install/iiwa_moveit2/share/iiwa_moveit2/environment/path.sh
+[23.670s] -- Symlinking: /home/jang/2024_7Dof/install/iiwa_moveit2/share/iiwa_moveit2/environment/path.dsv
+[23.681s] -- Symlinking: /home/jang/2024_7Dof/install/iiwa_moveit2/share/iiwa_moveit2/local_setup.bash
+[23.689s] -- Symlinking: /home/jang/2024_7Dof/install/iiwa_moveit2/share/iiwa_moveit2/local_setup.sh
+[23.700s] -- Symlinking: /home/jang/2024_7Dof/install/iiwa_moveit2/share/iiwa_moveit2/local_setup.zsh
+[23.712s] -- Symlinking: /home/jang/2024_7Dof/install/iiwa_moveit2/share/iiwa_moveit2/local_setup.dsv
+[23.721s] -- Symlinking: /home/jang/2024_7Dof/install/iiwa_moveit2/share/iiwa_moveit2/package.dsv
+[23.733s] -- Symlinking: /home/jang/2024_7Dof/install/iiwa_moveit2/share/ament_index/resource_index/packages/iiwa_moveit2
+[23.745s] -- Symlinking: /home/jang/2024_7Dof/install/iiwa_moveit2/share/ament_index/resource_index/rclcpp_components/iiwa_moveit2
+[23.757s] -- Symlinking: /home/jang/2024_7Dof/install/iiwa_moveit2/share/iiwa_moveit2/cmake/ament_cmake_export_targets-extras.cmake
+[23.769s] -- Symlinking: /home/jang/2024_7Dof/install/iiwa_moveit2/share/iiwa_moveit2/cmake/ament_cmake_export_dependencies-extras.cmake
+[23.777s] -- Symlinking: /home/jang/2024_7Dof/install/iiwa_moveit2/share/iiwa_moveit2/cmake/iiwa_moveit2Config.cmake
+[23.789s] -- Symlinking: /home/jang/2024_7Dof/install/iiwa_moveit2/share/iiwa_moveit2/cmake/iiwa_moveit2Config-version.cmake
+[23.801s] -- Symlinking: /home/jang/2024_7Dof/install/iiwa_moveit2/share/iiwa_moveit2/package.xml
+[23.812s] -- Installing: /home/jang/2024_7Dof/install/iiwa_moveit2/lib/libservo_controller_input.so
+[23.813s] -- Set runtime path of "/home/jang/2024_7Dof/install/iiwa_moveit2/lib/libservo_controller_input.so" to ""
+[23.813s] -- Installing: /home/jang/2024_7Dof/install/iiwa_moveit2/share/iiwa_moveit2/cmake/export_iiwa_moveit2Export.cmake
+[23.813s] -- Installing: /home/jang/2024_7Dof/install/iiwa_moveit2/share/iiwa_moveit2/cmake/export_iiwa_moveit2Export-release.cmake
+[23.815s] Invoked command in '/home/jang/2024_7Dof/build/iiwa_moveit2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jang/2024_7Dof/install/apf_nodes:/opt/ros/humble /usr/bin/cmake --install /home/jang/2024_7Dof/build/iiwa_moveit2

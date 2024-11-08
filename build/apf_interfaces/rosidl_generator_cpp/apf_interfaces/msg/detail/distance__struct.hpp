@@ -52,6 +52,7 @@ struct Distance_
     {
       this->end_distance = 0.0;
       this->obstacle_count = 0l;
+      this->link_count = 0l;
     }
   }
 
@@ -66,6 +67,7 @@ struct Distance_
     {
       this->end_distance = 0.0;
       this->obstacle_count = 0l;
+      this->link_count = 0l;
     }
   }
 
@@ -94,6 +96,9 @@ struct Distance_
   using _obstacle_count_type =
     int32_t;
   _obstacle_count_type obstacle_count;
+  using _link_count_type =
+    int32_t;
+  _link_count_type link_count;
 
   // setters for named parameter idiom
   Type & set__end_point(
@@ -142,6 +147,12 @@ struct Distance_
     const int32_t & _arg)
   {
     this->obstacle_count = _arg;
+    return *this;
+  }
+  Type & set__link_count(
+    const int32_t & _arg)
+  {
+    this->link_count = _arg;
     return *this;
   }
 
@@ -209,6 +220,9 @@ struct Distance_
       return false;
     }
     if (this->obstacle_count != other.obstacle_count) {
+      return false;
+    }
+    if (this->link_count != other.link_count) {
       return false;
     }
     return true;

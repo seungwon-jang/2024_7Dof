@@ -23,17 +23,25 @@ struct distance_data{
       double distance = 0;
       double dir[3] = {0,};
       double angle_distance[3] = {0,};
-    };
+    } typedef distance_data;
+
+struct obstacle_distance_data{
+      double distance = 0;
+      double dir[3] = {0,};
+    } typedef obstacle_distance_data;
 
 class apf_main_node : public rclcpp::Node
 {
   public:
     //거리 값들은 저장하기 - 플래그를 나중에 넣어 줘야 한다.
     
-    struct distance_data end_data;
+    distance_data end_data;
+    std::vector<obstacle_distance_data> obstacle_data;
 
     double joint_state[7] = {0,};
     Eigen::VectorXd joint_vel;
+    //장애물 개수 정의
+    int obstacle_count = 0;
 
     apf_main_node()
     : Node("apf_main_node"), count_(0)
@@ -131,6 +139,7 @@ class apf_main_node : public rclcpp::Node
       last_msg_time_ = current_time;
     }
 
+    //거리 값이 들어왔을 경우의 반응
     void distance_callback(const apf_interfaces::msg::Distance & distance) 
     {
       //RCLCPP_INFO(this->get_logger(), "Distance: %f, Distance_vector: (%f, %f,%f)", distance.end_distance, distance.direction_vector.x, distance.direction_vector.y, distance.direction_vector.z);
@@ -143,6 +152,30 @@ class apf_main_node : public rclcpp::Node
       end_data.angle_distance[0] = distance.end_angle_distance.x;
       end_data.angle_distance[1] = distance.end_angle_distance.y;
       end_data.angle_distance[2] = distance.end_angle_distance.z;
+      //장애물 개수 저장 및 배열 상에서의 위치 저장할 변수 선언
+      obstacle_count = distance.obstacle_count;
+
+      int value_count = 0;
+      obstacle_data.clear();
+      //지금은 링크 3부터 시작하고 5, 7 순으로 3개 저장되는데.
+      for (int i = 0; i < distance.link_count; i++){
+        //배열의 처음부터 -> link3과 장애물의 개수만큼 거리데이터 -> link5와 장애물의 개수만큼 거리데이터 
+        for (int j = 0; j < obstacle_count; j++){
+          obstacle_distance_data d;
+          d.distance = distance.obstacle_distance[value_count];
+          d.dir[0] = distance.obstacle_direction_vector[value_count].x;
+          d.dir[1] = distance.obstacle_direction_vector[value_count].y;
+          d.dir[2] = distance.obstacle_direction_vector[value_count].z;
+
+          obstacle_data.push_back(d);
+          
+          value_count = value_count+1;
+        }
+      }
+      //RCLCPP_INFO(this->get_logger(), "%d" , value_count);
+
+      //RCLCPP_INFO(this->get_logger(), "%d" , (int)obstacle_data.size());
+      //RCLCPP_INFO(this->get_logger(), "%lf, %lf, %lf, %lf" , obstacle_data[0].distance, obstacle_data[1].distance, obstacle_data[2].distance, obstacle_data[3].distance);
 
       //방향 표시하기
       publish_direction_vector(distance.end_point.x, distance.end_point.y, distance.end_point.z, distance.direction_vector.x, distance.direction_vector.y, distance.direction_vector.z, distance.target_point.x,distance.target_point.y, distance.target_point.z);
@@ -178,7 +211,7 @@ class apf_main_node : public rclcpp::Node
         point.positions[i] = joint_state[i] + (joint_vel[i]*sampling_time);
         ss << joint_vel[i] << ",";
       }
-      RCLCPP_INFO(this->get_logger(), ss.str().c_str());
+      //RCLCPP_INFO(this->get_logger(), ss.str().c_str());
       //값을 다 넣은 point 메세지 타입을 push_back 해줘서 넣기.
       target_point.points.push_back(point);
 
