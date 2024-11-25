@@ -7,3 +7,5 @@ apf_interfaces.egg-info/top_level.txt
 apf_interfaces/msg/__init__.py
 apf_interfaces/msg/_distance.py
 apf_interfaces/msg/_jacobian.py
+apf_interfaces/srv/__init__.py
+apf_interfaces/srv/_rrts_points.py

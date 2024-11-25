@@ -1,6 +1,7 @@
 /home/jang/2024_7Dof/install/apf_package/lib/apf_package/apf_main_node
 /home/jang/2024_7Dof/install/apf_package/lib/apf_package/cul_distance_node
 /home/jang/2024_7Dof/install/apf_package/lib/apf_package/save_jaco
+/home/jang/2024_7Dof/install/apf_package/lib/apf_package/path_planning_node
 /home/jang/2024_7Dof/install/apf_package/share/ament_index/resource_index/package_run_dependencies/apf_package
 /home/jang/2024_7Dof/install/apf_package/share/ament_index/resource_index/parent_prefix_path/apf_package
 /home/jang/2024_7Dof/install/apf_package/share/apf_package/environment/ament_prefix_path.sh

@@ -13,6 +13,8 @@
 
 // Include directives for member types
 // Member `flat_jacobian`
+// Member `flat_jacobian5`
+// Member `flat_jacobian3`
 #include "rosidl_runtime_c/primitives_sequence_functions.h"
 
 bool
@@ -27,6 +29,18 @@ apf_interfaces__msg__Jacobian__init(apf_interfaces__msg__Jacobian * msg)
     return false;
   }
   // col_num
+  // flat_jacobian5
+  if (!rosidl_runtime_c__double__Sequence__init(&msg->flat_jacobian5, 0)) {
+    apf_interfaces__msg__Jacobian__fini(msg);
+    return false;
+  }
+  // col_num5
+  // flat_jacobian3
+  if (!rosidl_runtime_c__double__Sequence__init(&msg->flat_jacobian3, 0)) {
+    apf_interfaces__msg__Jacobian__fini(msg);
+    return false;
+  }
+  // col_num3
   return true;
 }
 
@@ -39,6 +53,12 @@ apf_interfaces__msg__Jacobian__fini(apf_interfaces__msg__Jacobian * msg)
   // flat_jacobian
   rosidl_runtime_c__double__Sequence__fini(&msg->flat_jacobian);
   // col_num
+  // flat_jacobian5
+  rosidl_runtime_c__double__Sequence__fini(&msg->flat_jacobian5);
+  // col_num5
+  // flat_jacobian3
+  rosidl_runtime_c__double__Sequence__fini(&msg->flat_jacobian3);
+  // col_num3
 }
 
 bool
@@ -55,6 +75,26 @@ apf_interfaces__msg__Jacobian__are_equal(const apf_interfaces__msg__Jacobian * l
   }
   // col_num
   if (lhs->col_num != rhs->col_num) {
+    return false;
+  }
+  // flat_jacobian5
+  if (!rosidl_runtime_c__double__Sequence__are_equal(
+      &(lhs->flat_jacobian5), &(rhs->flat_jacobian5)))
+  {
+    return false;
+  }
+  // col_num5
+  if (lhs->col_num5 != rhs->col_num5) {
+    return false;
+  }
+  // flat_jacobian3
+  if (!rosidl_runtime_c__double__Sequence__are_equal(
+      &(lhs->flat_jacobian3), &(rhs->flat_jacobian3)))
+  {
+    return false;
+  }
+  // col_num3
+  if (lhs->col_num3 != rhs->col_num3) {
     return false;
   }
   return true;
@@ -76,6 +116,22 @@ apf_interfaces__msg__Jacobian__copy(
   }
   // col_num
   output->col_num = input->col_num;
+  // flat_jacobian5
+  if (!rosidl_runtime_c__double__Sequence__copy(
+      &(input->flat_jacobian5), &(output->flat_jacobian5)))
+  {
+    return false;
+  }
+  // col_num5
+  output->col_num5 = input->col_num5;
+  // flat_jacobian3
+  if (!rosidl_runtime_c__double__Sequence__copy(
+      &(input->flat_jacobian3), &(output->flat_jacobian3)))
+  {
+    return false;
+  }
+  // col_num3
+  output->col_num3 = input->col_num3;
   return true;
 }
 

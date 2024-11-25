@@ -1,0 +1,118 @@
+[0.016s] Invoking command in '/home/jang/2024_7Dof/build/apf_package': CMAKE_PREFIX_PATH=/home/jang/2024_7Dof/install/apf_interfaces:/home/jang/2024_7Dof/install/impedance_controller:/home/jang/2024_7Dof/install/iiwa_moveit2:/home/jang/2024_7Dof/install/iiwa_bringup:/home/jang/2024_7Dof/install/iiwa_description:/home/jang/2024_7Dof/install/external_torque_sensor_broadcaster:/home/jang/2024_7Dof/install/culjaco:/home/jang/2024_7Dof/install/apf_package:/home/jang/2024_7Dof/install/apf_nodes:/opt/ros/humble LD_LIBRARY_PATH=/home/jang/2024_7Dof/install/apf_interfaces/lib:/home/jang/2024_7Dof/install/impedance_controller/lib:/home/jang/2024_7Dof/install/iiwa_moveit2/lib:/home/jang/2024_7Dof/install/external_torque_sensor_broadcaster/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins /usr/bin/cmake /home/jang/2024_7Dof/src/apf_package -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/jang/2024_7Dof/install/apf_package
+[0.078s] -- The C compiler identification is GNU 11.4.0
+[0.130s] -- The CXX compiler identification is GNU 11.4.0
+[0.137s] -- Detecting C compiler ABI info
+[0.215s] -- Detecting C compiler ABI info - done
+[0.225s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.225s] -- Detecting C compile features
+[0.225s] -- Detecting C compile features - done
+[0.228s] -- Detecting CXX compiler ABI info
+[0.307s] -- Detecting CXX compiler ABI info - done
+[0.317s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.317s] -- Detecting CXX compile features
+[0.318s] -- Detecting CXX compile features - done
+[0.321s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.494s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.549s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.575s] -- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)
+[0.626s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.631s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.638s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.648s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.663s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.701s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.704s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.792s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.816s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.864s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.873s] -- Looking for pthread.h
+[0.942s] -- Looking for pthread.h - found
+[0.942s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.028s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.029s] -- Found Threads: TRUE  
+[1.101s] -- Found nav_msgs: 4.2.4 (/opt/ros/humble/share/nav_msgs/cmake)
+[1.144s] -- Found visualization_msgs: 4.2.4 (/opt/ros/humble/share/visualization_msgs/cmake)
+[1.181s] -- Found trajectory_msgs: 4.2.4 (/opt/ros/humble/share/trajectory_msgs/cmake)
+[1.196s] -- Found tf2: 0.25.8 (/opt/ros/humble/share/tf2/cmake)
+[1.205s] -- Found tf2_ros: 0.25.8 (/opt/ros/humble/share/tf2_ros/cmake)
+[1.283s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[1.291s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[1.291s] -- Found apf_interfaces: 0.0.0 (/home/jang/2024_7Dof/install/apf_interfaces/share/apf_interfaces/cmake)
+[1.323s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.413s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.413s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/jang/2024_7Dof/src/apf_package/include>
+[1.413s] -- Configured cppcheck exclude dirs and/or files: 
+[1.414s] -- Added test 'lint_cmake' to check CMake code style
+[1.414s] -- Added test 'uncrustify' to check C / C++ code style
+[1.414s] -- Configured uncrustify additional arguments: 
+[1.415s] -- Added test 'xmllint' to check XML markup files
+[1.416s] -- Configuring done
+[1.440s] -- Generating done
+[1.442s] -- Build files have been written to: /home/jang/2024_7Dof/build/apf_package
+[1.453s] Invoked command in '/home/jang/2024_7Dof/build/apf_package' returned '0': CMAKE_PREFIX_PATH=/home/jang/2024_7Dof/install/apf_interfaces:/home/jang/2024_7Dof/install/impedance_controller:/home/jang/2024_7Dof/install/iiwa_moveit2:/home/jang/2024_7Dof/install/iiwa_bringup:/home/jang/2024_7Dof/install/iiwa_description:/home/jang/2024_7Dof/install/external_torque_sensor_broadcaster:/home/jang/2024_7Dof/install/culjaco:/home/jang/2024_7Dof/install/apf_package:/home/jang/2024_7Dof/install/apf_nodes:/opt/ros/humble LD_LIBRARY_PATH=/home/jang/2024_7Dof/install/apf_interfaces/lib:/home/jang/2024_7Dof/install/impedance_controller/lib:/home/jang/2024_7Dof/install/iiwa_moveit2/lib:/home/jang/2024_7Dof/install/external_torque_sensor_broadcaster/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins /usr/bin/cmake /home/jang/2024_7Dof/src/apf_package -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/jang/2024_7Dof/install/apf_package
+[1.454s] Invoking command in '/home/jang/2024_7Dof/build/apf_package': CMAKE_PREFIX_PATH=/home/jang/2024_7Dof/install/apf_interfaces:/home/jang/2024_7Dof/install/impedance_controller:/home/jang/2024_7Dof/install/iiwa_moveit2:/home/jang/2024_7Dof/install/iiwa_bringup:/home/jang/2024_7Dof/install/iiwa_description:/home/jang/2024_7Dof/install/external_torque_sensor_broadcaster:/home/jang/2024_7Dof/install/culjaco:/home/jang/2024_7Dof/install/apf_package:/home/jang/2024_7Dof/install/apf_nodes:/opt/ros/humble LD_LIBRARY_PATH=/home/jang/2024_7Dof/install/apf_interfaces/lib:/home/jang/2024_7Dof/install/impedance_controller/lib:/home/jang/2024_7Dof/install/iiwa_moveit2/lib:/home/jang/2024_7Dof/install/external_torque_sensor_broadcaster/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins /usr/bin/cmake --build /home/jang/2024_7Dof/build/apf_package -- -j16 -l16
+[1.508s] [ 12%] [32mBuilding CXX object CMakeFiles/path_planning_node.dir/src/path_planning_node.cpp.o[0m
+[1.511s] [ 25%] [32mBuilding CXX object CMakeFiles/save_jaco.dir/src/save_jaco.cpp.o[0m
+[1.512s] [ 37%] [32mBuilding CXX object CMakeFiles/apf_main_node.dir/src/apf_main_node.cpp.o[0m
+[1.515s] [ 50%] [32mBuilding CXX object CMakeFiles/cul_distance_node.dir/src/cul_distance_node.cpp.o[0m
+[7.649s] [01m[K/home/jang/2024_7Dof/src/apf_package/src/cul_distance_node.cpp:[m[K In member function ‘[01m[Kvoid cul_distance_node::printTransform3d(const Transform3d&, rclcpp::Logger)[m[K’:
+[7.649s] [01m[K/home/jang/2024_7Dof/src/apf_package/src/cul_distance_node.cpp:313:77:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Klogger[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[7.649s]   313 |     void printTransform3d(const fcl::Transform3d& transform, [01;35m[Krclcpp::Logger logger[m[K) {
+[7.649s]       |                                                              [01;35m[K~~~~~~~~~~~~~~~^~~~~~[m[K
+[7.663s] [01m[K/home/jang/2024_7Dof/src/apf_package/src/cul_distance_node.cpp:[m[K In member function ‘[01m[Kvoid cul_distance_node::RRTs_result(rclcpp::Client<apf_interfaces::srv::RRTSPoints>::SharedFuture)[m[K’:
+[7.663s] [01m[K/home/jang/2024_7Dof/src/apf_package/src/cul_distance_node.cpp:539:25:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<double, std::allocator<double> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[7.663s]   539 |       for (int i = 0; [01;35m[Ki < ((response -> result_points).size()/7)[m[K; i++){
+[7.663s]       |                       [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[9.117s] [01m[K/home/jang/2024_7Dof/src/apf_package/src/path_planning_node.cpp:[m[K In member function ‘[01m[Kvoid Path_planning_node::publish_rrt_points(std::vector<std::array<double, 3> >)[m[K’:
+[9.117s] [01m[K/home/jang/2024_7Dof/src/apf_package/src/path_planning_node.cpp:402:31:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kcenter[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[9.117s]   402 |         std::array<double, 3> [01;35m[Kcenter[m[K = {0.0, 0.0, 0.36};
+[9.117s]       |                               [01;35m[K^~~~~~[m[K
+[9.119s] [01m[K/home/jang/2024_7Dof/src/apf_package/src/path_planning_node.cpp:[m[K In member function ‘[01m[Kvoid Path_planning_node::remake_tree(std::vector<Path_planning_node::RRTs_node>&, std::vector<double>, int, double, double, double)[m[K’:
+[9.119s] [01m[K/home/jang/2024_7Dof/src/apf_package/src/path_planning_node.cpp:471:148:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kcollision_gap[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[9.119s]   471 |     void remake_tree(std::vector<R_node>& rrts_tree, std::vector<double> obstacle_points, int obstacle_count, double searching_range = 0.1, [01;35m[Kdouble collision_gap = 0.1[m[K, double obstacle_min_radius = 0.42){
+[9.119s]       |                                                                                                                                             [01;35m[K~~~~~~~^~~~~~~~~~~~~~~~~~~[m[K
+[16.609s] [01m[K/home/jang/2024_7Dof/src/apf_package/src/cul_distance_node.cpp:[m[K In member function ‘[01m[Kvoid cul_distance_node::topic_callback(const Odometry&)[m[K’:
+[16.609s] [01m[K/home/jang/2024_7Dof/src/apf_package/src/cul_distance_node.cpp:142:26:[m[K [01;35m[Kwarning: [m[Kiteration 6 invokes undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Waggressive-loop-optimizations-Waggressive-loop-optimizations]8;;[m[K]
+[16.609s]   142 |           goal_points[i] = rrt_result_points[RRT_current_point][i];
+[16.609s] [01m[K/home/jang/2024_7Dof/src/apf_package/src/cul_distance_node.cpp:141:26:[m[K [01;36m[Knote: [m[Kwithin this loop
+[16.609s]   141 |         for(int i = 0; [01;36m[Ki < 7[m[K; i++){
+[16.609s]       |                        [01;36m[K~~^~~[m[K
+[19.971s] [01m[K/home/jang/2024_7Dof/src/apf_package/src/cul_distance_node.cpp:[m[K In member function ‘[01m[Kvoid cul_distance_node::RRTs_result(rclcpp::Client<apf_interfaces::srv::RRTSPoints>::SharedFuture)[m[K’:
+[19.971s] [01m[K/home/jang/2024_7Dof/src/apf_package/src/cul_distance_node.cpp:558:22:[m[K [01;35m[Kwarning: [m[Karray subscript 6 is above array bounds of ‘[01m[Kdouble [6][m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Warray-bounds-Warray-bounds]8;;[m[K]
+[19.971s]   558 |         [01;35m[Kgoal_points[6][m[K = rrt_result_points[0][6];
+[19.971s]       |         [01;35m[K~~~~~~~~~~~~~^[m[K
+[19.972s] [01m[K/home/jang/2024_7Dof/src/apf_package/src/cul_distance_node.cpp:57:12:[m[K [01;36m[Knote: [m[Kwhile referencing ‘[01m[Kcul_distance_node::goal_points[m[K’
+[19.972s]    57 |     double [01;36m[Kgoal_points[m[K[6] = {-0.3, -0.5, 0.5, 1.0, 0.5, 2.0};
+[19.972s]       |            [01;36m[K^~~~~~~~~~~[m[K
+[23.907s] [ 62%] [32m[1mLinking CXX executable cul_distance_node[0m
+[24.284s] [ 62%] Built target cul_distance_node
+[25.189s] [ 75%] [32m[1mLinking CXX executable path_planning_node[0m
+[25.394s] [ 75%] Built target path_planning_node
+[28.759s] [ 87%] [32m[1mLinking CXX executable save_jaco[0m
+[29.002s] [ 87%] Built target save_jaco
+[31.870s] [100%] [32m[1mLinking CXX executable apf_main_node[0m
+[32.094s] [100%] Built target apf_main_node
+[32.107s] Invoked command in '/home/jang/2024_7Dof/build/apf_package' returned '0': CMAKE_PREFIX_PATH=/home/jang/2024_7Dof/install/apf_interfaces:/home/jang/2024_7Dof/install/impedance_controller:/home/jang/2024_7Dof/install/iiwa_moveit2:/home/jang/2024_7Dof/install/iiwa_bringup:/home/jang/2024_7Dof/install/iiwa_description:/home/jang/2024_7Dof/install/external_torque_sensor_broadcaster:/home/jang/2024_7Dof/install/culjaco:/home/jang/2024_7Dof/install/apf_package:/home/jang/2024_7Dof/install/apf_nodes:/opt/ros/humble LD_LIBRARY_PATH=/home/jang/2024_7Dof/install/apf_interfaces/lib:/home/jang/2024_7Dof/install/impedance_controller/lib:/home/jang/2024_7Dof/install/iiwa_moveit2/lib:/home/jang/2024_7Dof/install/external_torque_sensor_broadcaster/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins /usr/bin/cmake --build /home/jang/2024_7Dof/build/apf_package -- -j16 -l16
+[32.142s] Invoking command in '/home/jang/2024_7Dof/build/apf_package': CMAKE_PREFIX_PATH=/home/jang/2024_7Dof/install/apf_interfaces:/home/jang/2024_7Dof/install/impedance_controller:/home/jang/2024_7Dof/install/iiwa_moveit2:/home/jang/2024_7Dof/install/iiwa_bringup:/home/jang/2024_7Dof/install/iiwa_description:/home/jang/2024_7Dof/install/external_torque_sensor_broadcaster:/home/jang/2024_7Dof/install/culjaco:/home/jang/2024_7Dof/install/apf_package:/home/jang/2024_7Dof/install/apf_nodes:/opt/ros/humble LD_LIBRARY_PATH=/home/jang/2024_7Dof/install/apf_interfaces/lib:/home/jang/2024_7Dof/install/impedance_controller/lib:/home/jang/2024_7Dof/install/iiwa_moveit2/lib:/home/jang/2024_7Dof/install/external_torque_sensor_broadcaster/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins /usr/bin/cmake --install /home/jang/2024_7Dof/build/apf_package
+[32.149s] -- Install configuration: "Release"
+[32.149s] -- Execute custom install script
+[32.150s] -- Symlinking: /home/jang/2024_7Dof/install/apf_package/lib/apf_package/apf_main_node
+[32.162s] -- Symlinking: /home/jang/2024_7Dof/install/apf_package/lib/apf_package/cul_distance_node
+[32.169s] -- Symlinking: /home/jang/2024_7Dof/install/apf_package/lib/apf_package/save_jaco
+[32.176s] -- Symlinking: /home/jang/2024_7Dof/install/apf_package/lib/apf_package/path_planning_node
+[32.184s] -- Symlinking: /home/jang/2024_7Dof/install/apf_package/share/ament_index/resource_index/package_run_dependencies/apf_package
+[32.190s] -- Symlinking: /home/jang/2024_7Dof/install/apf_package/share/ament_index/resource_index/parent_prefix_path/apf_package
+[32.198s] -- Symlinking: /home/jang/2024_7Dof/install/apf_package/share/apf_package/environment/ament_prefix_path.sh
+[32.207s] -- Symlinking: /home/jang/2024_7Dof/install/apf_package/share/apf_package/environment/ament_prefix_path.dsv
+[32.215s] -- Symlinking: /home/jang/2024_7Dof/install/apf_package/share/apf_package/environment/path.sh
+[32.224s] -- Symlinking: /home/jang/2024_7Dof/install/apf_package/share/apf_package/environment/path.dsv
+[32.232s] -- Symlinking: /home/jang/2024_7Dof/install/apf_package/share/apf_package/local_setup.bash
+[32.241s] -- Symlinking: /home/jang/2024_7Dof/install/apf_package/share/apf_package/local_setup.sh
+[32.251s] -- Symlinking: /home/jang/2024_7Dof/install/apf_package/share/apf_package/local_setup.zsh
+[32.260s] -- Symlinking: /home/jang/2024_7Dof/install/apf_package/share/apf_package/local_setup.dsv
+[32.268s] -- Symlinking: /home/jang/2024_7Dof/install/apf_package/share/apf_package/package.dsv
+[32.277s] -- Symlinking: /home/jang/2024_7Dof/install/apf_package/share/ament_index/resource_index/packages/apf_package
+[32.284s] -- Symlinking: /home/jang/2024_7Dof/install/apf_package/share/apf_package/cmake/apf_packageConfig.cmake
+[32.290s] -- Symlinking: /home/jang/2024_7Dof/install/apf_package/share/apf_package/cmake/apf_packageConfig-version.cmake
+[32.298s] -- Symlinking: /home/jang/2024_7Dof/install/apf_package/share/apf_package/package.xml
+[32.309s] Invoked command in '/home/jang/2024_7Dof/build/apf_package' returned '0': CMAKE_PREFIX_PATH=/home/jang/2024_7Dof/install/apf_interfaces:/home/jang/2024_7Dof/install/impedance_controller:/home/jang/2024_7Dof/install/iiwa_moveit2:/home/jang/2024_7Dof/install/iiwa_bringup:/home/jang/2024_7Dof/install/iiwa_description:/home/jang/2024_7Dof/install/external_torque_sensor_broadcaster:/home/jang/2024_7Dof/install/culjaco:/home/jang/2024_7Dof/install/apf_package:/home/jang/2024_7Dof/install/apf_nodes:/opt/ros/humble LD_LIBRARY_PATH=/home/jang/2024_7Dof/install/apf_interfaces/lib:/home/jang/2024_7Dof/install/impedance_controller/lib:/home/jang/2024_7Dof/install/iiwa_moveit2/lib:/home/jang/2024_7Dof/install/external_torque_sensor_broadcaster/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins /usr/bin/cmake --install /home/jang/2024_7Dof/build/apf_package

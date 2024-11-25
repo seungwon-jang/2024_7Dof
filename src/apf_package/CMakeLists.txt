@@ -45,6 +45,10 @@ target_link_libraries(cul_distance_node fcl)
 add_executable(save_jaco src/save_jaco.cpp)
 ament_target_dependencies(save_jaco rclcpp std_msgs Eigen3 apf_interfaces visualization_msgs geometry_msgs trajectory_msgs sensor_msgs)
 
+add_executable(path_planning_node src/path_planning_node.cpp)
+ament_target_dependencies(path_planning_node rclcpp std_msgs Eigen3 apf_interfaces visualization_msgs fcl)
+target_link_libraries(path_planning_node fcl)
+
 
 
 target_include_directories(apf_main_node PUBLIC
@@ -57,6 +61,7 @@ install(TARGETS
   apf_main_node
   cul_distance_node
   save_jaco
+  path_planning_node
   DESTINATION lib/${PROJECT_NAME})
 
 if(BUILD_TESTING)

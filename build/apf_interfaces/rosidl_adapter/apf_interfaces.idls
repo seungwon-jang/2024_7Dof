@@ -1,2 +1,3 @@
 /home/jang/2024_7Dof/build/apf_interfaces/rosidl_adapter/apf_interfaces:msg/Jacobian.idl
 /home/jang/2024_7Dof/build/apf_interfaces/rosidl_adapter/apf_interfaces:msg/Distance.idl
+/home/jang/2024_7Dof/build/apf_interfaces/rosidl_adapter/apf_interfaces:srv/RRTSPoints.idl

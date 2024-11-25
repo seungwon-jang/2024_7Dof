@@ -34,8 +34,8 @@ extern "C"
 {
 #endif
 
-#include "rosidl_runtime_c/primitives_sequence.h"  // flat_jacobian
-#include "rosidl_runtime_c/primitives_sequence_functions.h"  // flat_jacobian
+#include "rosidl_runtime_c/primitives_sequence.h"  // flat_jacobian, flat_jacobian3, flat_jacobian5
+#include "rosidl_runtime_c/primitives_sequence_functions.h"  // flat_jacobian, flat_jacobian3, flat_jacobian5
 
 // forward declare type support functions
 
@@ -62,6 +62,32 @@ static bool _Jacobian__cdr_serialize(
   // Field name: col_num
   {
     cdr << ros_message->col_num;
+  }
+
+  // Field name: flat_jacobian5
+  {
+    size_t size = ros_message->flat_jacobian5.size;
+    auto array_ptr = ros_message->flat_jacobian5.data;
+    cdr << static_cast<uint32_t>(size);
+    cdr.serializeArray(array_ptr, size);
+  }
+
+  // Field name: col_num5
+  {
+    cdr << ros_message->col_num5;
+  }
+
+  // Field name: flat_jacobian3
+  {
+    size_t size = ros_message->flat_jacobian3.size;
+    auto array_ptr = ros_message->flat_jacobian3.data;
+    cdr << static_cast<uint32_t>(size);
+    cdr.serializeArray(array_ptr, size);
+  }
+
+  // Field name: col_num3
+  {
+    cdr << ros_message->col_num3;
   }
 
   return true;
@@ -97,6 +123,48 @@ static bool _Jacobian__cdr_deserialize(
     cdr >> ros_message->col_num;
   }
 
+  // Field name: flat_jacobian5
+  {
+    uint32_t cdrSize;
+    cdr >> cdrSize;
+    size_t size = static_cast<size_t>(cdrSize);
+    if (ros_message->flat_jacobian5.data) {
+      rosidl_runtime_c__double__Sequence__fini(&ros_message->flat_jacobian5);
+    }
+    if (!rosidl_runtime_c__double__Sequence__init(&ros_message->flat_jacobian5, size)) {
+      fprintf(stderr, "failed to create array for field 'flat_jacobian5'");
+      return false;
+    }
+    auto array_ptr = ros_message->flat_jacobian5.data;
+    cdr.deserializeArray(array_ptr, size);
+  }
+
+  // Field name: col_num5
+  {
+    cdr >> ros_message->col_num5;
+  }
+
+  // Field name: flat_jacobian3
+  {
+    uint32_t cdrSize;
+    cdr >> cdrSize;
+    size_t size = static_cast<size_t>(cdrSize);
+    if (ros_message->flat_jacobian3.data) {
+      rosidl_runtime_c__double__Sequence__fini(&ros_message->flat_jacobian3);
+    }
+    if (!rosidl_runtime_c__double__Sequence__init(&ros_message->flat_jacobian3, size)) {
+      fprintf(stderr, "failed to create array for field 'flat_jacobian3'");
+      return false;
+    }
+    auto array_ptr = ros_message->flat_jacobian3.data;
+    cdr.deserializeArray(array_ptr, size);
+  }
+
+  // Field name: col_num3
+  {
+    cdr >> ros_message->col_num3;
+  }
+
   return true;
 }  // NOLINT(readability/fn_size)
 
@@ -128,6 +196,40 @@ size_t get_serialized_size_apf_interfaces__msg__Jacobian(
   // field.name col_num
   {
     size_t item_size = sizeof(ros_message->col_num);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // field.name flat_jacobian5
+  {
+    size_t array_size = ros_message->flat_jacobian5.size;
+    auto array_ptr = ros_message->flat_jacobian5.data;
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+    (void)array_ptr;
+    size_t item_size = sizeof(array_ptr[0]);
+    current_alignment += array_size * item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // field.name col_num5
+  {
+    size_t item_size = sizeof(ros_message->col_num5);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // field.name flat_jacobian3
+  {
+    size_t array_size = ros_message->flat_jacobian3.size;
+    auto array_ptr = ros_message->flat_jacobian3.data;
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+    (void)array_ptr;
+    size_t item_size = sizeof(array_ptr[0]);
+    current_alignment += array_size * item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // field.name col_num3
+  {
+    size_t item_size = sizeof(ros_message->col_num3);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -180,6 +282,46 @@ size_t max_serialized_size_apf_interfaces__msg__Jacobian(
     current_alignment += array_size * sizeof(uint32_t) +
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
+  // member: flat_jacobian5
+  {
+    size_t array_size = 0;
+    full_bounded = false;
+    is_plain = false;
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+
+    last_member_size = array_size * sizeof(uint64_t);
+    current_alignment += array_size * sizeof(uint64_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
+  }
+  // member: col_num5
+  {
+    size_t array_size = 1;
+
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+  // member: flat_jacobian3
+  {
+    size_t array_size = 0;
+    full_bounded = false;
+    is_plain = false;
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+
+    last_member_size = array_size * sizeof(uint64_t);
+    current_alignment += array_size * sizeof(uint64_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
+  }
+  // member: col_num3
+  {
+    size_t array_size = 1;
+
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
 
   size_t ret_val = current_alignment - initial_alignment;
   if (is_plain) {
@@ -189,7 +331,7 @@ size_t max_serialized_size_apf_interfaces__msg__Jacobian(
     using DataType = apf_interfaces__msg__Jacobian;
     is_plain =
       (
-      offsetof(DataType, col_num) +
+      offsetof(DataType, col_num3) +
       last_member_size
       ) == ret_val;
   }

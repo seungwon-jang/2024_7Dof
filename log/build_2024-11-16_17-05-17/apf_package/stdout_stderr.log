@@ -1,0 +1,112 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+-- Found FastRTPS: /opt/ros/humble/include  
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Found nav_msgs: 4.2.4 (/opt/ros/humble/share/nav_msgs/cmake)
+-- Found visualization_msgs: 4.2.4 (/opt/ros/humble/share/visualization_msgs/cmake)
+-- Found trajectory_msgs: 4.2.4 (/opt/ros/humble/share/trajectory_msgs/cmake)
+-- Found tf2: 0.25.8 (/opt/ros/humble/share/tf2/cmake)
+-- Found tf2_ros: 0.25.8 (/opt/ros/humble/share/tf2_ros/cmake)
+-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+-- Found Eigen3: TRUE (found version "3.4.0") 
+-- Found apf_interfaces: 0.0.0 (/home/jang/2024_7Dof/install/apf_interfaces/share/apf_interfaces/cmake)
+-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/jang/2024_7Dof/src/apf_package/include>
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/jang/2024_7Dof/build/apf_package
+[ 12%] [32mBuilding CXX object CMakeFiles/path_planning_node.dir/src/path_planning_node.cpp.o[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/save_jaco.dir/src/save_jaco.cpp.o[0m
+[ 37%] [32mBuilding CXX object CMakeFiles/apf_main_node.dir/src/apf_main_node.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/cul_distance_node.dir/src/cul_distance_node.cpp.o[0m
+[01m[K/home/jang/2024_7Dof/src/apf_package/src/cul_distance_node.cpp:[m[K In member function ‘[01m[Kvoid cul_distance_node::printTransform3d(const Transform3d&, rclcpp::Logger)[m[K’:
+[01m[K/home/jang/2024_7Dof/src/apf_package/src/cul_distance_node.cpp:313:77:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Klogger[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  313 |     void printTransform3d(const fcl::Transform3d& transform, [01;35m[Krclcpp::Logger logger[m[K) {
+      |                                                              [01;35m[K~~~~~~~~~~~~~~~^~~~~~[m[K
+[01m[K/home/jang/2024_7Dof/src/apf_package/src/cul_distance_node.cpp:[m[K In member function ‘[01m[Kvoid cul_distance_node::RRTs_result(rclcpp::Client<apf_interfaces::srv::RRTSPoints>::SharedFuture)[m[K’:
+[01m[K/home/jang/2024_7Dof/src/apf_package/src/cul_distance_node.cpp:539:25:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<double, std::allocator<double> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  539 |       for (int i = 0; [01;35m[Ki < ((response -> result_points).size()/7)[m[K; i++){
+      |                       [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/jang/2024_7Dof/src/apf_package/src/path_planning_node.cpp:[m[K In member function ‘[01m[Kvoid Path_planning_node::publish_rrt_points(std::vector<std::array<double, 3> >)[m[K’:
+[01m[K/home/jang/2024_7Dof/src/apf_package/src/path_planning_node.cpp:402:31:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kcenter[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  402 |         std::array<double, 3> [01;35m[Kcenter[m[K = {0.0, 0.0, 0.36};
+      |                               [01;35m[K^~~~~~[m[K
+[01m[K/home/jang/2024_7Dof/src/apf_package/src/path_planning_node.cpp:[m[K In member function ‘[01m[Kvoid Path_planning_node::remake_tree(std::vector<Path_planning_node::RRTs_node>&, std::vector<double>, int, double, double, double)[m[K’:
+[01m[K/home/jang/2024_7Dof/src/apf_package/src/path_planning_node.cpp:471:148:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kcollision_gap[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  471 |     void remake_tree(std::vector<R_node>& rrts_tree, std::vector<double> obstacle_points, int obstacle_count, double searching_range = 0.1, [01;35m[Kdouble collision_gap = 0.1[m[K, double obstacle_min_radius = 0.42){
+      |                                                                                                                                             [01;35m[K~~~~~~~^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/jang/2024_7Dof/src/apf_package/src/cul_distance_node.cpp:[m[K In member function ‘[01m[Kvoid cul_distance_node::topic_callback(const Odometry&)[m[K’:
+[01m[K/home/jang/2024_7Dof/src/apf_package/src/cul_distance_node.cpp:142:26:[m[K [01;35m[Kwarning: [m[Kiteration 6 invokes undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Waggressive-loop-optimizations-Waggressive-loop-optimizations]8;;[m[K]
+  142 |           goal_points[i] = rrt_result_points[RRT_current_point][i];
+[01m[K/home/jang/2024_7Dof/src/apf_package/src/cul_distance_node.cpp:141:26:[m[K [01;36m[Knote: [m[Kwithin this loop
+  141 |         for(int i = 0; [01;36m[Ki < 7[m[K; i++){
+      |                        [01;36m[K~~^~~[m[K
+[01m[K/home/jang/2024_7Dof/src/apf_package/src/cul_distance_node.cpp:[m[K In member function ‘[01m[Kvoid cul_distance_node::RRTs_result(rclcpp::Client<apf_interfaces::srv::RRTSPoints>::SharedFuture)[m[K’:
+[01m[K/home/jang/2024_7Dof/src/apf_package/src/cul_distance_node.cpp:558:22:[m[K [01;35m[Kwarning: [m[Karray subscript 6 is above array bounds of ‘[01m[Kdouble [6][m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Warray-bounds-Warray-bounds]8;;[m[K]
+  558 |         [01;35m[Kgoal_points[6][m[K = rrt_result_points[0][6];
+      |         [01;35m[K~~~~~~~~~~~~~^[m[K
+[01m[K/home/jang/2024_7Dof/src/apf_package/src/cul_distance_node.cpp:57:12:[m[K [01;36m[Knote: [m[Kwhile referencing ‘[01m[Kcul_distance_node::goal_points[m[K’
+   57 |     double [01;36m[Kgoal_points[m[K[6] = {-0.3, -0.5, 0.5, 1.0, 0.5, 2.0};
+      |            [01;36m[K^~~~~~~~~~~[m[K
+[ 62%] [32m[1mLinking CXX executable cul_distance_node[0m
+[ 62%] Built target cul_distance_node
+[ 75%] [32m[1mLinking CXX executable path_planning_node[0m
+[ 75%] Built target path_planning_node
+[ 87%] [32m[1mLinking CXX executable save_jaco[0m
+[ 87%] Built target save_jaco
+[100%] [32m[1mLinking CXX executable apf_main_node[0m
+[100%] Built target apf_main_node
+-- Install configuration: "Release"
+-- Execute custom install script
+-- Symlinking: /home/jang/2024_7Dof/install/apf_package/lib/apf_package/apf_main_node
+-- Symlinking: /home/jang/2024_7Dof/install/apf_package/lib/apf_package/cul_distance_node
+-- Symlinking: /home/jang/2024_7Dof/install/apf_package/lib/apf_package/save_jaco
+-- Symlinking: /home/jang/2024_7Dof/install/apf_package/lib/apf_package/path_planning_node
+-- Symlinking: /home/jang/2024_7Dof/install/apf_package/share/ament_index/resource_index/package_run_dependencies/apf_package
+-- Symlinking: /home/jang/2024_7Dof/install/apf_package/share/ament_index/resource_index/parent_prefix_path/apf_package
+-- Symlinking: /home/jang/2024_7Dof/install/apf_package/share/apf_package/environment/ament_prefix_path.sh
+-- Symlinking: /home/jang/2024_7Dof/install/apf_package/share/apf_package/environment/ament_prefix_path.dsv
+-- Symlinking: /home/jang/2024_7Dof/install/apf_package/share/apf_package/environment/path.sh
+-- Symlinking: /home/jang/2024_7Dof/install/apf_package/share/apf_package/environment/path.dsv
+-- Symlinking: /home/jang/2024_7Dof/install/apf_package/share/apf_package/local_setup.bash
+-- Symlinking: /home/jang/2024_7Dof/install/apf_package/share/apf_package/local_setup.sh
+-- Symlinking: /home/jang/2024_7Dof/install/apf_package/share/apf_package/local_setup.zsh
+-- Symlinking: /home/jang/2024_7Dof/install/apf_package/share/apf_package/local_setup.dsv
+-- Symlinking: /home/jang/2024_7Dof/install/apf_package/share/apf_package/package.dsv
+-- Symlinking: /home/jang/2024_7Dof/install/apf_package/share/ament_index/resource_index/packages/apf_package
+-- Symlinking: /home/jang/2024_7Dof/install/apf_package/share/apf_package/cmake/apf_packageConfig.cmake
+-- Symlinking: /home/jang/2024_7Dof/install/apf_package/share/apf_package/cmake/apf_packageConfig-version.cmake
+-- Symlinking: /home/jang/2024_7Dof/install/apf_package/share/apf_package/package.xml

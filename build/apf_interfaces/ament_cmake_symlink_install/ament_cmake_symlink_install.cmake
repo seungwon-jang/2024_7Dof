@@ -364,11 +364,23 @@ ament_cmake_symlink_install_files("/home/jang/2024_7Dof/src/apf_interfaces" FILE
 # install(FILES "/home/jang/2024_7Dof/build/apf_interfaces/rosidl_adapter/apf_interfaces/msg/Distance.idl" "DESTINATION" "share/apf_interfaces/msg")
 ament_cmake_symlink_install_files("/home/jang/2024_7Dof/src/apf_interfaces" FILES "/home/jang/2024_7Dof/build/apf_interfaces/rosidl_adapter/apf_interfaces/msg/Distance.idl" "DESTINATION" "share/apf_interfaces/msg")
 
+# install(FILES "/home/jang/2024_7Dof/build/apf_interfaces/rosidl_adapter/apf_interfaces/srv/RRTSPoints.idl" "DESTINATION" "share/apf_interfaces/srv")
+ament_cmake_symlink_install_files("/home/jang/2024_7Dof/src/apf_interfaces" FILES "/home/jang/2024_7Dof/build/apf_interfaces/rosidl_adapter/apf_interfaces/srv/RRTSPoints.idl" "DESTINATION" "share/apf_interfaces/srv")
+
 # install(FILES "/home/jang/2024_7Dof/src/apf_interfaces/msg/Jacobian.msg" "DESTINATION" "share/apf_interfaces/msg")
 ament_cmake_symlink_install_files("/home/jang/2024_7Dof/src/apf_interfaces" FILES "/home/jang/2024_7Dof/src/apf_interfaces/msg/Jacobian.msg" "DESTINATION" "share/apf_interfaces/msg")
 
 # install(FILES "/home/jang/2024_7Dof/src/apf_interfaces/msg/Distance.msg" "DESTINATION" "share/apf_interfaces/msg")
 ament_cmake_symlink_install_files("/home/jang/2024_7Dof/src/apf_interfaces" FILES "/home/jang/2024_7Dof/src/apf_interfaces/msg/Distance.msg" "DESTINATION" "share/apf_interfaces/msg")
+
+# install(FILES "/home/jang/2024_7Dof/src/apf_interfaces/srv/RRTSPoints.srv" "DESTINATION" "share/apf_interfaces/srv")
+ament_cmake_symlink_install_files("/home/jang/2024_7Dof/src/apf_interfaces" FILES "/home/jang/2024_7Dof/src/apf_interfaces/srv/RRTSPoints.srv" "DESTINATION" "share/apf_interfaces/srv")
+
+# install(FILES "/home/jang/2024_7Dof/build/apf_interfaces/rosidl_cmake/srv/RRTSPoints_Request.msg" "DESTINATION" "share/apf_interfaces/srv")
+ament_cmake_symlink_install_files("/home/jang/2024_7Dof/src/apf_interfaces" FILES "/home/jang/2024_7Dof/build/apf_interfaces/rosidl_cmake/srv/RRTSPoints_Request.msg" "DESTINATION" "share/apf_interfaces/srv")
+
+# install(FILES "/home/jang/2024_7Dof/build/apf_interfaces/rosidl_cmake/srv/RRTSPoints_Response.msg" "DESTINATION" "share/apf_interfaces/srv")
+ament_cmake_symlink_install_files("/home/jang/2024_7Dof/src/apf_interfaces" FILES "/home/jang/2024_7Dof/build/apf_interfaces/rosidl_cmake/srv/RRTSPoints_Response.msg" "DESTINATION" "share/apf_interfaces/srv")
 
 # install(FILES "/home/jang/2024_7Dof/build/apf_interfaces/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/apf_interfaces" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 ament_cmake_symlink_install_files("/home/jang/2024_7Dof/src/apf_interfaces" FILES "/home/jang/2024_7Dof/build/apf_interfaces/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/apf_interfaces" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")

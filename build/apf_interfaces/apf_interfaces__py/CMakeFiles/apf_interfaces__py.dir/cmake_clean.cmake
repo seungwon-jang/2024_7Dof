@@ -7,6 +7,9 @@ file(REMOVE_RECURSE
   "../rosidl_generator_py/apf_interfaces/msg/_distance_s.c"
   "../rosidl_generator_py/apf_interfaces/msg/_jacobian.py"
   "../rosidl_generator_py/apf_interfaces/msg/_jacobian_s.c"
+  "../rosidl_generator_py/apf_interfaces/srv/__init__.py"
+  "../rosidl_generator_py/apf_interfaces/srv/_rrts_points.py"
+  "../rosidl_generator_py/apf_interfaces/srv/_rrts_points_s.c"
   "CMakeFiles/apf_interfaces__py"
 )
 

@@ -9,6 +9,14 @@ module apf_interfaces {
       sequence<double> flat_jacobian;
 
       int32 col_num;
+
+      sequence<double> flat_jacobian5;
+
+      int32 col_num5;
+
+      sequence<double> flat_jacobian3;
+
+      int32 col_num3;
     };
   };
 };

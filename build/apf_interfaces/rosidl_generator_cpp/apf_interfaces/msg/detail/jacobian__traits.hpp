@@ -47,6 +47,56 @@ inline void to_flow_style_yaml(
   {
     out << "col_num: ";
     rosidl_generator_traits::value_to_yaml(msg.col_num, out);
+    out << ", ";
+  }
+
+  // member: flat_jacobian5
+  {
+    if (msg.flat_jacobian5.size() == 0) {
+      out << "flat_jacobian5: []";
+    } else {
+      out << "flat_jacobian5: [";
+      size_t pending_items = msg.flat_jacobian5.size();
+      for (auto item : msg.flat_jacobian5) {
+        rosidl_generator_traits::value_to_yaml(item, out);
+        if (--pending_items > 0) {
+          out << ", ";
+        }
+      }
+      out << "]";
+    }
+    out << ", ";
+  }
+
+  // member: col_num5
+  {
+    out << "col_num5: ";
+    rosidl_generator_traits::value_to_yaml(msg.col_num5, out);
+    out << ", ";
+  }
+
+  // member: flat_jacobian3
+  {
+    if (msg.flat_jacobian3.size() == 0) {
+      out << "flat_jacobian3: []";
+    } else {
+      out << "flat_jacobian3: [";
+      size_t pending_items = msg.flat_jacobian3.size();
+      for (auto item : msg.flat_jacobian3) {
+        rosidl_generator_traits::value_to_yaml(item, out);
+        if (--pending_items > 0) {
+          out << ", ";
+        }
+      }
+      out << "]";
+    }
+    out << ", ";
+  }
+
+  // member: col_num3
+  {
+    out << "col_num3: ";
+    rosidl_generator_traits::value_to_yaml(msg.col_num3, out);
   }
   out << "}";
 }  // NOLINT(readability/fn_size)
@@ -82,6 +132,66 @@ inline void to_block_style_yaml(
     }
     out << "col_num: ";
     rosidl_generator_traits::value_to_yaml(msg.col_num, out);
+    out << "\n";
+  }
+
+  // member: flat_jacobian5
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    if (msg.flat_jacobian5.size() == 0) {
+      out << "flat_jacobian5: []\n";
+    } else {
+      out << "flat_jacobian5:\n";
+      for (auto item : msg.flat_jacobian5) {
+        if (indentation > 0) {
+          out << std::string(indentation, ' ');
+        }
+        out << "- ";
+        rosidl_generator_traits::value_to_yaml(item, out);
+        out << "\n";
+      }
+    }
+  }
+
+  // member: col_num5
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    out << "col_num5: ";
+    rosidl_generator_traits::value_to_yaml(msg.col_num5, out);
+    out << "\n";
+  }
+
+  // member: flat_jacobian3
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    if (msg.flat_jacobian3.size() == 0) {
+      out << "flat_jacobian3: []\n";
+    } else {
+      out << "flat_jacobian3:\n";
+      for (auto item : msg.flat_jacobian3) {
+        if (indentation > 0) {
+          out << std::string(indentation, ' ');
+        }
+        out << "- ";
+        rosidl_generator_traits::value_to_yaml(item, out);
+        out << "\n";
+      }
+    }
+  }
+
+  // member: col_num3
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    out << "col_num3: ";
+    rosidl_generator_traits::value_to_yaml(msg.col_num3, out);
     out << "\n";
   }
 }  // NOLINT(readability/fn_size)

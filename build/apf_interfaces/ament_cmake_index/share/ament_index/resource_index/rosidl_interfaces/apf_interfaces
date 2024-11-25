@@ -2,3 +2,7 @@ msg/Distance.idl
 msg/Distance.msg
 msg/Jacobian.idl
 msg/Jacobian.msg
+srv/RRTSPoints.idl
+srv/RRTSPoints.srv
+srv/RRTSPoints_Request.msg
+srv/RRTSPoints_Response.msg

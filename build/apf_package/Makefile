@@ -236,6 +236,19 @@ save_jaco/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/save_jaco.dir/build.make CMakeFiles/save_jaco.dir/build
 .PHONY : save_jaco/fast
 
+#=============================================================================
+# Target rules for targets named path_planning_node
+
+# Build rule for target.
+path_planning_node: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 path_planning_node
+.PHONY : path_planning_node
+
+# fast build rule for target.
+path_planning_node/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/path_planning_node.dir/build.make CMakeFiles/path_planning_node.dir/build
+.PHONY : path_planning_node/fast
+
 src/apf_main_node.o: src/apf_main_node.cpp.o
 .PHONY : src/apf_main_node.o
 
@@ -284,6 +297,30 @@ src/cul_distance_node.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cul_distance_node.dir/build.make CMakeFiles/cul_distance_node.dir/src/cul_distance_node.cpp.s
 .PHONY : src/cul_distance_node.cpp.s
 
+src/path_planning_node.o: src/path_planning_node.cpp.o
+.PHONY : src/path_planning_node.o
+
+# target to build an object file
+src/path_planning_node.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/path_planning_node.dir/build.make CMakeFiles/path_planning_node.dir/src/path_planning_node.cpp.o
+.PHONY : src/path_planning_node.cpp.o
+
+src/path_planning_node.i: src/path_planning_node.cpp.i
+.PHONY : src/path_planning_node.i
+
+# target to preprocess a source file
+src/path_planning_node.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/path_planning_node.dir/build.make CMakeFiles/path_planning_node.dir/src/path_planning_node.cpp.i
+.PHONY : src/path_planning_node.cpp.i
+
+src/path_planning_node.s: src/path_planning_node.cpp.s
+.PHONY : src/path_planning_node.s
+
+# target to generate assembly for a file
+src/path_planning_node.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/path_planning_node.dir/build.make CMakeFiles/path_planning_node.dir/src/path_planning_node.cpp.s
+.PHONY : src/path_planning_node.cpp.s
+
 src/save_jaco.o: src/save_jaco.cpp.o
 .PHONY : src/save_jaco.o
 
@@ -325,6 +362,7 @@ help:
 	@echo "... uninstall"
 	@echo "... apf_main_node"
 	@echo "... cul_distance_node"
+	@echo "... path_planning_node"
 	@echo "... save_jaco"
 	@echo "... src/apf_main_node.o"
 	@echo "... src/apf_main_node.i"
@@ -332,6 +370,9 @@ help:
 	@echo "... src/cul_distance_node.o"
 	@echo "... src/cul_distance_node.i"
 	@echo "... src/cul_distance_node.s"
+	@echo "... src/path_planning_node.o"
+	@echo "... src/path_planning_node.i"
+	@echo "... src/path_planning_node.s"
 	@echo "... src/save_jaco.o"
 	@echo "... src/save_jaco.i"
 	@echo "... src/save_jaco.s"

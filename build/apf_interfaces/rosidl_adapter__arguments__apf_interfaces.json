@@ -2,6 +2,7 @@
   "package_name": "apf_interfaces",
   "non_idl_tuples": [
     "/home/jang/2024_7Dof/src/apf_interfaces:msg/Jacobian.msg",
-    "/home/jang/2024_7Dof/src/apf_interfaces:msg/Distance.msg"
+    "/home/jang/2024_7Dof/src/apf_interfaces:msg/Distance.msg",
+    "/home/jang/2024_7Dof/src/apf_interfaces:srv/RRTSPoints.srv"
   ]
 }

@@ -19,6 +19,8 @@ extern "C"
 
 // Include directives for member types
 // Member 'flat_jacobian'
+// Member 'flat_jacobian5'
+// Member 'flat_jacobian3'
 #include "rosidl_runtime_c/primitives_sequence.h"
 
 /// Struct defined in msg/Jacobian in the package apf_interfaces.
@@ -26,6 +28,10 @@ typedef struct apf_interfaces__msg__Jacobian
 {
   rosidl_runtime_c__double__Sequence flat_jacobian;
   int32_t col_num;
+  rosidl_runtime_c__double__Sequence flat_jacobian5;
+  int32_t col_num5;
+  rosidl_runtime_c__double__Sequence flat_jacobian3;
+  int32_t col_num3;
 } apf_interfaces__msg__Jacobian;
 
 // Struct for a sequence of apf_interfaces__msg__Jacobian.

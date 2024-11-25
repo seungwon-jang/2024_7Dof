@@ -113,11 +113,14 @@ class jaco_node : public rclcpp::Node
             mat_arry[i+1] = forward_mat;
         }
 
+        ////////////////////////////
         ///////jacobian 계산!
+        ////////////////////////////
         Eigen::Vector3d Z_mat[7];
         Eigen::Vector3d O_mat[7];
 
         //Z 매트릭스랑 O 매트릭스 잘라서 써야 한다. 필요한 것은 zi와 t7, ti이다.
+        //이거는 0 -> 7 자코비안을 구했다.
         for(int i = 0; i < 7; i++){
             //먼저 z0부터 계산. 마지막 z7이 아니라, z6까지가 필요하다. 
             Z_mat[i] = mat_arry[i].block<3,1>(0,2);
@@ -136,19 +139,57 @@ class jaco_node : public rclcpp::Node
         Eigen::MatrixXd jacobian_mat(6,7);
         jacobian_mat << O_mat[0], O_mat[1], O_mat[2], O_mat[3], O_mat[4], O_mat[5], O_mat[6],
                         Z_mat[0], Z_mat[1], Z_mat[2], Z_mat[3], Z_mat[4], Z_mat[5], Z_mat[6];
+
+        ///////////////////////////////////
+        // 0 -> 5 자코비안 계산 파트
+        //////////////////////////////////
+        for(int i = 0; i < 5; i++){
+            //먼저 z0부터 계산. 마지막 z7이 아니라, z6까지가 필요하다. 
+            Z_mat[i] = mat_arry[i].block<3,1>(0,2);
+            //지금 O도 구하기 얘도 z랑 같다.
+            Eigen::Vector3d cur_O(3,1);
+            cur_O = mat_arry[i].block<3,1>(0,3);
+            //마지막 매트릭스는 이거 하나만 필요하다.
+            Eigen::Vector3d final_O(3,1);
+            final_O = mat_arry[5].block<3,1>(0,3);
+            
+            //최종적으로 Zi cross(O최종 - Oi가 필요하다)
+            O_mat[i] = Z_mat[i].cross(final_O-cur_O);
+        }
+
+        //위아래로 합치기
+        Eigen::MatrixXd jacobian_mat5(6,5);
+        jacobian_mat5 << O_mat[0], O_mat[1], O_mat[2], O_mat[3], O_mat[4],
+                        Z_mat[0], Z_mat[1], Z_mat[2], Z_mat[3], Z_mat[4];
+
+        ///////////////////////////////////
+        // 0 -> 3 자코비안 계산 파트
+        //////////////////////////////////
+        for(int i = 0; i < 3; i++){
+            //먼저 z0부터 계산. 마지막 z7이 아니라, z6까지가 필요하다. 
+            Z_mat[i] = mat_arry[i].block<3,1>(0,2);
+            //지금 O도 구하기 얘도 z랑 같다.
+            Eigen::Vector3d cur_O(3,1);
+            cur_O = mat_arry[i].block<3,1>(0,3);
+            //마지막 매트릭스는 이거 하나만 필요하다.
+            Eigen::Vector3d final_O(3,1);
+            final_O = mat_arry[3].block<3,1>(0,3);
+            
+            //최종적으로 Zi cross(O최종 - Oi가 필요하다)
+            O_mat[i] = Z_mat[i].cross(final_O-cur_O);
+        }
+
+        //위아래로 합치기
+        Eigen::MatrixXd jacobian_mat3(6,3);
+        jacobian_mat3 << O_mat[0], O_mat[1], O_mat[2],
+                        Z_mat[0], Z_mat[1], Z_mat[2];
                 
-        //자코비안 테스트용 각속도
-        Eigen::MatrixXd angle_vel(7,1);
-        angle_vel << 0.0, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1;
-        //자코비안 계산 결과 직교 좌표계 속도
-        Eigen::MatrixXd result_vel(7,1);
-        result_vel = jacobian_mat*angle_vel;
 
         ///////그냥 출력하는 파트
         //행렬 형식에 맞게 행렬을 출력한다.
         Eigen:: IOFormat ros2_format(Eigen::StreamPrecision, 0, ", ", ";\n", "[", "]", "[", "]");
         std::stringstream output_mat;
-        output_mat << jacobian_mat.format(ros2_format);
+        output_mat << jacobian_mat3.format(ros2_format);
 
         RCLCPP_INFO(this->get_logger(), "Publishing: \n'%s'\n", output_mat.str().c_str());
 
@@ -161,13 +202,25 @@ class jaco_node : public rclcpp::Node
         // 데이터 채우기
         //jacobian 메세지 넣기 - 먼저 우리는 가변 배열이니까 크기를 지정해 주기
         auto jaco_msg = apf_interfaces::msg::Jacobian();
+        //jaco7
         jaco_msg.flat_jacobian.resize(6*joint_EA);
-
-        //데이터 보내주기
         std::vector<double> flat_data(jacobian_mat.data(), jacobian_mat.data() + jacobian_mat.size());
         std::copy(flat_data.begin(), flat_data.end(), jaco_msg.flat_jacobian.begin());
-
         jaco_msg.col_num = joint_EA;
+
+        //jaco5
+        jaco_msg.flat_jacobian5.resize(6*(joint_EA - 2));
+        std::vector<double> flat_data5(jacobian_mat5.data(), jacobian_mat5.data() + jacobian_mat5.size());
+        std::copy(flat_data5.begin(), flat_data5.end(), jaco_msg.flat_jacobian5.begin());
+        jaco_msg.col_num5 = joint_EA - 2;
+
+        //jaco3
+        jaco_msg.flat_jacobian3.resize(6*(joint_EA - 4));
+        std::vector<double> flat_data3(jacobian_mat3.data(), jacobian_mat3.data() + jacobian_mat3.size());
+        std::copy(flat_data3.begin(), flat_data3.end(), jaco_msg.flat_jacobian3.begin());
+        jaco_msg.col_num3 = joint_EA - 4;
+        
+        //데이터 보내주기 
         publisher_jacobian->publish(jaco_msg);
         publisher_link_pose->publish(link_pose_msg);
 

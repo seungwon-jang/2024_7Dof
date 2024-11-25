@@ -4,7 +4,8 @@
   "template_dir": "/opt/ros/humble/share/rosidl_typesupport_c/resource",
   "idl_tuples": [
     "/home/jang/2024_7Dof/build/apf_interfaces/rosidl_adapter/apf_interfaces:msg/Jacobian.idl",
-    "/home/jang/2024_7Dof/build/apf_interfaces/rosidl_adapter/apf_interfaces:msg/Distance.idl"
+    "/home/jang/2024_7Dof/build/apf_interfaces/rosidl_adapter/apf_interfaces:msg/Distance.idl",
+    "/home/jang/2024_7Dof/build/apf_interfaces/rosidl_adapter/apf_interfaces:srv/RRTSPoints.idl"
   ],
   "ros_interface_dependencies": [
     "geometry_msgs:/opt/ros/humble/share/geometry_msgs/msg/Accel.idl",
@@ -77,6 +78,7 @@
     "/opt/ros/humble/share/rosidl_typesupport_c/resource/srv__type_support.cpp.em",
     "/home/jang/2024_7Dof/build/apf_interfaces/rosidl_adapter/apf_interfaces/msg/Jacobian.idl",
     "/home/jang/2024_7Dof/build/apf_interfaces/rosidl_adapter/apf_interfaces/msg/Distance.idl",
+    "/home/jang/2024_7Dof/build/apf_interfaces/rosidl_adapter/apf_interfaces/srv/RRTSPoints.idl",
     "/opt/ros/humble/share/geometry_msgs/msg/Accel.idl",
     "/opt/ros/humble/share/geometry_msgs/msg/AccelStamped.idl",
     "/opt/ros/humble/share/geometry_msgs/msg/AccelWithCovariance.idl",

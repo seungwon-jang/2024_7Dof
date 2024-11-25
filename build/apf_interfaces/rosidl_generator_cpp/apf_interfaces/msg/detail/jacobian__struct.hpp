@@ -39,6 +39,8 @@ struct Jacobian_
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
       this->col_num = 0l;
+      this->col_num5 = 0l;
+      this->col_num3 = 0l;
     }
   }
 
@@ -49,6 +51,8 @@ struct Jacobian_
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
       this->col_num = 0l;
+      this->col_num5 = 0l;
+      this->col_num3 = 0l;
     }
   }
 
@@ -59,6 +63,18 @@ struct Jacobian_
   using _col_num_type =
     int32_t;
   _col_num_type col_num;
+  using _flat_jacobian5_type =
+    std::vector<double, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<double>>;
+  _flat_jacobian5_type flat_jacobian5;
+  using _col_num5_type =
+    int32_t;
+  _col_num5_type col_num5;
+  using _flat_jacobian3_type =
+    std::vector<double, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<double>>;
+  _flat_jacobian3_type flat_jacobian3;
+  using _col_num3_type =
+    int32_t;
+  _col_num3_type col_num3;
 
   // setters for named parameter idiom
   Type & set__flat_jacobian(
@@ -71,6 +87,30 @@ struct Jacobian_
     const int32_t & _arg)
   {
     this->col_num = _arg;
+    return *this;
+  }
+  Type & set__flat_jacobian5(
+    const std::vector<double, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<double>> & _arg)
+  {
+    this->flat_jacobian5 = _arg;
+    return *this;
+  }
+  Type & set__col_num5(
+    const int32_t & _arg)
+  {
+    this->col_num5 = _arg;
+    return *this;
+  }
+  Type & set__flat_jacobian3(
+    const std::vector<double, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<double>> & _arg)
+  {
+    this->flat_jacobian3 = _arg;
+    return *this;
+  }
+  Type & set__col_num3(
+    const int32_t & _arg)
+  {
+    this->col_num3 = _arg;
     return *this;
   }
 
@@ -120,6 +160,18 @@ struct Jacobian_
       return false;
     }
     if (this->col_num != other.col_num) {
+      return false;
+    }
+    if (this->flat_jacobian5 != other.flat_jacobian5) {
+      return false;
+    }
+    if (this->col_num5 != other.col_num5) {
+      return false;
+    }
+    if (this->flat_jacobian3 != other.flat_jacobian3) {
+      return false;
+    }
+    if (this->col_num3 != other.col_num3) {
       return false;
     }
     return true;

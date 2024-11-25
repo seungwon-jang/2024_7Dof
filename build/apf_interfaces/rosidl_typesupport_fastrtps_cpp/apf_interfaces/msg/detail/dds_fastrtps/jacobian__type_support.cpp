@@ -38,6 +38,18 @@ cdr_serialize(
   }
   // Member: col_num
   cdr << ros_message.col_num;
+  // Member: flat_jacobian5
+  {
+    cdr << ros_message.flat_jacobian5;
+  }
+  // Member: col_num5
+  cdr << ros_message.col_num5;
+  // Member: flat_jacobian3
+  {
+    cdr << ros_message.flat_jacobian3;
+  }
+  // Member: col_num3
+  cdr << ros_message.col_num3;
   return true;
 }
 
@@ -54,6 +66,22 @@ cdr_deserialize(
 
   // Member: col_num
   cdr >> ros_message.col_num;
+
+  // Member: flat_jacobian5
+  {
+    cdr >> ros_message.flat_jacobian5;
+  }
+
+  // Member: col_num5
+  cdr >> ros_message.col_num5;
+
+  // Member: flat_jacobian3
+  {
+    cdr >> ros_message.flat_jacobian3;
+  }
+
+  // Member: col_num3
+  cdr >> ros_message.col_num3;
 
   return true;
 }
@@ -84,6 +112,38 @@ get_serialized_size(
   // Member: col_num
   {
     size_t item_size = sizeof(ros_message.col_num);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // Member: flat_jacobian5
+  {
+    size_t array_size = ros_message.flat_jacobian5.size();
+
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+    size_t item_size = sizeof(ros_message.flat_jacobian5[0]);
+    current_alignment += array_size * item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // Member: col_num5
+  {
+    size_t item_size = sizeof(ros_message.col_num5);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // Member: flat_jacobian3
+  {
+    size_t array_size = ros_message.flat_jacobian3.size();
+
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+    size_t item_size = sizeof(ros_message.flat_jacobian3[0]);
+    current_alignment += array_size * item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // Member: col_num3
+  {
+    size_t item_size = sizeof(ros_message.col_num3);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -133,6 +193,50 @@ max_serialized_size_Jacobian(
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
 
+  // Member: flat_jacobian5
+  {
+    size_t array_size = 0;
+    full_bounded = false;
+    is_plain = false;
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+
+    last_member_size = array_size * sizeof(uint64_t);
+    current_alignment += array_size * sizeof(uint64_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
+  }
+
+  // Member: col_num5
+  {
+    size_t array_size = 1;
+
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+
+  // Member: flat_jacobian3
+  {
+    size_t array_size = 0;
+    full_bounded = false;
+    is_plain = false;
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+
+    last_member_size = array_size * sizeof(uint64_t);
+    current_alignment += array_size * sizeof(uint64_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
+  }
+
+  // Member: col_num3
+  {
+    size_t array_size = 1;
+
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+
   size_t ret_val = current_alignment - initial_alignment;
   if (is_plain) {
     // All members are plain, and type is not empty.
@@ -141,7 +245,7 @@ max_serialized_size_Jacobian(
     using DataType = apf_interfaces::msg::Jacobian;
     is_plain =
       (
-      offsetof(DataType, col_num) +
+      offsetof(DataType, col_num3) +
       last_member_size
       ) == ret_val;
   }

@@ -6,6 +6,8 @@
 # Import statements for member types
 
 # Member 'flat_jacobian'
+# Member 'flat_jacobian5'
+# Member 'flat_jacobian3'
 import array  # noqa: E402, I100
 
 import builtins  # noqa: E402, I100
@@ -62,14 +64,26 @@ class Jacobian(metaclass=Metaclass_Jacobian):
     __slots__ = [
         '_flat_jacobian',
         '_col_num',
+        '_flat_jacobian5',
+        '_col_num5',
+        '_flat_jacobian3',
+        '_col_num3',
     ]
 
     _fields_and_field_types = {
         'flat_jacobian': 'sequence<double>',
         'col_num': 'int32',
+        'flat_jacobian5': 'sequence<double>',
+        'col_num5': 'int32',
+        'flat_jacobian3': 'sequence<double>',
+        'col_num3': 'int32',
     }
 
     SLOT_TYPES = (
+        rosidl_parser.definition.UnboundedSequence(rosidl_parser.definition.BasicType('double')),  # noqa: E501
+        rosidl_parser.definition.BasicType('int32'),  # noqa: E501
+        rosidl_parser.definition.UnboundedSequence(rosidl_parser.definition.BasicType('double')),  # noqa: E501
+        rosidl_parser.definition.BasicType('int32'),  # noqa: E501
         rosidl_parser.definition.UnboundedSequence(rosidl_parser.definition.BasicType('double')),  # noqa: E501
         rosidl_parser.definition.BasicType('int32'),  # noqa: E501
     )
@@ -80,6 +94,10 @@ class Jacobian(metaclass=Metaclass_Jacobian):
             ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
         self.flat_jacobian = array.array('d', kwargs.get('flat_jacobian', []))
         self.col_num = kwargs.get('col_num', int())
+        self.flat_jacobian5 = array.array('d', kwargs.get('flat_jacobian5', []))
+        self.col_num5 = kwargs.get('col_num5', int())
+        self.flat_jacobian3 = array.array('d', kwargs.get('flat_jacobian3', []))
+        self.col_num3 = kwargs.get('col_num3', int())
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -113,6 +131,14 @@ class Jacobian(metaclass=Metaclass_Jacobian):
         if self.flat_jacobian != other.flat_jacobian:
             return False
         if self.col_num != other.col_num:
+            return False
+        if self.flat_jacobian5 != other.flat_jacobian5:
+            return False
+        if self.col_num5 != other.col_num5:
+            return False
+        if self.flat_jacobian3 != other.flat_jacobian3:
+            return False
+        if self.col_num3 != other.col_num3:
             return False
         return True
 
@@ -163,3 +189,89 @@ class Jacobian(metaclass=Metaclass_Jacobian):
             assert value >= -2147483648 and value < 2147483648, \
                 "The 'col_num' field must be an integer in [-2147483648, 2147483647]"
         self._col_num = value
+
+    @builtins.property
+    def flat_jacobian5(self):
+        """Message field 'flat_jacobian5'."""
+        return self._flat_jacobian5
+
+    @flat_jacobian5.setter
+    def flat_jacobian5(self, value):
+        if isinstance(value, array.array):
+            assert value.typecode == 'd', \
+                "The 'flat_jacobian5' array.array() must have the type code of 'd'"
+            self._flat_jacobian5 = value
+            return
+        if __debug__:
+            from collections.abc import Sequence
+            from collections.abc import Set
+            from collections import UserList
+            from collections import UserString
+            assert \
+                ((isinstance(value, Sequence) or
+                  isinstance(value, Set) or
+                  isinstance(value, UserList)) and
+                 not isinstance(value, str) and
+                 not isinstance(value, UserString) and
+                 all(isinstance(v, float) for v in value) and
+                 all(not (val < -1.7976931348623157e+308 or val > 1.7976931348623157e+308) or math.isinf(val) for val in value)), \
+                "The 'flat_jacobian5' field must be a set or sequence and each value of type 'float' and each double in [-179769313486231570814527423731704356798070567525844996598917476803157260780028538760589558632766878171540458953514382464234321326889464182768467546703537516986049910576551282076245490090389328944075868508455133942304583236903222948165808559332123348274797826204144723168738177180919299881250404026184124858368.000000, 179769313486231570814527423731704356798070567525844996598917476803157260780028538760589558632766878171540458953514382464234321326889464182768467546703537516986049910576551282076245490090389328944075868508455133942304583236903222948165808559332123348274797826204144723168738177180919299881250404026184124858368.000000]"
+        self._flat_jacobian5 = array.array('d', value)
+
+    @builtins.property
+    def col_num5(self):
+        """Message field 'col_num5'."""
+        return self._col_num5
+
+    @col_num5.setter
+    def col_num5(self, value):
+        if __debug__:
+            assert \
+                isinstance(value, int), \
+                "The 'col_num5' field must be of type 'int'"
+            assert value >= -2147483648 and value < 2147483648, \
+                "The 'col_num5' field must be an integer in [-2147483648, 2147483647]"
+        self._col_num5 = value
+
+    @builtins.property
+    def flat_jacobian3(self):
+        """Message field 'flat_jacobian3'."""
+        return self._flat_jacobian3
+
+    @flat_jacobian3.setter
+    def flat_jacobian3(self, value):
+        if isinstance(value, array.array):
+            assert value.typecode == 'd', \
+                "The 'flat_jacobian3' array.array() must have the type code of 'd'"
+            self._flat_jacobian3 = value
+            return
+        if __debug__:
+            from collections.abc import Sequence
+            from collections.abc import Set
+            from collections import UserList
+            from collections import UserString
+            assert \
+                ((isinstance(value, Sequence) or
+                  isinstance(value, Set) or
+                  isinstance(value, UserList)) and
+                 not isinstance(value, str) and
+                 not isinstance(value, UserString) and
+                 all(isinstance(v, float) for v in value) and
+                 all(not (val < -1.7976931348623157e+308 or val > 1.7976931348623157e+308) or math.isinf(val) for val in value)), \
+                "The 'flat_jacobian3' field must be a set or sequence and each value of type 'float' and each double in [-179769313486231570814527423731704356798070567525844996598917476803157260780028538760589558632766878171540458953514382464234321326889464182768467546703537516986049910576551282076245490090389328944075868508455133942304583236903222948165808559332123348274797826204144723168738177180919299881250404026184124858368.000000, 179769313486231570814527423731704356798070567525844996598917476803157260780028538760589558632766878171540458953514382464234321326889464182768467546703537516986049910576551282076245490090389328944075868508455133942304583236903222948165808559332123348274797826204144723168738177180919299881250404026184124858368.000000]"
+        self._flat_jacobian3 = array.array('d', value)
+
+    @builtins.property
+    def col_num3(self):
+        """Message field 'col_num3'."""
+        return self._col_num3
+
+    @col_num3.setter
+    def col_num3(self, value):
+        if __debug__:
+            assert \
+                isinstance(value, int), \
+                "The 'col_num3' field must be of type 'int'"
+            assert value >= -2147483648 and value < 2147483648, \
+                "The 'col_num3' field must be an integer in [-2147483648, 2147483647]"
+        self._col_num3 = value

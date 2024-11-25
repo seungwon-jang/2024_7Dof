@@ -1,0 +1,78 @@
+[0.196s] Invoking command in '/home/jang/2024_7Dof/build/external_torque_sensor_broadcaster': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jang/2024_7Dof/install/apf_nodes:/opt/ros/humble /usr/bin/cmake /home/jang/2024_7Dof/src/iiwa_ros2/iiwa_controllers/external_torque_sensor_broadcaster -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/jang/2024_7Dof/install/external_torque_sensor_broadcaster
+[0.257s] -- The C compiler identification is GNU 11.4.0
+[0.318s] -- The CXX compiler identification is GNU 11.4.0
+[0.326s] -- Detecting C compiler ABI info
+[0.405s] -- Detecting C compiler ABI info - done
+[0.415s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.415s] -- Detecting C compile features
+[0.415s] -- Detecting C compile features - done
+[0.419s] -- Detecting CXX compiler ABI info
+[0.503s] -- Detecting CXX compiler ABI info - done
+[0.509s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.509s] -- Detecting CXX compile features
+[0.509s] -- Detecting CXX compile features - done
+[0.514s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.655s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.734s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.767s] -- Found controller_interface: 2.43.1 (/opt/ros/humble/share/controller_interface/cmake)
+[0.801s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.805s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.811s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.823s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.836s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.001s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.004s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.024s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[1.078s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.079s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[1.094s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.097s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[1.105s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[1.115s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.123s] -- Looking for pthread.h
+[1.181s] -- Looking for pthread.h - found
+[1.181s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.241s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.242s] -- Found Threads: TRUE  
+[1.281s] -- Found realtime_tools: 2.6.0 (/opt/ros/humble/share/realtime_tools/cmake)
+[1.304s] -- Found ament_cmake_gtest: 1.3.10 (/opt/ros/humble/share/ament_cmake_gtest/cmake)
+[1.305s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.404s] -- Configuring done
+[1.422s] -- Generating done
+[1.423s] -- Build files have been written to: /home/jang/2024_7Dof/build/external_torque_sensor_broadcaster
+[1.435s] Invoked command in '/home/jang/2024_7Dof/build/external_torque_sensor_broadcaster' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jang/2024_7Dof/install/apf_nodes:/opt/ros/humble /usr/bin/cmake /home/jang/2024_7Dof/src/iiwa_ros2/iiwa_controllers/external_torque_sensor_broadcaster -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/jang/2024_7Dof/install/external_torque_sensor_broadcaster
+[1.435s] Invoking command in '/home/jang/2024_7Dof/build/external_torque_sensor_broadcaster': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jang/2024_7Dof/install/apf_nodes:/opt/ros/humble /usr/bin/cmake --build /home/jang/2024_7Dof/build/external_torque_sensor_broadcaster -- -j16 -l16
+[1.482s] [ 50%] [32mBuilding CXX object CMakeFiles/external_torque_sensor_broadcaster.dir/src/external_torque_sensor_broadcaster.cpp.o[0m
+[7.829s] [100%] [32m[1mLinking CXX shared library libexternal_torque_sensor_broadcaster.so[0m
+[8.085s] [100%] Built target external_torque_sensor_broadcaster
+[8.105s] Invoked command in '/home/jang/2024_7Dof/build/external_torque_sensor_broadcaster' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jang/2024_7Dof/install/apf_nodes:/opt/ros/humble /usr/bin/cmake --build /home/jang/2024_7Dof/build/external_torque_sensor_broadcaster -- -j16 -l16
+[8.143s] Invoking command in '/home/jang/2024_7Dof/build/external_torque_sensor_broadcaster': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jang/2024_7Dof/install/apf_nodes:/opt/ros/humble /usr/bin/cmake --install /home/jang/2024_7Dof/build/external_torque_sensor_broadcaster
+[8.152s] -- Install configuration: "Release"
+[8.152s] -- Execute custom install script
+[8.153s] -- Symlinking: /home/jang/2024_7Dof/install/external_torque_sensor_broadcaster/share/external_torque_sensor_broadcaster//external_torque_sensor_broadcaster.xml
+[8.165s] -- Symlinking: /home/jang/2024_7Dof/install/external_torque_sensor_broadcaster/lib/libexternal_torque_sensor_broadcaster.so
+[8.178s] -- Symlinking: /home/jang/2024_7Dof/install/external_torque_sensor_broadcaster/include/external_torque_sensor_broadcaster/external_torque_sensor.hpp
+[8.190s] -- Symlinking: /home/jang/2024_7Dof/install/external_torque_sensor_broadcaster/include/external_torque_sensor_broadcaster/external_torque_sensor_broadcaster.hpp
+[8.203s] -- Symlinking: /home/jang/2024_7Dof/install/external_torque_sensor_broadcaster/include/external_torque_sensor_broadcaster/visibility_control.h
+[8.215s] -- Symlinking: /home/jang/2024_7Dof/install/external_torque_sensor_broadcaster/share/external_torque_sensor_broadcaster/environment/library_path.sh
+[8.230s] -- Symlinking: /home/jang/2024_7Dof/install/external_torque_sensor_broadcaster/share/external_torque_sensor_broadcaster/environment/library_path.dsv
+[8.244s] -- Symlinking: /home/jang/2024_7Dof/install/external_torque_sensor_broadcaster/share/ament_index/resource_index/package_run_dependencies/external_torque_sensor_broadcaster
+[8.255s] -- Symlinking: /home/jang/2024_7Dof/install/external_torque_sensor_broadcaster/share/ament_index/resource_index/parent_prefix_path/external_torque_sensor_broadcaster
+[8.266s] -- Symlinking: /home/jang/2024_7Dof/install/external_torque_sensor_broadcaster/share/external_torque_sensor_broadcaster/environment/ament_prefix_path.sh
+[8.279s] -- Symlinking: /home/jang/2024_7Dof/install/external_torque_sensor_broadcaster/share/external_torque_sensor_broadcaster/environment/ament_prefix_path.dsv
+[8.292s] -- Symlinking: /home/jang/2024_7Dof/install/external_torque_sensor_broadcaster/share/external_torque_sensor_broadcaster/environment/path.sh
+[8.305s] -- Symlinking: /home/jang/2024_7Dof/install/external_torque_sensor_broadcaster/share/external_torque_sensor_broadcaster/environment/path.dsv
+[8.317s] -- Symlinking: /home/jang/2024_7Dof/install/external_torque_sensor_broadcaster/share/external_torque_sensor_broadcaster/local_setup.bash
+[8.333s] -- Symlinking: /home/jang/2024_7Dof/install/external_torque_sensor_broadcaster/share/external_torque_sensor_broadcaster/local_setup.sh
+[8.344s] -- Symlinking: /home/jang/2024_7Dof/install/external_torque_sensor_broadcaster/share/external_torque_sensor_broadcaster/local_setup.zsh
+[8.358s] -- Symlinking: /home/jang/2024_7Dof/install/external_torque_sensor_broadcaster/share/external_torque_sensor_broadcaster/local_setup.dsv
+[8.370s] -- Symlinking: /home/jang/2024_7Dof/install/external_torque_sensor_broadcaster/share/external_torque_sensor_broadcaster/package.dsv
+[8.382s] -- Symlinking: /home/jang/2024_7Dof/install/external_torque_sensor_broadcaster/share/ament_index/resource_index/packages/external_torque_sensor_broadcaster
+[8.396s] -- Symlinking: /home/jang/2024_7Dof/install/external_torque_sensor_broadcaster/share/ament_index/resource_index/controller_interface__pluginlib__plugin/external_torque_sensor_broadcaster
+[8.413s] -- Symlinking: /home/jang/2024_7Dof/install/external_torque_sensor_broadcaster/share/external_torque_sensor_broadcaster/cmake/ament_cmake_export_include_directories-extras.cmake
+[8.426s] -- Symlinking: /home/jang/2024_7Dof/install/external_torque_sensor_broadcaster/share/external_torque_sensor_broadcaster/cmake/ament_cmake_export_libraries-extras.cmake
+[8.439s] -- Symlinking: /home/jang/2024_7Dof/install/external_torque_sensor_broadcaster/share/external_torque_sensor_broadcaster/cmake/ament_cmake_export_dependencies-extras.cmake
+[8.454s] -- Symlinking: /home/jang/2024_7Dof/install/external_torque_sensor_broadcaster/share/external_torque_sensor_broadcaster/cmake/external_torque_sensor_broadcasterConfig.cmake
+[8.469s] -- Symlinking: /home/jang/2024_7Dof/install/external_torque_sensor_broadcaster/share/external_torque_sensor_broadcaster/cmake/external_torque_sensor_broadcasterConfig-version.cmake
+[8.482s] -- Symlinking: /home/jang/2024_7Dof/install/external_torque_sensor_broadcaster/share/external_torque_sensor_broadcaster/package.xml
+[8.498s] Invoked command in '/home/jang/2024_7Dof/build/external_torque_sensor_broadcaster' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jang/2024_7Dof/install/apf_nodes:/opt/ros/humble /usr/bin/cmake --install /home/jang/2024_7Dof/build/external_torque_sensor_broadcaster
