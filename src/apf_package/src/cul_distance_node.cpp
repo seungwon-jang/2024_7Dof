@@ -53,8 +53,12 @@ class cul_distance_node : public rclcpp::Node
       set_init();
     }
 
-    //원하는 x,y,z 좌표 전달, 뒤에 3개는 오일러 각도.
-    double goal_points[6] = {-0.3, -0.5, 0.5, 1.0, 0.5, 2.0};
+    //원하는 x,y,z 좌표 전달, x,y,z,w 순으로 저장한다
+    double goal_points[7] = {0.3, 0.5, 0.5, 1.0, 0.5, 2.0, 0};
+
+
+
+    double a = 100;
     //진짜 목표지점의 점
     double init_goal_points[6] = {0.3, 0.5, 0.5, 1.0, 0.5, 2.0};
     //RRTs로 만들어진 점들을 저장할 부분
@@ -109,9 +113,9 @@ class cul_distance_node : public rclcpp::Node
       //RCLCPP_INFO(this->get_logger(), "Quater: x:'%.2f', y:'%.2f', z:'%.2f, w:%.2f'\n", Quater[0], Quater[1], Quater[2], Quater[3]);
       //RCLCPP_INFO(this->get_logger(), "Position_diff: x:'%.2f', y:'%.2f', z:'%.2f'\n", (goal_points[0] - position[0]), (goal_points[1] - position[1]), (goal_points[2] - position[2]));
 
-      //목표 roll pitch yaw 쿼터니안으로 변환해서 저장하고, 현재 값도 쿼터니안으로 변환해서 저장하기
+      //목표 쿼터니안으로 변환해서 저장하고, 현재 값도 쿼터니안으로 변환해서 저장하기
       tf2::Quaternion target_Quater, cur_Quater;
-      target_Quater.setRPY(goal_points[3], goal_points[4], goal_points[5]);
+      target_Quater.setValue(goal_points[3], goal_points[4], goal_points[5], goal_points[6]);
       cur_Quater.setValue(Quater[0], Quater[1], Quater[2], Quater[3]);
       
       //쿼터니안 값 개별로 출력해 보기
@@ -134,7 +138,9 @@ class cul_distance_node : public rclcpp::Node
       }
 
       //거리가 일정 이상 가까워지면 다음 점으로 옮기기
+      
       if(cartisian_distance < 0.15){
+        //현재 지점의 값 저장 - 만약 경로가 새로 생성될 경우 다시 0으로 초기화해 줘야한다
         RRT_current_point++;
         if(RRT_current_point >= (int)rrt_result_points.size())
           RRT_current_point = (int)rrt_result_points.size() - 1; 
@@ -142,6 +148,7 @@ class cul_distance_node : public rclcpp::Node
           goal_points[i] = rrt_result_points[RRT_current_point][i];
         }
       }
+      
 
       //RCLCPP_INFO(this->get_logger(), "RRT_point_time_count %d", RRT_current_point);
       //RCLCPP_INFO(this->get_logger(), "(int)rrt_result_points.size() %d", (int)rrt_result_points.size());
@@ -534,10 +541,15 @@ class cul_distance_node : public rclcpp::Node
     //서비스 클라이언트로 메세지를 보낸 후 실행시킬 함수
     void RRTs_result(rclcpp::Client<apf_interfaces::srv::RRTSPoints>::SharedFuture future){
       auto response = future.get();
-      //RCLCPP_INFO(this -> get_logger(), "result_points : %f, %f, %f, %f, %f, %f, %f, %f,", response -> result_points[0], response -> result_points[1], response -> result_points[2], response -> result_points[3], response -> result_points[4], response -> result_points[5], response -> result_points[6], response -> result_points[7]);
+      RCLCPP_INFO(this -> get_logger(), "test____result_points : %f, %f, %f, %f, %f, %f, %f, %f,", response -> result_points[0], response -> result_points[1], response -> result_points[2], response -> result_points[3], response -> result_points[4], response -> result_points[5], response -> result_points[6], response -> result_points[7]);
+      RCLCPP_INFO(this -> get_logger(), "이번에는 a 값을 출력해 보자, %f", a);
       rrt_result_points.clear();
       for (int i = 0; i < ((response -> result_points).size()/7); i++){
         std::array<double, 7> new_point;
+        for (int j = 0; j < 7; j ++){
+          new_point[j] = response -> result_points[7*i + j];
+        }
+        /*
         new_point[0] = response -> result_points[7*i + 0];
         new_point[1] = response -> result_points[7*i + 1];
         new_point[2] = response -> result_points[7*i + 2];
@@ -545,10 +557,15 @@ class cul_distance_node : public rclcpp::Node
         new_point[4] = response -> result_points[7*i + 4];
         new_point[5] = response -> result_points[7*i + 5];
         new_point[6] = response -> result_points[7*i + 6];
+        */
         rrt_result_points.push_back(new_point);
       }
-      //초기 값 뽑기
-      for (int i = 0; i < 7 ; i++){
+      //초기을 먼저 goal_point로 지정하여 값 뽑기
+
+      for (int j = 0; j < 7; j++){
+        goal_points[j] = rrt_result_points[0][j];
+      }
+        /*
         goal_points[0] = rrt_result_points[0][0];
         goal_points[1] = rrt_result_points[0][1];
         goal_points[2] = rrt_result_points[0][2];
@@ -556,8 +573,9 @@ class cul_distance_node : public rclcpp::Node
         goal_points[4] = rrt_result_points[0][4];
         goal_points[5] = rrt_result_points[0][5];
         goal_points[6] = rrt_result_points[0][6];
+        */
         //RCLCPP_INFO(this->get_logger(), "new_count: %f, %f, %f", goal_points[0], goal_points[1], goal_points[2]);
-      }
+
       RRT_current_point = 0;
       //RCLCPP_INFO(this->get_logger(), "Received point_count: %ld", response->point_count);
     }

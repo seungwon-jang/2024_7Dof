@@ -1,0 +1,28 @@
+[35m[1mConsolidate compiler generated dependencies of target cul_distance_node[0m
+[ 25%] Built target apf_main_node
+[ 50%] Built target save_jaco
+[ 75%] Built target path_planning_node
+[ 87%] [32mBuilding CXX object CMakeFiles/cul_distance_node.dir/src/cul_distance_node.cpp.o[0m
+[100%] [32m[1mLinking CXX executable cul_distance_node[0m
+[100%] Built target cul_distance_node
+-- Install configuration: "Release"
+-- Execute custom install script
+-- Up-to-date symlink: /home/jang/2024_7Dof/install/apf_package/lib/apf_package/apf_main_node
+-- Up-to-date symlink: /home/jang/2024_7Dof/install/apf_package/lib/apf_package/cul_distance_node
+-- Up-to-date symlink: /home/jang/2024_7Dof/install/apf_package/lib/apf_package/save_jaco
+-- Up-to-date symlink: /home/jang/2024_7Dof/install/apf_package/lib/apf_package/path_planning_node
+-- Up-to-date symlink: /home/jang/2024_7Dof/install/apf_package/share/ament_index/resource_index/package_run_dependencies/apf_package
+-- Up-to-date symlink: /home/jang/2024_7Dof/install/apf_package/share/ament_index/resource_index/parent_prefix_path/apf_package
+-- Up-to-date symlink: /home/jang/2024_7Dof/install/apf_package/share/apf_package/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/jang/2024_7Dof/install/apf_package/share/apf_package/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/jang/2024_7Dof/install/apf_package/share/apf_package/environment/path.sh
+-- Up-to-date symlink: /home/jang/2024_7Dof/install/apf_package/share/apf_package/environment/path.dsv
+-- Up-to-date symlink: /home/jang/2024_7Dof/install/apf_package/share/apf_package/local_setup.bash
+-- Up-to-date symlink: /home/jang/2024_7Dof/install/apf_package/share/apf_package/local_setup.sh
+-- Up-to-date symlink: /home/jang/2024_7Dof/install/apf_package/share/apf_package/local_setup.zsh
+-- Up-to-date symlink: /home/jang/2024_7Dof/install/apf_package/share/apf_package/local_setup.dsv
+-- Symlinking: /home/jang/2024_7Dof/install/apf_package/share/apf_package/package.dsv
+-- Up-to-date symlink: /home/jang/2024_7Dof/install/apf_package/share/ament_index/resource_index/packages/apf_package
+-- Up-to-date symlink: /home/jang/2024_7Dof/install/apf_package/share/apf_package/cmake/apf_packageConfig.cmake
+-- Up-to-date symlink: /home/jang/2024_7Dof/install/apf_package/share/apf_package/cmake/apf_packageConfig-version.cmake
+-- Up-to-date symlink: /home/jang/2024_7Dof/install/apf_package/share/apf_package/package.xml

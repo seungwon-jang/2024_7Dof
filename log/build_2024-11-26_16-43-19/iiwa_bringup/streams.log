@@ -1,0 +1,28 @@
+[0.075s] Invoking command in '/home/jang/2024_7Dof/build/iiwa_bringup': CMAKE_PREFIX_PATH=/home/jang/2024_7Dof/install/iiwa_description:/home/jang/2024_7Dof/install/impedance_controller:/home/jang/2024_7Dof/install/iiwa_moveit2:/home/jang/2024_7Dof/install/iiwa_bringup:/home/jang/2024_7Dof/install/external_torque_sensor_broadcaster:/home/jang/2024_7Dof/install/culjaco:/home/jang/2024_7Dof/install/apf_package:/home/jang/2024_7Dof/install/apf_interfaces:/home/jang/2024_7Dof/install/apf_nodes:/opt/ros/humble /usr/bin/cmake --build /home/jang/2024_7Dof/build/iiwa_bringup -- -j16 -l16
+[0.241s] Invoked command in '/home/jang/2024_7Dof/build/iiwa_bringup' returned '0': CMAKE_PREFIX_PATH=/home/jang/2024_7Dof/install/iiwa_description:/home/jang/2024_7Dof/install/impedance_controller:/home/jang/2024_7Dof/install/iiwa_moveit2:/home/jang/2024_7Dof/install/iiwa_bringup:/home/jang/2024_7Dof/install/external_torque_sensor_broadcaster:/home/jang/2024_7Dof/install/culjaco:/home/jang/2024_7Dof/install/apf_package:/home/jang/2024_7Dof/install/apf_interfaces:/home/jang/2024_7Dof/install/apf_nodes:/opt/ros/humble /usr/bin/cmake --build /home/jang/2024_7Dof/build/iiwa_bringup -- -j16 -l16
+[0.342s] Invoking command in '/home/jang/2024_7Dof/build/iiwa_bringup': CMAKE_PREFIX_PATH=/home/jang/2024_7Dof/install/iiwa_description:/home/jang/2024_7Dof/install/impedance_controller:/home/jang/2024_7Dof/install/iiwa_moveit2:/home/jang/2024_7Dof/install/iiwa_bringup:/home/jang/2024_7Dof/install/external_torque_sensor_broadcaster:/home/jang/2024_7Dof/install/culjaco:/home/jang/2024_7Dof/install/apf_package:/home/jang/2024_7Dof/install/apf_interfaces:/home/jang/2024_7Dof/install/apf_nodes:/opt/ros/humble /usr/bin/cmake --install /home/jang/2024_7Dof/build/iiwa_bringup
+[0.358s] -- Install configuration: "Release"
+[0.359s] -- Execute custom install script
+[0.359s] -- Up-to-date symlink: /home/jang/2024_7Dof/install/iiwa_bringup/share/iiwa_bringup/launch/iiwa.launch.py
+[0.359s] -- Up-to-date symlink: /home/jang/2024_7Dof/install/iiwa_bringup/share/iiwa_bringup/launch/iiwa_planning.launch.py
+[0.359s] -- Up-to-date symlink: /home/jang/2024_7Dof/install/iiwa_bringup/share/iiwa_bringup/launch/iiwa_pose_tracking.launch.py
+[0.359s] -- Up-to-date symlink: /home/jang/2024_7Dof/install/iiwa_bringup/share/iiwa_bringup/launch/iiwa_servoing.launch.py
+[0.360s] -- Up-to-date symlink: /home/jang/2024_7Dof/install/iiwa_bringup/share/iiwa_bringup/launch/iiwa_test_joint_trajectory_controller.launch.py
+[0.360s] -- Up-to-date symlink: /home/jang/2024_7Dof/install/iiwa_bringup/share/iiwa_bringup/launch/joy_servo_teleop.launch.py
+[0.360s] -- Up-to-date symlink: /home/jang/2024_7Dof/install/iiwa_bringup/share/iiwa_bringup/config/test_trajectory_config.yaml
+[0.360s] -- Up-to-date symlink: /home/jang/2024_7Dof/install/iiwa_bringup/share/ament_index/resource_index/package_run_dependencies/iiwa_bringup
+[0.364s] -- Up-to-date symlink: /home/jang/2024_7Dof/install/iiwa_bringup/share/ament_index/resource_index/parent_prefix_path/iiwa_bringup
+[0.364s] -- Up-to-date symlink: /home/jang/2024_7Dof/install/iiwa_bringup/share/iiwa_bringup/environment/ament_prefix_path.sh
+[0.366s] -- Up-to-date symlink: /home/jang/2024_7Dof/install/iiwa_bringup/share/iiwa_bringup/environment/ament_prefix_path.dsv
+[0.367s] -- Up-to-date symlink: /home/jang/2024_7Dof/install/iiwa_bringup/share/iiwa_bringup/environment/path.sh
+[0.370s] -- Up-to-date symlink: /home/jang/2024_7Dof/install/iiwa_bringup/share/iiwa_bringup/environment/path.dsv
+[0.370s] -- Up-to-date symlink: /home/jang/2024_7Dof/install/iiwa_bringup/share/iiwa_bringup/local_setup.bash
+[0.371s] -- Up-to-date symlink: /home/jang/2024_7Dof/install/iiwa_bringup/share/iiwa_bringup/local_setup.sh
+[0.371s] -- Up-to-date symlink: /home/jang/2024_7Dof/install/iiwa_bringup/share/iiwa_bringup/local_setup.zsh
+[0.373s] -- Up-to-date symlink: /home/jang/2024_7Dof/install/iiwa_bringup/share/iiwa_bringup/local_setup.dsv
+[0.374s] -- Symlinking: /home/jang/2024_7Dof/install/iiwa_bringup/share/iiwa_bringup/package.dsv
+[0.388s] -- Up-to-date symlink: /home/jang/2024_7Dof/install/iiwa_bringup/share/ament_index/resource_index/packages/iiwa_bringup
+[0.389s] -- Up-to-date symlink: /home/jang/2024_7Dof/install/iiwa_bringup/share/iiwa_bringup/cmake/iiwa_bringupConfig.cmake
+[0.389s] -- Up-to-date symlink: /home/jang/2024_7Dof/install/iiwa_bringup/share/iiwa_bringup/cmake/iiwa_bringupConfig-version.cmake
+[0.389s] -- Up-to-date symlink: /home/jang/2024_7Dof/install/iiwa_bringup/share/iiwa_bringup/package.xml
+[0.393s] Invoked command in '/home/jang/2024_7Dof/build/iiwa_bringup' returned '0': CMAKE_PREFIX_PATH=/home/jang/2024_7Dof/install/iiwa_description:/home/jang/2024_7Dof/install/impedance_controller:/home/jang/2024_7Dof/install/iiwa_moveit2:/home/jang/2024_7Dof/install/iiwa_bringup:/home/jang/2024_7Dof/install/external_torque_sensor_broadcaster:/home/jang/2024_7Dof/install/culjaco:/home/jang/2024_7Dof/install/apf_package:/home/jang/2024_7Dof/install/apf_interfaces:/home/jang/2024_7Dof/install/apf_nodes:/opt/ros/humble /usr/bin/cmake --install /home/jang/2024_7Dof/build/iiwa_bringup
