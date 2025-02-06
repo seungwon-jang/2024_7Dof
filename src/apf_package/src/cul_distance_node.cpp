@@ -24,7 +24,7 @@ struct distance_struct{
   int obstacle_num;
 }distnace_data;
 
-
+//주석
 class cul_distance_node : public rclcpp::Node
 {
   public:
