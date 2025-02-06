@@ -6,7 +6,9 @@
 [https://github.com/lbr-stack/lbr_fri_ros2_stack](https://github.com/ICube-Robotics/iiwa_ros2)
 위의 iiwa 7 R800을 불러와서 사용하였다. 해당 내용에 맞게 환경 설정 필요
 
+https://github.com/flexible-collision-library/fcl
 
+또한 FCL라이브러리를 위와 같이 설정하여 주어야 한다
 
 
 ### 2. 사용 방법
